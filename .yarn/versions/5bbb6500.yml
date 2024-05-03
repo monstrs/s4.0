@@ -1,0 +1,3 @@
+releases:
+  "@chats-system/gateway-rpc": patch
+  "@chats-system/gateway-rpc-client": patch

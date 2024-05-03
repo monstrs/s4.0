@@ -1,0 +1,32 @@
+{
+  "name": "@organizations/edit-organization-feature",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": "./src/index.ts"
+  },
+  "main": "src/index.ts",
+  "dependencies": {
+    "@app/operations": "workspace:0.0.1"
+  },
+  "devDependencies": {
+    "@organizations/figure-skating-organization-entity": "workspace:0.0.1",
+    "@organizations/organization-entity": "workspace:0.0.1",
+    "@types/react": "^18.3.1",
+    "effector": "^23.2.1",
+    "effector-react": "^23.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "peerDependencies": {
+    "@organizations/figure-skating-organization-entity": "workspace:0.0.1",
+    "@organizations/organization-entity": "workspace:0.0.1",
+    "effector": "^23",
+    "effector-react": "^23",
+    "react": "^18",
+    "react-dom": "^18"
+  }
+}

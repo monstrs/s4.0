@@ -1,0 +1,6 @@
+export * from './person.entity.js'
+export * from './base-sportsman.entity.js'
+export * from './figure-skating-sportsman.entity.js'
+export * from './coach.entity.js'
+export * from './base-judge.entity.js'
+export * from './figure-skating-judge.entity.js'

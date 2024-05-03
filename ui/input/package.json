@@ -1,0 +1,27 @@
+{
+  "name": "@ui/input",
+  "version": "0.0.1",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": "./src/index.ts"
+  },
+  "main": "src/index.ts",
+  "dependencies": {
+    "@ui-primitives/input": "^0.1.4",
+    "@ui/sprinkles": "workspace:0.0.1",
+    "@ui/theme": "workspace:0.0.1",
+    "@vanilla-extract/recipes": "^0.5.2",
+    "antd": "^5.16.5"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.1",
+    "@vanilla-extract/css": "^1.15.1",
+    "@vanilla-extract/sprinkles": "^1.6.1",
+    "react": "^18.3.1"
+  },
+  "peerDependencies": {
+    "react": "^18"
+  }
+}

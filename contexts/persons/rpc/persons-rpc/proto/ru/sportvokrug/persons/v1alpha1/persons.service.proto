@@ -1,0 +1,160 @@
+syntax = "proto3";
+
+package ru.sportvokrug.persons.v1alpha1;
+
+import "google/protobuf/timestamp.proto";
+import "tech/monstrs/queries/v1alpha1/queries.proto";
+
+service PersonsService {
+  rpc CreatePerson(CreatePersonRequest) returns (CreatePersonResponse) {}
+  rpc UpdatePerson(UpdatePersonRequest) returns (UpdatePersonResponse) {}
+  rpc CreateCoach(CreateCoachRequest) returns (CreateCoachResponse) {}
+  rpc UpdateCoach(UpdateCoachRequest) returns (UpdateCoachResponse) {}
+  rpc CreateFigureSkatingSportsman(CreateFigureSkatingSportsmanRequest) returns (CreateFigureSkatingSportsmanResponse) {}
+  rpc UpdateFigureSkatingSportsman(UpdateFigureSkatingSportsmanRequest) returns (UpdateFigureSkatingSportsmanResponse) {}
+  rpc CreateFigureSkatingJudge(CreateFigureSkatingJudgeRequest) returns (CreateFigureSkatingJudgeResponse) {}
+  rpc UpdateFigureSkatingJudge(UpdateFigureSkatingJudgeRequest) returns (UpdateFigureSkatingJudgeResponse) {}
+}
+
+enum Gender {
+  MALE = 0;
+  FEMALE = 1;
+}
+
+enum SportsmanRank {
+  NOT_SPECIFIED = 0;
+  NO_RANK = 1;
+  THIRD_YOUTH = 2;
+  SECOND_YOUTH = 3;
+  FIRST_YOUTH = 4;
+  THIRD_SPORTS = 5;
+  SECOND_SPORTS = 6;
+  FIRST_SPORTS = 7;
+  CANDIDATE_MASTER_OF_SPORTS = 8;
+  MASTER_OF_SPORTS = 9;
+  INTERNATIONAL_MASTER_OF_SPORTS = 10;
+  HONORED_MASTER_OF_SPORTS = 11;
+}
+
+enum JudgeRank {
+  SPORTS_JUDGE_THIRD_CATEGORY = 0;
+  SPORTS_JUDGE_SECOND_CATEGORY = 1;
+  SPORTS_JUDGE_FIRST_CATEGORY = 2;
+  SPORTS_JUDGE_ALL_RUSSIAN_CATEGORY = 3;
+}
+
+message Person {
+  string id = 1;
+  string first_name = 2;
+  string last_name = 3;
+  string patronymic = 4;
+  Gender gender = 5;
+  google.protobuf.Timestamp birthday = 6;
+  google.protobuf.Timestamp created_at = 7;
+}
+
+message Coach {
+  string id = 1;
+  string person_id = 2;
+  bool is_honored = 3;
+  google.protobuf.Timestamp created_at = 4;
+}
+
+message FigureSkatingSportsman {
+  string id = 1;
+  string person_id = 2;
+  SportsmanRank rank = 3;
+  google.protobuf.Timestamp rank_assign_date = 4;
+  google.protobuf.Timestamp created_at = 5;
+}
+
+message FigureSkatingJudge {
+  string id = 1;
+  string person_id = 2;
+  JudgeRank rank = 3;
+  google.protobuf.Timestamp rank_order_date = 4;
+  google.protobuf.Timestamp created_at = 5;
+}
+
+message CreatePersonRequest {
+  string first_name = 1;
+  string last_name = 2;
+  string patronymic = 3;
+  Gender gender = 4;
+  google.protobuf.Timestamp birthday = 5;
+}
+
+message CreatePersonResponse {
+  Person person = 1;
+}
+
+message UpdatePersonRequest {
+  string person_id = 1;
+  string first_name = 2;
+  string last_name = 3;
+  string patronymic = 4;
+  Gender gender = 5;
+  google.protobuf.Timestamp birthday = 6;
+}
+
+message UpdatePersonResponse {
+  Person person = 1;
+}
+
+message CreateCoachRequest {
+  string person_id = 1;
+  bool is_honored = 2;
+}
+
+message CreateCoachResponse {
+  Coach coach = 1;
+}
+
+message UpdateCoachRequest {
+  string coach_id = 1;
+  bool is_honored = 2;
+}
+
+message UpdateCoachResponse {
+  Coach coach = 1;
+}
+
+message CreateFigureSkatingSportsmanRequest {
+  string person_id = 1;
+  SportsmanRank rank = 2;
+  google.protobuf.Timestamp rank_assign_date = 3;
+}
+
+message CreateFigureSkatingSportsmanResponse {
+  FigureSkatingSportsman sportsman = 1;
+}
+
+message UpdateFigureSkatingSportsmanRequest {
+  string sportsman_id = 1;
+  SportsmanRank rank = 2;
+  google.protobuf.Timestamp rank_assign_date = 3;
+}
+
+message UpdateFigureSkatingSportsmanResponse {
+  FigureSkatingSportsman sportsman = 1;
+}
+
+message CreateFigureSkatingJudgeRequest {
+  string person_id = 1;
+  JudgeRank rank = 2;
+  google.protobuf.Timestamp rank_order_date = 3;
+}
+
+message CreateFigureSkatingJudgeResponse {
+  FigureSkatingJudge judge = 1;
+}
+
+message UpdateFigureSkatingJudgeRequest {
+  string judge_id = 1;
+  JudgeRank rank = 2;
+  google.protobuf.Timestamp rank_order_date = 3;
+}
+
+message UpdateFigureSkatingJudgeResponse {
+  FigureSkatingJudge judge = 1;
+}

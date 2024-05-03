@@ -1,0 +1,30 @@
+diff --git a/lib/src/raw/core/TLObject.js b/lib/src/raw/core/TLObject.js
+index 60126c3ed65e7eb769a3e6b87f0bf9737597117b..5665c68ede88adade07da91aa4ab443cf2055019 100644
+--- a/lib/src/raw/core/TLObject.js
++++ b/lib/src/raw/core/TLObject.js
+@@ -52,20 +52,20 @@ async function getModule(name) {
+         throw new Error("name of module can't be undefined");
+     }
+     if (name === 'Message') {
+-        return (await req('./Message.ts')).Message;
++        return require('./Message.js').Message
+     }
+     else if (name === 'GzipPacked') {
+-        return (await req('./GzipPacked.ts')).GzipPacked;
++        return require('./GzipPacked.js').GzipPacked
+     }
+     else if (name === 'MsgContainer') {
+-        return (await req('./MsgContainer.ts')).MsgContainer;
++        return require('./MsgContainer.js').MsgContainer
+     }
+     else if (name.startsWith('Primitive')) {
+-        return (await req('./primitive/index.ts'))[name.split('.')[1]];
++        return require('./primitive/index.js')[name.split('.')[1]];
+     }
+     else {
+         const split = name.split('.');
+-        const { Raw } = await req('../Raw.ts');
++        const { Raw } = require('../Raw.js')
+         if (split.length == 3) {
+             return Raw[split[1]][split[2]];
+         }

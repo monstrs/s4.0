@@ -1,0 +1,31 @@
+[
+  {
+    "id": "allow-x-session-token",
+    "upstream": {
+      "preserveHost": true,
+      "url": "http://standalone:3000/socket.io/"
+    },
+    "match": {
+      "url": "http://chats.chats-system.ru/socket.io/",
+      "methods": ["GET", "POST"]
+    },
+    "authenticators": [
+      {
+        "handler": "cookie_session"
+      }
+    ],
+    "authorizer": {
+      "handler": "allow"
+    },
+    "mutators": [
+      {
+        "handler": "header",
+        "config": {
+          "headers": {
+            "X-User": "{{ print .Subject }}"
+          }
+        }
+      }
+    ]
+  }
+]

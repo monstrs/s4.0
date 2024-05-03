@@ -1,0 +1,7 @@
+releases:
+  "@chats-system/auth-session-rpc": patch
+  "@chats-system/auth-session-rpc-client": patch
+  "@chats-system/gateway-rpc": patch
+  "@chats-system/gateway-rpc-client": patch
+  "@chats-system/session-rpc": patch
+  "@chats-system/session-rpc-client": patch

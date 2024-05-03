@@ -1,0 +1,3 @@
+releases:
+  "@chats-system/core-errors": patch
+  "@chats-system/rpc": patch

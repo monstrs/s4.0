@@ -1,0 +1,5 @@
+releases:
+  "@chats-system/auth-rpc": patch
+  "@chats-system/auth-rpc-client": patch
+  "@chats-system/authkey-rpc": patch
+  "@chats-system/authkey-rpc-client": patch

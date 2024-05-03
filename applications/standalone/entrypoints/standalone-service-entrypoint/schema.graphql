@@ -1,0 +1,138 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type ValidationError {
+  id: String!
+  message: String!
+}
+
+type CreateFigureSkatingOrganizationErrors {
+  fullName: ValidationError
+  abbreviation: ValidationError
+  websiteName: ValidationError
+  listName: ValidationError
+  foundingDate: ValidationError
+  category: ValidationError
+  curatorId: ValidationError
+  cityId: ValidationError
+  address: ValidationError
+  phone: ValidationError
+  inn: ValidationError
+  applicationId: ValidationError
+  applicantJobTitle: ValidationError
+  applicantPhone: ValidationError
+  contingent: ValidationError
+  disciplines: ValidationError
+  state: ValidationError
+  responsible: ValidationError
+  charterId: ValidationError
+  registrationCertificateId: ValidationError
+}
+
+type FigureSkatingOrganization {
+  id: String!
+  fullName: String!
+  abbreviation: String!
+  websiteName: String!
+  listName: String!
+  foundingDate: DateTime!
+  category: OrganizationCategory!
+  address: String!
+  phone: String!
+  inn: String!
+  additionalInformation: String
+  applicantJobTitle: String!
+  applicantPhone: String!
+  contingent: [FigureSkatingContingent!]!
+  disciplines: [FigureSkatingDisciplines!]!
+  state: OrganizationState!
+  createdAt: DateTime!
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+enum OrganizationCategory {
+  SCHOOL
+  FEDERATION
+  SOCIETY
+  OTHER
+}
+
+enum FigureSkatingContingent {
+  CHILDREN
+  ADULTS
+}
+
+enum FigureSkatingDisciplines {
+  SINGLE
+  PAIR
+  SYNCHRONOUS
+  DANCE
+  COLLECTIVE
+  OTHER
+}
+
+enum OrganizationState {
+  CREATED
+  WAIT_REVISE
+  CANCELED
+  DENIED
+  IN_REGISTRY
+  NOT_IN_REGISTRY
+  DOES_NOT_EXIST
+  ACTUALIZATION
+  ACTUALIZATION_FAILED
+  ACTUALIZATION_CHECK
+}
+
+type FigureSkatingOrganizations {
+  organizations: [FigureSkatingOrganization!]!
+  hasNextPage: Boolean!
+}
+
+type Organizations {
+  figureSkating(pager: ListFigureSkatingOrganizationsPagerInput): FigureSkatingOrganizations!
+}
+
+input ListFigureSkatingOrganizationsPagerInput {
+  take: Float!
+  offset: Float!
+}
+
+type CreateFigureSkatingOrganizationResponse {
+  organization: FigureSkatingOrganization
+  errors: CreateFigureSkatingOrganizationErrors
+}
+
+type Query {
+  organizations: Organizations!
+}
+
+type Mutation {
+  createFigureSkatingOrganization(input: CreateFigureSkatingOrganizationInput!): CreateFigureSkatingOrganizationResponse!
+}
+
+input CreateFigureSkatingOrganizationInput {
+  fullName: String!
+  abbreviation: String!
+  websiteName: String!
+  listName: String!
+  foundingDate: DateTime
+  category: OrganizationCategory
+  curatorId: String
+  cityId: String
+  address: String!
+  phone: String!
+  inn: String!
+  additionalInformation: String
+  applicantJobTitle: String!
+  applicantPhone: String!
+  contingent: [FigureSkatingContingent!]!
+  disciplines: [FigureSkatingDisciplines!]!
+  charterId: String!
+  registrationCertificateId: String!
+}

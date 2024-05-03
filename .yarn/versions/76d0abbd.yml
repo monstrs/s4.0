@@ -1,0 +1,3 @@
+releases:
+  "@chats-system/user-rpc": patch
+  "@chats-system/user-rpc-client": patch

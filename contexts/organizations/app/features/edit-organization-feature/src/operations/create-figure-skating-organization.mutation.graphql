@@ -1,0 +1,13 @@
+mutation createFigureSkatingOrganization($input: CreateFigureSkatingOrganizationInput!) {
+  createFigureSkatingOrganization(input: $input) {
+    organization {
+      id
+    }
+    errors {
+      fullName {
+        id
+        message
+      }
+    }
+  }
+}
