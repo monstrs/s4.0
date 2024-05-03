@@ -1,13 +1,19 @@
-import { useUnit }                                   from 'effector-react'
-import { useCallback }                               from 'react'
-
 import type { FigureSkatingDisciplines }                  from '../enums/index.js'
 import type { ChangeFigureSkatingOrganizationFieldProps } from '../events/index.js'
-import { $figureSkatingOrganizationFields }          from '../stores/index.js'
-import type { FigureSkatingOrganizationFieldsProps }      from '../stores/index.js'
-import { changeFigureSkatingOrganizationFieldEvent } from '../events/index.js'
+import type { FigureSkatingOrganizationErrors }           from '../interfaces/index.js'
+import type { FigureSkatingOrganizationFields }           from '../interfaces/index.js'
 
-export const useFigureSkatingOrganizationFields = (): FigureSkatingOrganizationFieldsProps =>
+import { useUnit }                                        from 'effector-react'
+import { useCallback }                                    from 'react'
+
+import { $figureSkatingOrganizationErrors }               from '../stores/index.js'
+import { $figureSkatingOrganizationFields }               from '../stores/index.js'
+import { changeFigureSkatingOrganizationFieldEvent }      from '../events/index.js'
+
+export const useFigureSkatingOrganizationErrors = (): FigureSkatingOrganizationErrors =>
+  useUnit($figureSkatingOrganizationErrors)
+
+export const useFigureSkatingOrganizationFields = (): FigureSkatingOrganizationFields =>
   useUnit($figureSkatingOrganizationFields)
 
 export const useChangeFigureSkatingOrganizationField = (): ((

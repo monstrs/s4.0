@@ -1,8 +1,8 @@
-import type { DynamicModule }         from '@nestjs/common'
+import type { DynamicModule }          from '@nestjs/common'
 
-import { Module }                     from '@nestjs/common'
+import { Module }                      from '@nestjs/common'
 
-import { createClient }               from '@figure-skating/rpc-client'
+import { createClient }                from '@figure-skating/rpc-client'
 
 import { FIGURE_SKATING_CLIENT_TOKEN } from '../constants/index.js'
 

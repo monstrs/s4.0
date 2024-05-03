@@ -1,12 +1,13 @@
-import type { ControlElement } from '@ui-primitives/input'
+import type { ControlElement }    from '@ui-primitives/input'
 
-import { forwardRef }          from 'react'
-import React                   from 'react'
+import type { InputControlProps } from './input-control/index.js'
+import type { InputRootProps }    from './input-root/index.js'
 
-import { InputControl }        from './input-control/index.js'
-import type { InputControlProps }   from './input-control/index.js'
-import { InputRoot }           from './input-root/index.js'
-import type { InputRootProps }      from './input-root/index.js'
+import { forwardRef }             from 'react'
+import React                      from 'react'
+
+import { InputControl }           from './input-control/index.js'
+import { InputRoot }              from './input-root/index.js'
 
 export interface InputProps
   extends InputRootProps,

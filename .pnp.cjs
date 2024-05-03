@@ -197,10 +197,10 @@ const RAW_RUNTIME_STATE =
     ["@ui/card", ["virtual:d05eae374fdeeb31e68a71264e88bc5822467ae94df2eff57e74245f01087eb82b6e0ba78170d36c4cfd76c125f64fd25111ab5985d5fe110549d37c057343a4#workspace:ui/card", "workspace:ui/card"]],\
     ["@ui/checkbox", ["virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/checkbox", "virtual:f7f51cd516cc50de9640bd688026015e08e62137d049b7600615191828b527e9d14573a10fc7e1a203726c356dafe111a65ca500657707cbfa55cb583b29889b#workspace:ui/checkbox", "workspace:ui/checkbox"]],\
     ["@ui/datepicker", ["virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/datepicker", "virtual:f7f51cd516cc50de9640bd688026015e08e62137d049b7600615191828b527e9d14573a10fc7e1a203726c356dafe111a65ca500657707cbfa55cb583b29889b#workspace:ui/datepicker", "workspace:ui/datepicker"]],\
-    ["@ui/icons", ["virtual:5f365ac1e6bef895d8ee6694fc71f709d3073bf4b4fd64918b002444ee30794295f081d639e91af9ab9d924ae95e77703a57f2f086c486e25d4c6fa1620a8705#workspace:ui/icons", "workspace:ui/icons"]],\
+    ["@ui/icons", ["virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/icons", "workspace:ui/icons"]],\
     ["@ui/input", ["virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/input", "workspace:ui/input"]],\
     ["@ui/label", ["virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/label", "workspace:ui/label"]],\
-    ["@ui/layout", ["virtual:d05eae374fdeeb31e68a71264e88bc5822467ae94df2eff57e74245f01087eb82b6e0ba78170d36c4cfd76c125f64fd25111ab5985d5fe110549d37c057343a4#workspace:ui/layout", "workspace:ui/layout"]],\
+    ["@ui/layout", ["virtual:df70da4559be7d5d16585100f61c6edbf9eb7fe7b2bd93adbcc69890563fea9d68209015d1da906462e96fc651efe2c60148289b252d7fffdec6b26ea76c718c#workspace:ui/layout", "workspace:ui/layout"]],\
     ["@ui/select", ["virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/select", "virtual:f7f51cd516cc50de9640bd688026015e08e62137d049b7600615191828b527e9d14573a10fc7e1a203726c356dafe111a65ca500657707cbfa55cb583b29889b#workspace:ui/select", "workspace:ui/select"]],\
     ["@ui/sprinkles", ["virtual:a528d0566ad4c835daf52b9a40527de2088db264091344fb72ff0f7389109ad0b59430b8513b02ac6febfc32e26397485898572e78a87675e1a057cde9d5671c#workspace:ui/sprinkles", "workspace:ui/sprinkles"]],\
     ["@ui/tabs", ["virtual:b543bb7e8a22418c3454a07c2343b3b376322c0a8171f9810dd9f195702fdca0e1b8accbd2b4f421a3314315b85a8b48dbc066dfb416d5c89f041bf211640d7c#workspace:ui/tabs", "virtual:d05eae374fdeeb31e68a71264e88bc5822467ae94df2eff57e74245f01087eb82b6e0ba78170d36c4cfd76c125f64fd25111ab5985d5fe110549d37c057343a4#workspace:ui/tabs", "workspace:ui/tabs"]],\
@@ -10835,6 +10835,7 @@ const RAW_RUNTIME_STATE =
           ["@types/react", "npm:18.3.1"],\
           ["@types/react-dom", "npm:18.3.0"],\
           ["@types/react-intl", null],\
+          ["@ui/layout", "virtual:df70da4559be7d5d16585100f61c6edbf9eb7fe7b2bd93adbcc69890563fea9d68209015d1da906462e96fc651efe2c60148289b252d7fffdec6b26ea76c718c#workspace:ui/layout"],\
           ["effector", "npm:23.2.1"],\
           ["effector-react", "virtual:a900b384c4e06002318ffb7bb23340bdea327ec5f698697bb2b1c41a96e3398e9a1b500704019825c0c4ec0fe3337a3124a7bc69dead5cce1ce36f074c60544a#npm:23.2.0"],\
           ["next", "virtual:a900b384c4e06002318ffb7bb23340bdea327ec5f698697bb2b1c41a96e3398e9a1b500704019825c0c4ec0fe3337a3124a7bc69dead5cce1ce36f074c60544a#npm:14.2.3"],\
@@ -10862,6 +10863,7 @@ const RAW_RUNTIME_STATE =
           ["@organizations/create-figure-skating-organization-page", "workspace:contexts/figure-skating/app/pages/create-figure-skating-organization-page"],\
           ["@organizations/create-figure-skating-organization-widget", "virtual:47fcc5c276a9a9f66d5c395f67349be5eb15ddabe034a110c295b5685af0cd2f295960fbaaff9b7daa29ec6c7898a57a1b95033be15dbe81bc47fed0fc2c06a6#workspace:contexts/figure-skating/app/widgets/create-figure-skating-organization-widget"],\
           ["@types/react", "npm:18.3.1"],\
+          ["@ui/layout", "virtual:df70da4559be7d5d16585100f61c6edbf9eb7fe7b2bd93adbcc69890563fea9d68209015d1da906462e96fc651efe2c60148289b252d7fffdec6b26ea76c718c#workspace:ui/layout"],\
           ["effector", "npm:23.2.1"],\
           ["effector-react", "virtual:a900b384c4e06002318ffb7bb23340bdea327ec5f698697bb2b1c41a96e3398e9a1b500704019825c0c4ec0fe3337a3124a7bc69dead5cce1ce36f074c60544a#npm:23.2.0"],\
           ["next", "virtual:f7f51cd516cc50de9640bd688026015e08e62137d049b7600615191828b527e9d14573a10fc7e1a203726c356dafe111a65ca500657707cbfa55cb583b29889b#npm:14.2.3"],\
@@ -10887,7 +10889,7 @@ const RAW_RUNTIME_STATE =
           ["@types/react-intl", null],\
           ["@ui/button", "virtual:b543bb7e8a22418c3454a07c2343b3b376322c0a8171f9810dd9f195702fdca0e1b8accbd2b4f421a3314315b85a8b48dbc066dfb416d5c89f041bf211640d7c#workspace:ui/button"],\
           ["@ui/card", "virtual:d05eae374fdeeb31e68a71264e88bc5822467ae94df2eff57e74245f01087eb82b6e0ba78170d36c4cfd76c125f64fd25111ab5985d5fe110549d37c057343a4#workspace:ui/card"],\
-          ["@ui/layout", "virtual:d05eae374fdeeb31e68a71264e88bc5822467ae94df2eff57e74245f01087eb82b6e0ba78170d36c4cfd76c125f64fd25111ab5985d5fe110549d37c057343a4#workspace:ui/layout"],\
+          ["@ui/layout", "virtual:df70da4559be7d5d16585100f61c6edbf9eb7fe7b2bd93adbcc69890563fea9d68209015d1da906462e96fc651efe2c60148289b252d7fffdec6b26ea76c718c#workspace:ui/layout"],\
           ["@ui/tabs", "virtual:b543bb7e8a22418c3454a07c2343b3b376322c0a8171f9810dd9f195702fdca0e1b8accbd2b4f421a3314315b85a8b48dbc066dfb416d5c89f041bf211640d7c#workspace:ui/tabs"],\
           ["effector", "npm:23.2.1"],\
           ["effector-react", "virtual:a900b384c4e06002318ffb7bb23340bdea327ec5f698697bb2b1c41a96e3398e9a1b500704019825c0c4ec0fe3337a3124a7bc69dead5cce1ce36f074c60544a#npm:23.2.0"],\
@@ -10924,7 +10926,7 @@ const RAW_RUNTIME_STATE =
           ["@types/react-intl", null],\
           ["@ui/button", "virtual:d05eae374fdeeb31e68a71264e88bc5822467ae94df2eff57e74245f01087eb82b6e0ba78170d36c4cfd76c125f64fd25111ab5985d5fe110549d37c057343a4#workspace:ui/button"],\
           ["@ui/card", "virtual:d05eae374fdeeb31e68a71264e88bc5822467ae94df2eff57e74245f01087eb82b6e0ba78170d36c4cfd76c125f64fd25111ab5985d5fe110549d37c057343a4#workspace:ui/card"],\
-          ["@ui/layout", "virtual:d05eae374fdeeb31e68a71264e88bc5822467ae94df2eff57e74245f01087eb82b6e0ba78170d36c4cfd76c125f64fd25111ab5985d5fe110549d37c057343a4#workspace:ui/layout"],\
+          ["@ui/layout", "virtual:df70da4559be7d5d16585100f61c6edbf9eb7fe7b2bd93adbcc69890563fea9d68209015d1da906462e96fc651efe2c60148289b252d7fffdec6b26ea76c718c#workspace:ui/layout"],\
           ["@ui/tabs", "virtual:d05eae374fdeeb31e68a71264e88bc5822467ae94df2eff57e74245f01087eb82b6e0ba78170d36c4cfd76c125f64fd25111ab5985d5fe110549d37c057343a4#workspace:ui/tabs"],\
           ["effector", "npm:23.2.1"],\
           ["effector-react", "virtual:a900b384c4e06002318ffb7bb23340bdea327ec5f698697bb2b1c41a96e3398e9a1b500704019825c0c4ec0fe3337a3124a7bc69dead5cce1ce36f074c60544a#npm:23.2.0"],\
@@ -10957,7 +10959,7 @@ const RAW_RUNTIME_STATE =
           ["@types/react", "npm:18.3.1"],\
           ["@ui/button", "virtual:b543bb7e8a22418c3454a07c2343b3b376322c0a8171f9810dd9f195702fdca0e1b8accbd2b4f421a3314315b85a8b48dbc066dfb416d5c89f041bf211640d7c#workspace:ui/button"],\
           ["@ui/card", "virtual:d05eae374fdeeb31e68a71264e88bc5822467ae94df2eff57e74245f01087eb82b6e0ba78170d36c4cfd76c125f64fd25111ab5985d5fe110549d37c057343a4#workspace:ui/card"],\
-          ["@ui/layout", "virtual:d05eae374fdeeb31e68a71264e88bc5822467ae94df2eff57e74245f01087eb82b6e0ba78170d36c4cfd76c125f64fd25111ab5985d5fe110549d37c057343a4#workspace:ui/layout"],\
+          ["@ui/layout", "virtual:df70da4559be7d5d16585100f61c6edbf9eb7fe7b2bd93adbcc69890563fea9d68209015d1da906462e96fc651efe2c60148289b252d7fffdec6b26ea76c718c#workspace:ui/layout"],\
           ["@ui/tabs", "virtual:b543bb7e8a22418c3454a07c2343b3b376322c0a8171f9810dd9f195702fdca0e1b8accbd2b4f421a3314315b85a8b48dbc066dfb416d5c89f041bf211640d7c#workspace:ui/tabs"],\
           ["effector", "npm:23.2.1"],\
           ["effector-react", "virtual:a900b384c4e06002318ffb7bb23340bdea327ec5f698697bb2b1c41a96e3398e9a1b500704019825c0c4ec0fe3337a3124a7bc69dead5cce1ce36f074c60544a#npm:23.2.0"],\
@@ -11067,9 +11069,10 @@ const RAW_RUNTIME_STATE =
           ["@ui/card", "virtual:d05eae374fdeeb31e68a71264e88bc5822467ae94df2eff57e74245f01087eb82b6e0ba78170d36c4cfd76c125f64fd25111ab5985d5fe110549d37c057343a4#workspace:ui/card"],\
           ["@ui/checkbox", "virtual:f7f51cd516cc50de9640bd688026015e08e62137d049b7600615191828b527e9d14573a10fc7e1a203726c356dafe111a65ca500657707cbfa55cb583b29889b#workspace:ui/checkbox"],\
           ["@ui/datepicker", "virtual:f7f51cd516cc50de9640bd688026015e08e62137d049b7600615191828b527e9d14573a10fc7e1a203726c356dafe111a65ca500657707cbfa55cb583b29889b#workspace:ui/datepicker"],\
+          ["@ui/icons", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/icons"],\
           ["@ui/input", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/input"],\
           ["@ui/label", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/label"],\
-          ["@ui/layout", "virtual:d05eae374fdeeb31e68a71264e88bc5822467ae94df2eff57e74245f01087eb82b6e0ba78170d36c4cfd76c125f64fd25111ab5985d5fe110549d37c057343a4#workspace:ui/layout"],\
+          ["@ui/layout", "virtual:df70da4559be7d5d16585100f61c6edbf9eb7fe7b2bd93adbcc69890563fea9d68209015d1da906462e96fc651efe2c60148289b252d7fffdec6b26ea76c718c#workspace:ui/layout"],\
           ["@ui/select", "virtual:f7f51cd516cc50de9640bd688026015e08e62137d049b7600615191828b527e9d14573a10fc7e1a203726c356dafe111a65ca500657707cbfa55cb583b29889b#workspace:ui/select"],\
           ["@ui/text", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/text"],\
           ["effector", "npm:23.2.1"],\
@@ -11104,9 +11107,10 @@ const RAW_RUNTIME_STATE =
           ["@ui/card", "virtual:d05eae374fdeeb31e68a71264e88bc5822467ae94df2eff57e74245f01087eb82b6e0ba78170d36c4cfd76c125f64fd25111ab5985d5fe110549d37c057343a4#workspace:ui/card"],\
           ["@ui/checkbox", "virtual:f7f51cd516cc50de9640bd688026015e08e62137d049b7600615191828b527e9d14573a10fc7e1a203726c356dafe111a65ca500657707cbfa55cb583b29889b#workspace:ui/checkbox"],\
           ["@ui/datepicker", "virtual:f7f51cd516cc50de9640bd688026015e08e62137d049b7600615191828b527e9d14573a10fc7e1a203726c356dafe111a65ca500657707cbfa55cb583b29889b#workspace:ui/datepicker"],\
+          ["@ui/icons", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/icons"],\
           ["@ui/input", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/input"],\
           ["@ui/label", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/label"],\
-          ["@ui/layout", "virtual:d05eae374fdeeb31e68a71264e88bc5822467ae94df2eff57e74245f01087eb82b6e0ba78170d36c4cfd76c125f64fd25111ab5985d5fe110549d37c057343a4#workspace:ui/layout"],\
+          ["@ui/layout", "virtual:df70da4559be7d5d16585100f61c6edbf9eb7fe7b2bd93adbcc69890563fea9d68209015d1da906462e96fc651efe2c60148289b252d7fffdec6b26ea76c718c#workspace:ui/layout"],\
           ["@ui/select", "virtual:f7f51cd516cc50de9640bd688026015e08e62137d049b7600615191828b527e9d14573a10fc7e1a203726c356dafe111a65ca500657707cbfa55cb583b29889b#workspace:ui/select"],\
           ["@ui/text", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/text"],\
           ["effector", "npm:23.2.1"],\
@@ -11142,9 +11146,10 @@ const RAW_RUNTIME_STATE =
           ["@ui/card", "virtual:d05eae374fdeeb31e68a71264e88bc5822467ae94df2eff57e74245f01087eb82b6e0ba78170d36c4cfd76c125f64fd25111ab5985d5fe110549d37c057343a4#workspace:ui/card"],\
           ["@ui/checkbox", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/checkbox"],\
           ["@ui/datepicker", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/datepicker"],\
+          ["@ui/icons", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/icons"],\
           ["@ui/input", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/input"],\
           ["@ui/label", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/label"],\
-          ["@ui/layout", "virtual:d05eae374fdeeb31e68a71264e88bc5822467ae94df2eff57e74245f01087eb82b6e0ba78170d36c4cfd76c125f64fd25111ab5985d5fe110549d37c057343a4#workspace:ui/layout"],\
+          ["@ui/layout", "virtual:df70da4559be7d5d16585100f61c6edbf9eb7fe7b2bd93adbcc69890563fea9d68209015d1da906462e96fc651efe2c60148289b252d7fffdec6b26ea76c718c#workspace:ui/layout"],\
           ["@ui/select", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/select"],\
           ["@ui/text", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/text"],\
           ["effector", "npm:23.2.1"],\
@@ -11176,9 +11181,10 @@ const RAW_RUNTIME_STATE =
           ["@ui/card", "virtual:d05eae374fdeeb31e68a71264e88bc5822467ae94df2eff57e74245f01087eb82b6e0ba78170d36c4cfd76c125f64fd25111ab5985d5fe110549d37c057343a4#workspace:ui/card"],\
           ["@ui/checkbox", "virtual:f7f51cd516cc50de9640bd688026015e08e62137d049b7600615191828b527e9d14573a10fc7e1a203726c356dafe111a65ca500657707cbfa55cb583b29889b#workspace:ui/checkbox"],\
           ["@ui/datepicker", "virtual:f7f51cd516cc50de9640bd688026015e08e62137d049b7600615191828b527e9d14573a10fc7e1a203726c356dafe111a65ca500657707cbfa55cb583b29889b#workspace:ui/datepicker"],\
+          ["@ui/icons", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/icons"],\
           ["@ui/input", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/input"],\
           ["@ui/label", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/label"],\
-          ["@ui/layout", "virtual:d05eae374fdeeb31e68a71264e88bc5822467ae94df2eff57e74245f01087eb82b6e0ba78170d36c4cfd76c125f64fd25111ab5985d5fe110549d37c057343a4#workspace:ui/layout"],\
+          ["@ui/layout", "virtual:df70da4559be7d5d16585100f61c6edbf9eb7fe7b2bd93adbcc69890563fea9d68209015d1da906462e96fc651efe2c60148289b252d7fffdec6b26ea76c718c#workspace:ui/layout"],\
           ["@ui/select", "virtual:f7f51cd516cc50de9640bd688026015e08e62137d049b7600615191828b527e9d14573a10fc7e1a203726c356dafe111a65ca500657707cbfa55cb583b29889b#workspace:ui/select"],\
           ["@ui/text", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/text"],\
           ["effector", "npm:23.2.1"],\
@@ -11203,9 +11209,10 @@ const RAW_RUNTIME_STATE =
           ["@types/react-intl", null],\
           ["@ui/card", "virtual:d05eae374fdeeb31e68a71264e88bc5822467ae94df2eff57e74245f01087eb82b6e0ba78170d36c4cfd76c125f64fd25111ab5985d5fe110549d37c057343a4#workspace:ui/card"],\
           ["@ui/datepicker", "virtual:f7f51cd516cc50de9640bd688026015e08e62137d049b7600615191828b527e9d14573a10fc7e1a203726c356dafe111a65ca500657707cbfa55cb583b29889b#workspace:ui/datepicker"],\
+          ["@ui/icons", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/icons"],\
           ["@ui/input", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/input"],\
           ["@ui/label", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/label"],\
-          ["@ui/layout", "virtual:d05eae374fdeeb31e68a71264e88bc5822467ae94df2eff57e74245f01087eb82b6e0ba78170d36c4cfd76c125f64fd25111ab5985d5fe110549d37c057343a4#workspace:ui/layout"],\
+          ["@ui/layout", "virtual:df70da4559be7d5d16585100f61c6edbf9eb7fe7b2bd93adbcc69890563fea9d68209015d1da906462e96fc651efe2c60148289b252d7fffdec6b26ea76c718c#workspace:ui/layout"],\
           ["@ui/select", "virtual:f7f51cd516cc50de9640bd688026015e08e62137d049b7600615191828b527e9d14573a10fc7e1a203726c356dafe111a65ca500657707cbfa55cb583b29889b#workspace:ui/select"],\
           ["@ui/text", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/text"],\
           ["effector", "npm:23.2.1"],\
@@ -11239,9 +11246,10 @@ const RAW_RUNTIME_STATE =
           ["@types/react-intl", null],\
           ["@ui/card", "virtual:d05eae374fdeeb31e68a71264e88bc5822467ae94df2eff57e74245f01087eb82b6e0ba78170d36c4cfd76c125f64fd25111ab5985d5fe110549d37c057343a4#workspace:ui/card"],\
           ["@ui/datepicker", "virtual:f7f51cd516cc50de9640bd688026015e08e62137d049b7600615191828b527e9d14573a10fc7e1a203726c356dafe111a65ca500657707cbfa55cb583b29889b#workspace:ui/datepicker"],\
+          ["@ui/icons", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/icons"],\
           ["@ui/input", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/input"],\
           ["@ui/label", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/label"],\
-          ["@ui/layout", "virtual:d05eae374fdeeb31e68a71264e88bc5822467ae94df2eff57e74245f01087eb82b6e0ba78170d36c4cfd76c125f64fd25111ab5985d5fe110549d37c057343a4#workspace:ui/layout"],\
+          ["@ui/layout", "virtual:df70da4559be7d5d16585100f61c6edbf9eb7fe7b2bd93adbcc69890563fea9d68209015d1da906462e96fc651efe2c60148289b252d7fffdec6b26ea76c718c#workspace:ui/layout"],\
           ["@ui/select", "virtual:f7f51cd516cc50de9640bd688026015e08e62137d049b7600615191828b527e9d14573a10fc7e1a203726c356dafe111a65ca500657707cbfa55cb583b29889b#workspace:ui/select"],\
           ["@ui/text", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/text"],\
           ["effector", "npm:23.2.1"],\
@@ -11276,9 +11284,10 @@ const RAW_RUNTIME_STATE =
           ["@types/react-intl", null],\
           ["@ui/card", "virtual:d05eae374fdeeb31e68a71264e88bc5822467ae94df2eff57e74245f01087eb82b6e0ba78170d36c4cfd76c125f64fd25111ab5985d5fe110549d37c057343a4#workspace:ui/card"],\
           ["@ui/datepicker", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/datepicker"],\
+          ["@ui/icons", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/icons"],\
           ["@ui/input", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/input"],\
           ["@ui/label", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/label"],\
-          ["@ui/layout", "virtual:d05eae374fdeeb31e68a71264e88bc5822467ae94df2eff57e74245f01087eb82b6e0ba78170d36c4cfd76c125f64fd25111ab5985d5fe110549d37c057343a4#workspace:ui/layout"],\
+          ["@ui/layout", "virtual:df70da4559be7d5d16585100f61c6edbf9eb7fe7b2bd93adbcc69890563fea9d68209015d1da906462e96fc651efe2c60148289b252d7fffdec6b26ea76c718c#workspace:ui/layout"],\
           ["@ui/select", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/select"],\
           ["@ui/text", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/text"],\
           ["effector", "npm:23.2.1"],\
@@ -11309,9 +11318,10 @@ const RAW_RUNTIME_STATE =
           ["@types/react", "npm:18.3.1"],\
           ["@ui/card", "virtual:d05eae374fdeeb31e68a71264e88bc5822467ae94df2eff57e74245f01087eb82b6e0ba78170d36c4cfd76c125f64fd25111ab5985d5fe110549d37c057343a4#workspace:ui/card"],\
           ["@ui/datepicker", "virtual:f7f51cd516cc50de9640bd688026015e08e62137d049b7600615191828b527e9d14573a10fc7e1a203726c356dafe111a65ca500657707cbfa55cb583b29889b#workspace:ui/datepicker"],\
+          ["@ui/icons", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/icons"],\
           ["@ui/input", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/input"],\
           ["@ui/label", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/label"],\
-          ["@ui/layout", "virtual:d05eae374fdeeb31e68a71264e88bc5822467ae94df2eff57e74245f01087eb82b6e0ba78170d36c4cfd76c125f64fd25111ab5985d5fe110549d37c057343a4#workspace:ui/layout"],\
+          ["@ui/layout", "virtual:df70da4559be7d5d16585100f61c6edbf9eb7fe7b2bd93adbcc69890563fea9d68209015d1da906462e96fc651efe2c60148289b252d7fffdec6b26ea76c718c#workspace:ui/layout"],\
           ["@ui/select", "virtual:f7f51cd516cc50de9640bd688026015e08e62137d049b7600615191828b527e9d14573a10fc7e1a203726c356dafe111a65ca500657707cbfa55cb583b29889b#workspace:ui/select"],\
           ["@ui/text", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/text"],\
           ["effector", "npm:23.2.1"],\
@@ -14607,10 +14617,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@ui/icons", [\
-      ["virtual:5f365ac1e6bef895d8ee6694fc71f709d3073bf4b4fd64918b002444ee30794295f081d639e91af9ab9d924ae95e77703a57f2f086c486e25d4c6fa1620a8705#workspace:ui/icons", {\
-        "packageLocation": "./.yarn/__virtual__/@ui-icons-virtual-b484a4a4ff/1/ui/icons/",\
+      ["virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/icons", {\
+        "packageLocation": "./.yarn/__virtual__/@ui-icons-virtual-5f2c0fe33e/1/ui/icons/",\
         "packageDependencies": [\
-          ["@ui/icons", "virtual:5f365ac1e6bef895d8ee6694fc71f709d3073bf4b4fd64918b002444ee30794295f081d639e91af9ab9d924ae95e77703a57f2f086c486e25d4c6fa1620a8705#workspace:ui/icons"],\
+          ["@ui/icons", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/icons"],\
           ["@babel/core", "npm:7.24.5"],\
           ["@babel/template", "npm:7.24.0"],\
           ["@types/babel__core", "npm:7.20.5"],\
@@ -14684,7 +14694,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@ui/label", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/label"],\
           ["@types/react", "npm:18.3.1"],\
-          ["@ui/icons", "virtual:5f365ac1e6bef895d8ee6694fc71f709d3073bf4b4fd64918b002444ee30794295f081d639e91af9ab9d924ae95e77703a57f2f086c486e25d4c6fa1620a8705#workspace:ui/icons"],\
+          ["@ui/icons", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/icons"],\
           ["@ui/sprinkles", "virtual:a528d0566ad4c835daf52b9a40527de2088db264091344fb72ff0f7389109ad0b59430b8513b02ac6febfc32e26397485898572e78a87675e1a057cde9d5671c#workspace:ui/sprinkles"],\
           ["@ui/theme", "workspace:ui/theme"],\
           ["@ui/tooltip", "virtual:5f365ac1e6bef895d8ee6694fc71f709d3073bf4b4fd64918b002444ee30794295f081d639e91af9ab9d924ae95e77703a57f2f086c486e25d4c6fa1620a8705#workspace:ui/tooltip"],\
@@ -14704,7 +14714,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@ui/label", "workspace:ui/label"],\
           ["@types/react", "npm:18.3.1"],\
-          ["@ui/icons", "virtual:5f365ac1e6bef895d8ee6694fc71f709d3073bf4b4fd64918b002444ee30794295f081d639e91af9ab9d924ae95e77703a57f2f086c486e25d4c6fa1620a8705#workspace:ui/icons"],\
+          ["@ui/icons", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/icons"],\
           ["@ui/sprinkles", "virtual:a528d0566ad4c835daf52b9a40527de2088db264091344fb72ff0f7389109ad0b59430b8513b02ac6febfc32e26397485898572e78a87675e1a057cde9d5671c#workspace:ui/sprinkles"],\
           ["@ui/theme", "workspace:ui/theme"],\
           ["@ui/tooltip", "virtual:5f365ac1e6bef895d8ee6694fc71f709d3073bf4b4fd64918b002444ee30794295f081d639e91af9ab9d924ae95e77703a57f2f086c486e25d4c6fa1620a8705#workspace:ui/tooltip"],\
@@ -14717,10 +14727,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@ui/layout", [\
-      ["virtual:d05eae374fdeeb31e68a71264e88bc5822467ae94df2eff57e74245f01087eb82b6e0ba78170d36c4cfd76c125f64fd25111ab5985d5fe110549d37c057343a4#workspace:ui/layout", {\
-        "packageLocation": "./.yarn/__virtual__/@ui-layout-virtual-afbe09a023/1/ui/layout/",\
+      ["virtual:df70da4559be7d5d16585100f61c6edbf9eb7fe7b2bd93adbcc69890563fea9d68209015d1da906462e96fc651efe2c60148289b252d7fffdec6b26ea76c718c#workspace:ui/layout", {\
+        "packageLocation": "./.yarn/__virtual__/@ui-layout-virtual-6c55719f49/1/ui/layout/",\
         "packageDependencies": [\
-          ["@ui/layout", "virtual:d05eae374fdeeb31e68a71264e88bc5822467ae94df2eff57e74245f01087eb82b6e0ba78170d36c4cfd76c125f64fd25111ab5985d5fe110549d37c057343a4#workspace:ui/layout"],\
+          ["@ui/layout", "virtual:df70da4559be7d5d16585100f61c6edbf9eb7fe7b2bd93adbcc69890563fea9d68209015d1da906462e96fc651efe2c60148289b252d7fffdec6b26ea76c718c#workspace:ui/layout"],\
           ["@types/react", "npm:18.3.1"],\
           ["@ui/sprinkles", "virtual:a528d0566ad4c835daf52b9a40527de2088db264091344fb72ff0f7389109ad0b59430b8513b02ac6febfc32e26397485898572e78a87675e1a057cde9d5671c#workspace:ui/sprinkles"],\
           ["@ui/theme", "workspace:ui/theme"],\
@@ -14935,7 +14945,7 @@ const RAW_RUNTIME_STATE =
           ["@radix-ui/react-tooltip", "virtual:c77c2067756ff7c7c42af208e0857f6e22b3c7a4983f719528649b0a0ee7d6705dcb777481f9e1adad46ab35a86be5d918a91e274a9b410ad7d9f3efe3acbcae#npm:1.0.7"],\
           ["@types/react", "npm:18.3.1"],\
           ["@types/react-dom", null],\
-          ["@ui/icons", "virtual:5f365ac1e6bef895d8ee6694fc71f709d3073bf4b4fd64918b002444ee30794295f081d639e91af9ab9d924ae95e77703a57f2f086c486e25d4c6fa1620a8705#workspace:ui/icons"],\
+          ["@ui/icons", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/icons"],\
           ["@ui/theme", "workspace:ui/theme"],\
           ["@vanilla-extract/css", "npm:1.15.1"],\
           ["@vanilla-extract/recipes", "virtual:a528d0566ad4c835daf52b9a40527de2088db264091344fb72ff0f7389109ad0b59430b8513b02ac6febfc32e26397485898572e78a87675e1a057cde9d5671c#npm:0.5.2"],\
@@ -14955,7 +14965,7 @@ const RAW_RUNTIME_STATE =
           ["@ui/tooltip", "workspace:ui/tooltip"],\
           ["@radix-ui/react-tooltip", "virtual:c77c2067756ff7c7c42af208e0857f6e22b3c7a4983f719528649b0a0ee7d6705dcb777481f9e1adad46ab35a86be5d918a91e274a9b410ad7d9f3efe3acbcae#npm:1.0.7"],\
           ["@types/react", "npm:18.3.1"],\
-          ["@ui/icons", "virtual:5f365ac1e6bef895d8ee6694fc71f709d3073bf4b4fd64918b002444ee30794295f081d639e91af9ab9d924ae95e77703a57f2f086c486e25d4c6fa1620a8705#workspace:ui/icons"],\
+          ["@ui/icons", "virtual:230bf3ecf09a29d427c2efa8024efaecde454b5aceb5ec0ee4a56e9d3608d72dcc410631bea24712cf1accb1da318c9c64c564787a928bfdb9271b402ae4ba74#workspace:ui/icons"],\
           ["@ui/theme", "workspace:ui/theme"],\
           ["@vanilla-extract/css", "npm:1.15.1"],\
           ["@vanilla-extract/recipes", "virtual:a528d0566ad4c835daf52b9a40527de2088db264091344fb72ff0f7389109ad0b59430b8513b02ac6febfc32e26397485898572e78a87675e1a057cde9d5671c#npm:0.5.2"],\

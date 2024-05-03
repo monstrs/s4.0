@@ -1,13 +1,18 @@
-import { useUnit }                      from 'effector-react'
-import { useCallback }                  from 'react'
-
 import type { OrganizationCategory }         from '../enums/index.js'
 import type { ChangeOrganizationFieldProps } from '../events/index.js'
-import { $organizationFields }          from '../stores/index.js'
-import type { OrganizationFieldsProps }      from '../stores/index.js'
-import { changeOrganizationFieldEvent } from '../events/index.js'
+import type { OrganizationErrors }           from '../interfaces/index.js'
+import type { OrganizationFields }           from '../interfaces/index.js'
 
-export const useOrganizationFields = (): OrganizationFieldsProps => useUnit($organizationFields)
+import { useUnit }                           from 'effector-react'
+import { useCallback }                       from 'react'
+
+import { $organizationErrors }               from '../stores/index.js'
+import { $organizationFields }               from '../stores/index.js'
+import { changeOrganizationFieldEvent }      from '../events/index.js'
+
+export const useOrganizationErrors = (): OrganizationErrors => useUnit($organizationErrors)
+
+export const useOrganizationFields = (): OrganizationFields => useUnit($organizationFields)
 
 export const useChangeOrganizationField = (): ((
   props: ChangeOrganizationFieldProps

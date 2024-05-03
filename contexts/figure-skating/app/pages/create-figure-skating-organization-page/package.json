@@ -10,7 +10,8 @@
   },
   "main": "src/index.ts",
   "dependencies": {
-    "@organizations/create-figure-skating-organization-widget": "workspace:0.0.1"
+    "@organizations/create-figure-skating-organization-widget": "workspace:0.0.1",
+    "@ui/layout": "workspace:0.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.3.1",

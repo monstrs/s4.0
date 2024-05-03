@@ -1,12 +1,13 @@
-import { ResolveField }                             from '@nestjs/graphql'
-import { Resolver }                                 from '@nestjs/graphql'
-import { Args }                                     from '@nestjs/graphql'
+import type { ListFigureSkatingOrganizationsResponse } from '@figure-skating/client-module'
 
-import type { ListFigureSkatingOrganizationsResponse }   from '@figure-skating/client-module'
-import { FigureSkatingClient }                      from '@figure-skating/client-module'
+import { ResolveField }                                from '@nestjs/graphql'
+import { Resolver }                                    from '@nestjs/graphql'
+import { Args }                                        from '@nestjs/graphql'
 
-import { ListFigureSkatingOrganizationsPagerInput } from '../inputs/index.js'
-import { Organizations }                            from '../types/index.js'
+import { FigureSkatingClient }                         from '@figure-skating/client-module'
+
+import { ListFigureSkatingOrganizationsPagerInput }    from '../inputs/index.js'
+import { Organizations }                               from '../types/index.js'
 
 @Resolver(() => Organizations)
 export class OrganizationsResolver {

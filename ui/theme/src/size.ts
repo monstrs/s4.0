@@ -24,4 +24,5 @@ export const size = {
   '10x': '80px',
   '11x': '88px',
   '12x': '96px',
+  '80x': '640px',
 }

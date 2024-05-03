@@ -1,15 +1,16 @@
-import type { ReactElement }   from 'react'
-import type { ReactNode }      from 'react'
+import type { ReactElement }        from 'react'
+import type { ReactNode }           from 'react'
 
-import { Provider }            from '@radix-ui/react-tooltip'
-import { Root }                from '@radix-ui/react-tooltip'
-import { TooltipTrigger }      from '@radix-ui/react-tooltip'
-import { Portal }              from '@radix-ui/react-tooltip'
-import React                   from 'react'
-
-import { TooltipArrow }        from './tooltip-arrow/index.js'
-import { TooltipContent }      from './tooltip-content/index.js'
 import type { TooltipContentProps } from './tooltip-content/index.js'
+
+import { Provider }                 from '@radix-ui/react-tooltip'
+import { Root }                     from '@radix-ui/react-tooltip'
+import { TooltipTrigger }           from '@radix-ui/react-tooltip'
+import { Portal }                   from '@radix-ui/react-tooltip'
+import React                        from 'react'
+
+import { TooltipArrow }             from './tooltip-arrow/index.js'
+import { TooltipContent }           from './tooltip-content/index.js'
 
 export interface TooltipProps extends Omit<TooltipContentProps, 'content'> {
   content?: ReactNode | string

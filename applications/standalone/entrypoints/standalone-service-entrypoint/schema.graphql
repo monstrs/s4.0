@@ -19,12 +19,11 @@ type CreateFigureSkatingOrganizationErrors {
   address: ValidationError
   phone: ValidationError
   inn: ValidationError
-  applicationId: ValidationError
+  applicantId: ValidationError
   applicantJobTitle: ValidationError
   applicantPhone: ValidationError
   contingent: ValidationError
   disciplines: ValidationError
-  state: ValidationError
   responsible: ValidationError
   charterId: ValidationError
   registrationCertificateId: ValidationError
@@ -113,7 +112,9 @@ type Query {
 }
 
 type Mutation {
-  createFigureSkatingOrganization(input: CreateFigureSkatingOrganizationInput!): CreateFigureSkatingOrganizationResponse!
+  createFigureSkatingOrganization(
+    input: CreateFigureSkatingOrganizationInput!
+  ): CreateFigureSkatingOrganizationResponse!
 }
 
 input CreateFigureSkatingOrganizationInput {

@@ -5387,6 +5387,7 @@ __metadata:
   dependencies:
     "@organizations/create-figure-skating-organization-widget": "workspace:0.0.1"
     "@types/react": "npm:^18.3.1"
+    "@ui/layout": "workspace:0.0.1"
     effector: "npm:^23.2.1"
     effector-react: "npm:^23.2.0"
     next: "npm:^14.2.3"
@@ -5459,6 +5460,7 @@ __metadata:
     "@ui/card": "workspace:0.0.1"
     "@ui/checkbox": "workspace:0.0.1"
     "@ui/datepicker": "workspace:0.0.1"
+    "@ui/icons": "workspace:0.0.1"
     "@ui/input": "workspace:0.0.1"
     "@ui/label": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"
@@ -5486,6 +5488,7 @@ __metadata:
     "@types/react": "npm:^18.3.1"
     "@ui/card": "workspace:0.0.1"
     "@ui/datepicker": "workspace:0.0.1"
+    "@ui/icons": "workspace:0.0.1"
     "@ui/input": "workspace:0.0.1"
     "@ui/label": "workspace:0.0.1"
     "@ui/layout": "workspace:0.0.1"

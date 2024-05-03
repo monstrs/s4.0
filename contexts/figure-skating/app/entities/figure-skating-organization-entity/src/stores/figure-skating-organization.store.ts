@@ -1,20 +1,12 @@
+import type { FigureSkatingOrganizationErrors }      from '../interfaces/index.js'
+import type { FigureSkatingOrganizationFields }      from '../interfaces/index.js'
+
 import { createStore }                               from 'effector'
 
-import type { FigureSkatingDisciplines }                  from '../enums/index.js'
 import { changeFigureSkatingOrganizationFieldEvent } from '../events/index.js'
+import { setFigureSkatingOrganizationErrorsEvent }   from '../events/index.js'
 
-export interface FigureSkatingOrganizationFieldsProps {
-  cityId: string
-  address: string
-  phone: string
-  inn: string
-  additionalInformation?: string
-  applicantJobTitle: string
-  applicantPhone: string
-  disciplines: Array<FigureSkatingDisciplines>
-}
-
-const initialState: FigureSkatingOrganizationFieldsProps = {
+const initialState: FigureSkatingOrganizationFields = {
   cityId: '',
   address: '',
   phone: '',
@@ -25,7 +17,7 @@ const initialState: FigureSkatingOrganizationFieldsProps = {
   disciplines: [],
 }
 
-export const $figureSkatingOrganizationFields = createStore<FigureSkatingOrganizationFieldsProps>(
+export const $figureSkatingOrganizationFields = createStore<FigureSkatingOrganizationFields>(
   initialState,
   {
     sid: 'figure-skating-organization-fields',
@@ -39,3 +31,12 @@ $figureSkatingOrganizationFields.on(changeFigureSkatingOrganizationFieldEvent, (
   ...state,
   [key]: value,
 }))
+
+export const $figureSkatingOrganizationErrors = createStore<FigureSkatingOrganizationErrors>(
+  {},
+  {
+    sid: 'figure-skating-organization-errors',
+  }
+)
+
+$figureSkatingOrganizationErrors.on(setFigureSkatingOrganizationErrorsEvent, (_, errors) => errors)

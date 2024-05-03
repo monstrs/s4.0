@@ -1,5 +1,5 @@
-import type { Query }                     from '@monstrs/query-types'
 import type { FigureSkatingOrganization } from '@figure-skating/domain-module'
+import type { Query }                     from '@monstrs/query-types'
 
 export interface FigureSkatingOrganizationsQuery {
   id?: Query.IDType

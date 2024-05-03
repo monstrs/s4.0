@@ -1,6 +1,7 @@
+import type { TooltipProps }  from 'antd'
+import type { ReactElement }  from 'react'
+
 import { Tooltip }            from 'antd'
-import type { TooltipProps }       from 'antd'
-import type { ReactElement }       from 'react'
 import React                  from 'react'
 
 import { QuestionCircleIcon } from '@ui/icons'

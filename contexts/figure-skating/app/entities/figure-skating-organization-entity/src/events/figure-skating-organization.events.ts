@@ -1,12 +1,23 @@
-import { createEvent }              from 'effector'
+import type { FigureSkatingDisciplines }        from '../enums/index.js'
+import type { FigureSkatingOrganizationErrors } from '../interfaces/index.js'
 
-import type { FigureSkatingDisciplines } from '../enums/index.js'
+import { createEvent }                          from 'effector'
 
 export type ChangeFigureSkatingOrganizationFieldProps = {
   key:
-    'additionalInformation' | 'address' | 'applicantJobTitle' | 'applicantPhone' | 'cityId' | 'disciplines' | 'inn' | 'phone'
+    | 'additionalInformation'
+    | 'address'
+    | 'applicantJobTitle'
+    | 'applicantPhone'
+    | 'cityId'
+    | 'disciplines'
+    | 'inn'
+    | 'phone'
   value: Array<FigureSkatingDisciplines> | string
 }
 
 export const changeFigureSkatingOrganizationFieldEvent =
   createEvent<ChangeFigureSkatingOrganizationFieldProps>()
+
+export const setFigureSkatingOrganizationErrorsEvent =
+  createEvent<FigureSkatingOrganizationErrors>()

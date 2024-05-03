@@ -1,19 +1,12 @@
+import type { OrganizationErrors }      from '../interfaces/index.js'
+import type { OrganizationFields }      from '../interfaces/index.js'
+
 import { createStore }                  from 'effector'
 
-import type { OrganizationCategory }         from '../enums/index.js'
 import { changeOrganizationFieldEvent } from '../events/index.js'
+import { setOrganizationErrorsEvent }   from '../events/index.js'
 
-export interface OrganizationFieldsProps {
-  fullName: string
-  abbreviation: string
-  websiteName: string
-  listName: string
-  foundingDate?: Date
-  category?: OrganizationCategory
-  curatorId?: string
-}
-
-const initialState: OrganizationFieldsProps = {
+const initialState: OrganizationFields = {
   fullName: '',
   abbreviation: '',
   websiteName: '',
@@ -23,7 +16,7 @@ const initialState: OrganizationFieldsProps = {
   curatorId: undefined,
 }
 
-export const $organizationFields = createStore<OrganizationFieldsProps>(initialState, {
+export const $organizationFields = createStore<OrganizationFields>(initialState, {
   sid: 'organization-fields',
 })
 
@@ -31,3 +24,12 @@ $organizationFields.on(changeOrganizationFieldEvent, (state, { key, value }) => 
   ...state,
   [key]: value,
 }))
+
+export const $organizationErrors = createStore<OrganizationErrors>(
+  {},
+  {
+    sid: 'organization-errors',
+  }
+)
+
+$organizationErrors.on(setOrganizationErrorsEvent, (_, errors) => errors)

@@ -3,9 +3,12 @@ import type { CreateFigureSkatingOrganizationInput }    from '@app/operations'
 
 import { createEffect }                                 from 'effector'
 import { attach }                                       from 'effector'
+import { sample }                                       from 'effector'
 
-import { $figureSkatingOrganizationFields} from '@organizations/figure-skating-organization-entity'
+import { $figureSkatingOrganizationFields }             from '@organizations/figure-skating-organization-entity'
 import { $organizationFields }                          from '@organizations/organization-entity'
+import { setFigureSkatingOrganizationErrorsEvent }      from '@organizations/figure-skating-organization-entity'
+import { setOrganizationErrorsEvent }                   from '@organizations/organization-entity'
 import operations                                       from '@app/operations'
 
 export const createFigureSkatingOrganizationFx = createEffect(async (
@@ -20,7 +23,10 @@ export const createFigureSkatingOrganizationFx = createEffect(async (
 
 export const createFigureSkatingOrganizationAttachFx = attach({
   effect: createFigureSkatingOrganizationFx,
-  source: { organization: $organizationFields, figureSkatingOrganization: $figureSkatingOrganizationFields },
+  source: {
+    organization: $organizationFields,
+    figureSkatingOrganization: $figureSkatingOrganizationFields,
+  },
   mapParams: (_, { organization, figureSkatingOrganization }) => ({
     fullName: organization.fullName,
     abbreviation: organization.abbreviation,
@@ -39,6 +45,28 @@ export const createFigureSkatingOrganizationAttachFx = attach({
     disciplines: figureSkatingOrganization.disciplines,
     contingent: [],
     charterId: '',
-    registrationCertificateId: ''
+    registrationCertificateId: '',
   }),
+})
+
+sample({
+  clock: createFigureSkatingOrganizationAttachFx.doneData,
+  filter({ errors }) {
+    return !!errors
+  },
+  fn({ errors }) {
+    return errors!
+  },
+  target: setFigureSkatingOrganizationErrorsEvent,
+})
+
+sample({
+  clock: createFigureSkatingOrganizationAttachFx.doneData,
+  filter({ errors }) {
+    return !!errors
+  },
+  fn({ errors }) {
+    return errors!
+  },
+  target: setOrganizationErrorsEvent,
 })

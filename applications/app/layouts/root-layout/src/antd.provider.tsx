@@ -1,9 +1,9 @@
 'use client'
 
 import type { ReactElement } from 'react'
+import type { ReactNode }    from 'react'
 
 import { ConfigProvider }    from 'antd'
-import type { ReactNode }         from 'react'
 import React                 from 'react'
 
 const theme = {

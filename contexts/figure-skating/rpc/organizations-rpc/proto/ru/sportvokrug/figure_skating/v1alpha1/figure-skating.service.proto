@@ -39,7 +39,7 @@ message FigureSkatingOrganization {
   string website_name = 4;
   string list_name = 5;
   google.protobuf.Timestamp founding_date = 6;
-  OrganizationCategory category = 7;
+  optional OrganizationCategory category = 7;
   string curator_id = 8;
   string city_id = 9;
   string address = 10;
@@ -64,7 +64,7 @@ message CreateFigureSkatingOrganizationRequest {
   string website_name = 3;
   string list_name = 4;
   google.protobuf.Timestamp founding_date = 5;
-  OrganizationCategory category = 6;
+  optional OrganizationCategory category = 6;
   string curator_id = 7;
   string city_id = 8;
   string address = 9;

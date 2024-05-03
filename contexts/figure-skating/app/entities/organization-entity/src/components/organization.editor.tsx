@@ -1,18 +1,22 @@
-import type { ReactElement }         from 'react'
-import React                    from 'react'
+import type { ReactElement }       from 'react'
 
-import { Card }                 from '@ui/card'
-import { CardDivider }          from '@ui/card'
-import { DatePicker }           from '@ui/datepicker'
-import { Input }                from '@ui/input'
-import { Label }                from '@ui/label'
-import { Row }                  from '@ui/layout'
-import { Column }               from '@ui/layout'
-import { Layout }               from '@ui/layout'
-import { Select }               from '@ui/select'
-import { Text }                 from '@ui/text'
+import type { OrganizationErrors } from '../interfaces/index.js'
 
-import { OrganizationCategory } from '../enums/index.js'
+import React                       from 'react'
+
+import { Card }                    from '@ui/card'
+import { CardDivider }             from '@ui/card'
+import { DatePicker }              from '@ui/datepicker'
+import { WarningFilledIcon }       from '@ui/icons'
+import { Input }                   from '@ui/input'
+import { Label }                   from '@ui/label'
+import { Row }                     from '@ui/layout'
+import { Column }                  from '@ui/layout'
+import { Layout }                  from '@ui/layout'
+import { Select }                  from '@ui/select'
+import { Text }                    from '@ui/text'
+
+import { OrganizationCategory }    from '../enums/index.js'
 
 export interface OrganizationEditorProps {
   fullName: string
@@ -22,6 +26,7 @@ export interface OrganizationEditorProps {
   foundingDate?: Date
   category?: OrganizationCategory
   curatorId?: string
+  errors: OrganizationErrors
   onChangeFullName: (fullname: string) => void
   onChangeAbbreviation: (abbreviation: string) => void
   onChangeWebsiteName: (websiteName: string) => void
@@ -39,6 +44,7 @@ export const OrganizationEditor = ({
   foundingDate,
   category,
   curatorId,
+  errors,
   onChangeFullName,
   onChangeAbbreviation,
   onChangeWebsiteName,
@@ -92,6 +98,8 @@ export const OrganizationEditor = ({
             <Input
               id='organization-full-name'
               value={fullName}
+              status={errors.fullName && 'error'}
+              suffix={errors.fullName && <WarningFilledIcon color='red' />}
               onChange={(event) => {
                 onChangeFullName(event.target.value)
               }}
@@ -132,6 +140,8 @@ export const OrganizationEditor = ({
             <Input
               id='organization-abbreviation'
               value={abbreviation}
+              status={errors.abbreviation && 'error'}
+              suffix={errors.abbreviation && <WarningFilledIcon color='red' />}
               onChange={(event) => {
                 onChangeAbbreviation(event.target.value)
               }}
@@ -180,6 +190,8 @@ export const OrganizationEditor = ({
             <Input
               id='organization-website-name'
               value={websiteName}
+              status={errors.websiteName && 'error'}
+              suffix={errors.websiteName && <WarningFilledIcon color='red' />}
               onChange={(event) => {
                 onChangeWebsiteName(event.target.value)
               }}
@@ -224,6 +236,8 @@ export const OrganizationEditor = ({
             <Input
               id='organization-list-name'
               value={listName}
+              status={errors.listName && 'error'}
+              suffix={errors.listName && <WarningFilledIcon color='red' />}
               onChange={(event) => {
                 onChangeListName(event.target.value)
               }}
@@ -246,6 +260,7 @@ export const OrganizationEditor = ({
             <DatePicker
               id='organization-founding-date'
               value={foundingDate}
+              status={errors.foundingDate && 'error'}
               onChange={onChangeFoundingDate}
             />
           </Layout>
@@ -289,6 +304,7 @@ export const OrganizationEditor = ({
                   label: 'прочее',
                 },
               ]}
+              status={errors.category && 'error'}
               onChange={onChangeCategory}
             />
           </Layout>
@@ -330,6 +346,7 @@ export const OrganizationEditor = ({
               placeholder='выбрать...'
               options={[]}
               value={curatorId}
+              status={errors.curatorId && 'error'}
               onChange={onChangeCuratorId}
             />
           </Layout>

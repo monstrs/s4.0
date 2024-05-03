@@ -38,9 +38,10 @@ export class CreateFigureSkatingOrganizationPayload {
     return this.request.foundingDate?.toDate()!
   }
 
+  @IsNotEmpty()
   @IsEnum(OrganizationCategory)
   get category(): OrganizationCategory {
-    return this.request.category
+    return this.request.category!
   }
 
   @IsUUID(4)

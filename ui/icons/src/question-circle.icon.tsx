@@ -4,8 +4,16 @@ import type { SVGProps }     from 'react'
 
 import React                 from 'react'
 
-import type { vars }              from '@ui/theme'
+import { vars }              from '@ui/theme'
 
+const getColor = (
+  color: string | keyof typeof vars.colors | undefined
+): keyof typeof vars.colors | undefined => {
+  if (color) {
+    return vars?.colors[color as keyof typeof vars.colors] as keyof typeof vars.colors
+  }
+  return undefined
+}
 export interface QuestionCircleIconProps extends Omit<SVGProps<SVGSVGElement>, 'color'> {
   color?: string | `$${keyof typeof vars.colors}`
 }
@@ -16,7 +24,7 @@ export const QuestionCircleIcon = ({ color, ...props }: QuestionCircleIconProps)
     data-icon='question-circle'
     width='1em'
     height='1em'
-    fill='currentColor'
+    fill={getColor(color) || '#1677ff'}
     aria-hidden='true'
     {...props}
   >

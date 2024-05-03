@@ -8,6 +8,78 @@ mutation createFigureSkatingOrganization($input: CreateFigureSkatingOrganization
         id
         message
       }
+      abbreviation {
+        id
+        message
+      }
+      websiteName {
+        id
+        message
+      }
+      listName {
+        id
+        message
+      }
+      foundingDate {
+        id
+        message
+      }
+      category {
+        id
+        message
+      }
+      curatorId {
+        id
+        message
+      }
+      cityId {
+        id
+        message
+      }
+      address {
+        id
+        message
+      }
+      phone {
+        id
+        message
+      }
+      inn {
+        id
+        message
+      }
+      applicantId {
+        id
+        message
+      }
+      applicantJobTitle {
+        id
+        message
+      }
+      applicantPhone {
+        id
+        message
+      }
+      contingent {
+        id
+        message
+      }
+      disciplines {
+        id
+        message
+      }
+      responsible {
+        id
+        message
+      }
+      charterId {
+        id
+        message
+      }
+      registrationCertificateId {
+        id
+        message
+      }
     }
   }
 }

@@ -3,9 +3,14 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import type { Timestamp } from "@bufbuild/protobuf";
-import type { FigureSkatingContingent, FigureSkatingDisciplines } from "../../common/v1alpha1/common.types_pb.js";
-import type { Query_ID, Query_Order, Query_Pager, Query_Search } from "../../../../tech/monstrs/queries/v1alpha1/queries_pb.js";
+import type { Timestamp }                from '@bufbuild/protobuf'
+
+import type { Query_ID }                 from '../../../../tech/monstrs/queries/v1alpha1/queries_pb.js'
+import type { Query_Order }              from '../../../../tech/monstrs/queries/v1alpha1/queries_pb.js'
+import type { Query_Pager }              from '../../../../tech/monstrs/queries/v1alpha1/queries_pb.js'
+import type { Query_Search }             from '../../../../tech/monstrs/queries/v1alpha1/queries_pb.js'
+import type { FigureSkatingContingent }  from '../../common/v1alpha1/common.types_pb.js'
+import type { FigureSkatingDisciplines } from '../../common/v1alpha1/common.types_pb.js'
 
 /**
  * @generated from enum ru.sportvokrug.figure_skatings.v1alpha1.OrganizationCategory
@@ -94,118 +99,117 @@ export interface FigureSkatingOrganization {
   /**
    * @generated from field: string id = 1;
    */
-  id: string;
+  id: string
 
   /**
    * @generated from field: string full_name = 2;
    */
-  fullName: string;
+  fullName: string
 
   /**
    * @generated from field: string abbreviation = 3;
    */
-  abbreviation: string;
+  abbreviation: string
 
   /**
    * @generated from field: string website_name = 4;
    */
-  websiteName: string;
+  websiteName: string
 
   /**
    * @generated from field: string list_name = 5;
    */
-  listName: string;
+  listName: string
 
   /**
    * @generated from field: google.protobuf.Timestamp founding_date = 6;
    */
-  foundingDate?: Timestamp;
+  foundingDate?: Timestamp
 
   /**
-   * @generated from field: ru.sportvokrug.figure_skatings.v1alpha1.OrganizationCategory category = 7;
+   * @generated from field: optional ru.sportvokrug.figure_skatings.v1alpha1.OrganizationCategory category = 7;
    */
-  category: OrganizationCategory;
+  category?: OrganizationCategory
 
   /**
    * @generated from field: string curator_id = 8;
    */
-  curatorId: string;
+  curatorId: string
 
   /**
    * @generated from field: string city_id = 9;
    */
-  cityId: string;
+  cityId: string
 
   /**
    * @generated from field: string address = 10;
    */
-  address: string;
+  address: string
 
   /**
    * @generated from field: string phone = 11;
    */
-  phone: string;
+  phone: string
 
   /**
    * @generated from field: string inn = 12;
    */
-  inn: string;
+  inn: string
 
   /**
    * @generated from field: string additional_information = 13;
    */
-  additionalInformation: string;
+  additionalInformation: string
 
   /**
    * @generated from field: string applicant_id = 14;
    */
-  applicantId: string;
+  applicantId: string
 
   /**
    * @generated from field: string applicant_job_title = 15;
    */
-  applicantJobTitle: string;
+  applicantJobTitle: string
 
   /**
    * @generated from field: string applicant_phone = 16;
    */
-  applicantPhone: string;
+  applicantPhone: string
 
   /**
    * @generated from field: repeated ru.sportvokrug.common.v1alpha1.FigureSkatingContingent contingent = 17;
    */
-  contingent: FigureSkatingContingent[];
+  contingent: FigureSkatingContingent[]
 
   /**
    * @generated from field: repeated ru.sportvokrug.common.v1alpha1.FigureSkatingDisciplines disciplines = 18;
    */
-  disciplines: FigureSkatingDisciplines[];
+  disciplines: FigureSkatingDisciplines[]
 
   /**
    * @generated from field: ru.sportvokrug.figure_skatings.v1alpha1.OrganizationState state = 19;
    */
-  state: OrganizationState;
+  state: OrganizationState
 
   /**
    * @generated from field: repeated string responsible = 20;
    */
-  responsible: string[];
+  responsible: string[]
 
   /**
    * @generated from field: string charter_id = 21;
    */
-  charterId: string;
+  charterId: string
 
   /**
    * @generated from field: string registration_certificate_id = 22;
    */
-  registrationCertificateId: string;
+  registrationCertificateId: string
 
   /**
    * @generated from field: google.protobuf.Timestamp created_at = 23;
    */
-  createdAt?: Timestamp;
-
+  createdAt?: Timestamp
 }
 
 /**
@@ -215,103 +219,102 @@ export interface CreateFigureSkatingOrganizationRequest {
   /**
    * @generated from field: string full_name = 1;
    */
-  fullName: string;
+  fullName: string
 
   /**
    * @generated from field: string abbreviation = 2;
    */
-  abbreviation: string;
+  abbreviation: string
 
   /**
    * @generated from field: string website_name = 3;
    */
-  websiteName: string;
+  websiteName: string
 
   /**
    * @generated from field: string list_name = 4;
    */
-  listName: string;
+  listName: string
 
   /**
    * @generated from field: google.protobuf.Timestamp founding_date = 5;
    */
-  foundingDate?: Timestamp;
+  foundingDate?: Timestamp
 
   /**
-   * @generated from field: ru.sportvokrug.figure_skatings.v1alpha1.OrganizationCategory category = 6;
+   * @generated from field: optional ru.sportvokrug.figure_skatings.v1alpha1.OrganizationCategory category = 6;
    */
-  category: OrganizationCategory;
+  category?: OrganizationCategory
 
   /**
    * @generated from field: string curator_id = 7;
    */
-  curatorId: string;
+  curatorId: string
 
   /**
    * @generated from field: string city_id = 8;
    */
-  cityId: string;
+  cityId: string
 
   /**
    * @generated from field: string address = 9;
    */
-  address: string;
+  address: string
 
   /**
    * @generated from field: string phone = 10;
    */
-  phone: string;
+  phone: string
 
   /**
    * @generated from field: string inn = 11;
    */
-  inn: string;
+  inn: string
 
   /**
    * @generated from field: string additional_information = 12;
    */
-  additionalInformation: string;
+  additionalInformation: string
 
   /**
    * @generated from field: string applicant_id = 13;
    */
-  applicantId: string;
+  applicantId: string
 
   /**
    * @generated from field: string applicant_job_title = 14;
    */
-  applicantJobTitle: string;
+  applicantJobTitle: string
 
   /**
    * @generated from field: string applicant_phone = 15;
    */
-  applicantPhone: string;
+  applicantPhone: string
 
   /**
    * @generated from field: repeated ru.sportvokrug.common.v1alpha1.FigureSkatingContingent contingent = 16;
    */
-  contingent: FigureSkatingContingent[];
+  contingent: FigureSkatingContingent[]
 
   /**
    * @generated from field: repeated ru.sportvokrug.common.v1alpha1.FigureSkatingDisciplines disciplines = 17;
    */
-  disciplines: FigureSkatingDisciplines[];
+  disciplines: FigureSkatingDisciplines[]
 
   /**
    * @generated from field: repeated string responsible = 18;
    */
-  responsible: string[];
+  responsible: string[]
 
   /**
    * @generated from field: string charter_id = 19;
    */
-  charterId: string;
+  charterId: string
 
   /**
    * @generated from field: string registration_certificate_id = 20;
    */
-  registrationCertificateId: string;
-
+  registrationCertificateId: string
 }
 
 /**
@@ -321,8 +324,7 @@ export interface CreateFigureSkatingOrganizationResponse {
   /**
    * @generated from field: ru.sportvokrug.figure_skatings.v1alpha1.FigureSkatingOrganization organization = 1;
    */
-  organization?: FigureSkatingOrganization;
-
+  organization?: FigureSkatingOrganization
 }
 
 /**
@@ -332,108 +334,107 @@ export interface UpdateFigureSkatingOrganizationRequest {
   /**
    * @generated from field: string organization_id = 1;
    */
-  organizationId: string;
+  organizationId: string
 
   /**
    * @generated from field: string full_name = 2;
    */
-  fullName: string;
+  fullName: string
 
   /**
    * @generated from field: string abbreviation = 3;
    */
-  abbreviation: string;
+  abbreviation: string
 
   /**
    * @generated from field: string website_name = 4;
    */
-  websiteName: string;
+  websiteName: string
 
   /**
    * @generated from field: string list_name = 5;
    */
-  listName: string;
+  listName: string
 
   /**
    * @generated from field: google.protobuf.Timestamp founding_date = 6;
    */
-  foundingDate?: Timestamp;
+  foundingDate?: Timestamp
 
   /**
    * @generated from field: ru.sportvokrug.figure_skatings.v1alpha1.OrganizationCategory category = 7;
    */
-  category: OrganizationCategory;
+  category: OrganizationCategory
 
   /**
    * @generated from field: string curator_id = 8;
    */
-  curatorId: string;
+  curatorId: string
 
   /**
    * @generated from field: string city_id = 9;
    */
-  cityId: string;
+  cityId: string
 
   /**
    * @generated from field: string address = 10;
    */
-  address: string;
+  address: string
 
   /**
    * @generated from field: string phone = 11;
    */
-  phone: string;
+  phone: string
 
   /**
    * @generated from field: string inn = 12;
    */
-  inn: string;
+  inn: string
 
   /**
    * @generated from field: string additional_information = 13;
    */
-  additionalInformation: string;
+  additionalInformation: string
 
   /**
    * @generated from field: string applicant_id = 14;
    */
-  applicantId: string;
+  applicantId: string
 
   /**
    * @generated from field: string applicant_job_title = 15;
    */
-  applicantJobTitle: string;
+  applicantJobTitle: string
 
   /**
    * @generated from field: string applicant_phone = 16;
    */
-  applicantPhone: string;
+  applicantPhone: string
 
   /**
    * @generated from field: repeated ru.sportvokrug.common.v1alpha1.FigureSkatingContingent contingent = 17;
    */
-  contingent: FigureSkatingContingent[];
+  contingent: FigureSkatingContingent[]
 
   /**
    * @generated from field: repeated ru.sportvokrug.common.v1alpha1.FigureSkatingDisciplines disciplines = 18;
    */
-  disciplines: FigureSkatingDisciplines[];
+  disciplines: FigureSkatingDisciplines[]
 
   /**
    * @generated from field: repeated string responsible = 19;
    */
-  responsible: string[];
+  responsible: string[]
 
   /**
    * @generated from field: string charter_id = 20;
    */
-  charterId: string;
+  charterId: string
 
   /**
    * @generated from field: string registration_certificate_id = 21;
    */
-  registrationCertificateId: string;
-
+  registrationCertificateId: string
 }
 
 /**
@@ -443,8 +444,7 @@ export interface UpdateFigureSkatingOrganizationResponse {
   /**
    * @generated from field: ru.sportvokrug.figure_skatings.v1alpha1.FigureSkatingOrganization organization = 1;
    */
-  organization?: FigureSkatingOrganization;
-
+  organization?: FigureSkatingOrganization
 }
 
 /**
@@ -454,23 +454,22 @@ export interface ListFigureSkatingOrganizationsRequest {
   /**
    * @generated from field: tech.monstrs.queries.v1alpha1.Query.Pager pager = 1;
    */
-  pager?: Query_Pager;
+  pager?: Query_Pager
 
   /**
    * @generated from field: tech.monstrs.queries.v1alpha1.Query.Order order = 2;
    */
-  order?: Query_Order;
+  order?: Query_Order
 
   /**
    * @generated from field: tech.monstrs.queries.v1alpha1.Query.Search search = 3;
    */
-  search?: Query_Search;
+  search?: Query_Search
 
   /**
    * @generated from field: ru.sportvokrug.figure_skatings.v1alpha1.ListFigureSkatingOrganizationsRequest.FigureSkatingOrganizationsQuery query = 4;
    */
-  query?: ListFigureSkatingOrganizationsRequest_FigureSkatingOrganizationsQuery;
-
+  query?: ListFigureSkatingOrganizationsRequest_FigureSkatingOrganizationsQuery
 }
 
 /**
@@ -480,8 +479,7 @@ export interface ListFigureSkatingOrganizationsRequest_FigureSkatingOrganization
   /**
    * @generated from field: tech.monstrs.queries.v1alpha1.Query.ID id = 1;
    */
-  id?: Query_ID;
-
+  id?: Query_ID
 }
 
 /**
@@ -491,12 +489,10 @@ export interface ListFigureSkatingOrganizationsResponse {
   /**
    * @generated from field: repeated ru.sportvokrug.figure_skatings.v1alpha1.FigureSkatingOrganization organizations = 1;
    */
-  organizations: FigureSkatingOrganization[];
+  organizations: FigureSkatingOrganization[]
 
   /**
    * @generated from field: bool has_next_page = 2;
    */
-  hasNextPage: boolean;
-
+  hasNextPage: boolean
 }
-

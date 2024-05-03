@@ -29,7 +29,7 @@ export class FigureSkatingOrganizationMutations {
         ...input,
         applicantId: 'ce8157ce-e69c-4944-9aad-87aa73f1fc8b',
         foundingDate: input.foundingDate ? Timestamp.fromDate(input.foundingDate) : undefined,
-        responsible: []
+        responsible: [],
       })
     } catch (error) {
       const details: Array<ValidationError> = findValidationErrorDetails(error)

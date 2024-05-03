@@ -1,12 +1,13 @@
-import { Entity }                   from '@mikro-orm/core'
-import { Property }                 from '@mikro-orm/core'
-import { Enum }                     from '@mikro-orm/core'
-
 import type { FigureSkatingContingent }  from '@common/domain-module'
 import type { FigureSkatingDisciplines } from '@common/domain-module'
-import { OrganizationState }        from '@figure-skating/domain-module'
 
-import { BaseOrganization }         from './base-organization.entity.js'
+import { Entity }                        from '@mikro-orm/core'
+import { Property }                      from '@mikro-orm/core'
+import { Enum }                          from '@mikro-orm/core'
+
+import { OrganizationState }             from '@figure-skating/domain-module'
+
+import { BaseOrganization }              from './base-organization.entity.js'
 
 @Entity({ discriminatorValue: 'figure-skating' })
 export class FigureSkatingOrganizationEntity extends BaseOrganization {

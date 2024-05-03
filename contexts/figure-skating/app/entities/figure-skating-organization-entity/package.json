@@ -13,6 +13,7 @@
     "@ui/card": "workspace:0.0.1",
     "@ui/checkbox": "workspace:0.0.1",
     "@ui/datepicker": "workspace:0.0.1",
+    "@ui/icons": "workspace:0.0.1",
     "@ui/input": "workspace:0.0.1",
     "@ui/label": "workspace:0.0.1",
     "@ui/layout": "workspace:0.0.1",

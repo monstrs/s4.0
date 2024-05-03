@@ -8,7 +8,7 @@ import { Injectable }                     from '@nestjs/common'
 import { Inject }                         from '@nestjs/common'
 import DataLoader                         from 'dataloader'
 
-import { FIGURE_SKATING_CLIENT_TOKEN }     from '../constants/index.js'
+import { FIGURE_SKATING_CLIENT_TOKEN }    from '../constants/index.js'
 
 @Injectable()
 export class FigureSkatingOrganizationsDataLoader {
@@ -18,8 +18,9 @@ export class FigureSkatingOrganizationsDataLoader {
     @Inject(FIGURE_SKATING_CLIENT_TOKEN)
     protected readonly client: PromiseClient<typeof FigureSkatingService>
   ) {
-    this.dataloader = new DataLoader<string, FigureSkatingOrganization>(async (figureSkatingOrganizationIds: ReadonlyArray<string>) =>
-      this.getFigureSkatingOrganizations(figureSkatingOrganizationIds))
+    this.dataloader = new DataLoader<string, FigureSkatingOrganization>(async (
+      figureSkatingOrganizationIds: ReadonlyArray<string>
+    ) => this.getFigureSkatingOrganizations(figureSkatingOrganizationIds))
   }
 
   async load(query: string): Promise<FigureSkatingOrganization> {

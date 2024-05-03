@@ -1,19 +1,23 @@
-import type { ReactElement }             from 'react'
-import React                        from 'react'
+import type { ReactElement }                    from 'react'
 
-import { Card }                     from '@ui/card'
-import { CardDivider }              from '@ui/card'
-import { CheckboxGroup }            from '@ui/checkbox'
-import { Checkbox }                 from '@ui/checkbox'
-import { Input }                    from '@ui/input'
-import { Label }                    from '@ui/label'
-import { Row }                      from '@ui/layout'
-import { Column }                   from '@ui/layout'
-import { Layout }                   from '@ui/layout'
-import { Select }                   from '@ui/select'
-import { Text }                     from '@ui/text'
+import type { FigureSkatingOrganizationErrors } from '../interfaces/index.js'
 
-import { FigureSkatingDisciplines } from '../enums/index.js'
+import React                                    from 'react'
+
+import { Card }                                 from '@ui/card'
+import { CardDivider }                          from '@ui/card'
+import { CheckboxGroup }                        from '@ui/checkbox'
+import { Checkbox }                             from '@ui/checkbox'
+import { WarningFilledIcon }                    from '@ui/icons'
+import { Input }                                from '@ui/input'
+import { Label }                                from '@ui/label'
+import { Row }                                  from '@ui/layout'
+import { Column }                               from '@ui/layout'
+import { Layout }                               from '@ui/layout'
+import { Select }                               from '@ui/select'
+import { Text }                                 from '@ui/text'
+
+import { FigureSkatingDisciplines }             from '../enums/index.js'
 
 export interface FigureSkatingOrganizationInformationEditorProps {
   cityId: string
@@ -24,6 +28,7 @@ export interface FigureSkatingOrganizationInformationEditorProps {
   applicantJobTitle: string
   applicantPhone: string
   disciplines: Array<FigureSkatingDisciplines>
+  errors: FigureSkatingOrganizationErrors
   onChangeCityId: (city: string) => void
   onChangeAddress: (address: string) => void
   onChangePhone: (phone: string) => void
@@ -43,6 +48,7 @@ export const FigureSkatingOrganizationInformationEditor = ({
   applicantJobTitle,
   applicantPhone,
   disciplines,
+  errors,
   onChangeCityId,
   onChangeAddress,
   onChangePhone,
@@ -71,6 +77,7 @@ export const FigureSkatingOrganizationInformationEditor = ({
               style={{ width: '100%' }}
               options={[]}
               value={cityId}
+              status={errors.cityId && 'error'}
               onChange={onChangeCityId}
             />
           </Layout>
@@ -92,6 +99,8 @@ export const FigureSkatingOrganizationInformationEditor = ({
               id='organization-information-address'
               placeholder='Укажите адрес без города'
               value={address}
+              status={errors.address && 'error'}
+              suffix={errors.address && <WarningFilledIcon color='red' />}
               onChange={(event) => {
                 onChangeAddress(event.target.value)
               }}
@@ -115,6 +124,8 @@ export const FigureSkatingOrganizationInformationEditor = ({
               id='organization-information-phone'
               placeholder='+7 (123) 456-78-90'
               value={phone}
+              status={errors.phone && 'error'}
+              suffix={errors.phone && <WarningFilledIcon color='red' />}
               onChange={(event) => {
                 onChangePhone(event.target.value)
               }}
@@ -137,6 +148,8 @@ export const FigureSkatingOrganizationInformationEditor = ({
             <Input
               id='organization-information-inn'
               value={inn}
+              status={errors.inn && 'error'}
+              suffix={errors.inn && <WarningFilledIcon color='red' />}
               onChange={(event) => {
                 onChangeInn(event.target.value)
               }}
@@ -205,6 +218,8 @@ export const FigureSkatingOrganizationInformationEditor = ({
               id='organization-information-applicant-job-title'
               placeholder='Укажите должность'
               value={applicantJobTitle}
+              status={errors.applicantJobTitle && 'error'}
+              suffix={errors.applicantJobTitle && <WarningFilledIcon color='red' />}
               onChange={(event) => {
                 onChangeApplicantJobTitle(event.target.value)
               }}
@@ -228,6 +243,8 @@ export const FigureSkatingOrganizationInformationEditor = ({
               id='organization-information-applicant-phone'
               placeholder='+7 (123) 456-78-90'
               value={applicantPhone}
+              status={errors.applicantPhone && 'error'}
+              suffix={errors.applicantPhone && <WarningFilledIcon color='red' />}
               onChange={(event) => {
                 onChangeApplicantPhone(event.target.value)
               }}

@@ -39,7 +39,7 @@ export class CreateFigureSkatingOrganizationErrors {
   inn?: ValidationError
 
   @Field(() => ValidationError, { nullable: true })
-  applicationId?: ValidationError
+  applicantId?: ValidationError
 
   @Field(() => ValidationError, { nullable: true })
   applicantJobTitle?: ValidationError
@@ -52,9 +52,6 @@ export class CreateFigureSkatingOrganizationErrors {
 
   @Field(() => ValidationError, { nullable: true })
   disciplines?: ValidationError
-
-  @Field(() => ValidationError, { nullable: true })
-  state?: ValidationError
 
   @Field(() => ValidationError, { nullable: true })
   responsible?: ValidationError

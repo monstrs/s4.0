@@ -4,10 +4,11 @@ import type { LabelHTMLAttributes } from 'react'
 import type { ReactElement }        from 'react'
 import type { ReactNode }           from 'react'
 
+import type { LabelInfoProps }      from './label-info/index.js'
+
 import React                        from 'react'
 
 import { LabelInfo }                from './label-info/index.js'
-import type { LabelInfoProps }           from './label-info/index.js'
 import { labelStyles }              from './label.css.js'
 
 export interface LabelProps extends LabelHTMLAttributes<HTMLLabelElement> {
