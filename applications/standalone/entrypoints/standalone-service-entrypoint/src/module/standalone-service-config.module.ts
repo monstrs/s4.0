@@ -16,7 +16,7 @@ import { Module }                    from '@nestjs/common'
 import { CqrsModule }                from '@nestjs/cqrs'
 import { GraphQLModule }             from '@nestjs/graphql'
 
-import { OrganizationsClientModule } from '@organizations/client-module'
+import { FigureSkatingClientModule } from '@figure-skating/client-module'
 
 import { entities }                  from '../entities/index.js'
 import { migrations }                from '../migrations/index.js'
@@ -76,7 +76,7 @@ export class StandaloneServiceConfigModule implements OnModuleInit {
             }
           },
         }),
-        OrganizationsClientModule.register(),
+        FigureSkatingClientModule.register(),
       ],
       exports: [MikroOrmModule, RedisModule],
     }

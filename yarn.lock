@@ -2510,6 +2510,204 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@figure-skating/application-module@workspace:0.0.1, @figure-skating/application-module@workspace:contexts/figure-skating/service/application-module":
+  version: 0.0.0-use.local
+  resolution: "@figure-skating/application-module@workspace:contexts/figure-skating/service/application-module"
+  dependencies:
+    "@common/domain-module": "workspace:0.0.1"
+    "@figure-skating/domain-module": "workspace:0.0.1"
+    "@monstrs/query-types": "npm:^0.0.10"
+    "@nestjs/common": "npm:^10.3.8"
+    "@nestjs/core": "npm:^10.3.8"
+    "@nestjs/cqrs": "npm:^10.2.7"
+    "@nestjs/testing": "npm:^10.3.8"
+    "@types/node": "npm:^20.12.7"
+    rxjs: "npm:^7.8.1"
+  peerDependencies:
+    "@nestjs/common": ^10
+    "@nestjs/core": ^10
+    "@nestjs/cqrs": ^10
+    reflect-metadata: ^0.1
+    rxjs: ^7
+  languageName: unknown
+  linkType: soft
+
+"@figure-skating/client-module@workspace:0.0.1, @figure-skating/client-module@workspace:contexts/figure-skating/service/client-module":
+  version: 0.0.0-use.local
+  resolution: "@figure-skating/client-module@workspace:contexts/figure-skating/service/client-module"
+  dependencies:
+    "@bufbuild/protobuf": "npm:^1.9.0"
+    "@connectrpc/connect": "npm:^1.4.0"
+    "@connectrpc/connect-node": "npm:^1.4.0"
+    "@figure-skating/domain-module": "workspace:0.0.1"
+    "@figure-skating/rpc-client": "workspace:0.0.1"
+    "@monstrs/logger": "npm:^0.0.20"
+    "@nestjs/common": "npm:^10.3.8"
+    "@nestjs/core": "npm:^10.3.8"
+    dataloader: "npm:^2.2.2"
+    reflect-metadata: "npm:^0.2.2"
+    rxjs: "npm:^7.8.1"
+  peerDependencies:
+    "@bufbuild/protobuf": ^1.5.0
+    "@connectrpc/connect": ^1.1.3
+    "@connectrpc/connect-node": ^1.1.3
+    "@nestjs/common": ^10
+    "@nestjs/core": ^10
+    "@nestjs/microservices": ^10
+    reflect-metadata: ^0.2
+    rxjs: ^7
+  languageName: unknown
+  linkType: soft
+
+"@figure-skating/domain-module@workspace:0.0.1, @figure-skating/domain-module@workspace:contexts/figure-skating/service/domain-module":
+  version: 0.0.0-use.local
+  resolution: "@figure-skating/domain-module@workspace:contexts/figure-skating/service/domain-module"
+  dependencies:
+    "@common/domain-module": "workspace:0.0.1"
+    "@monstrs/guard-clause": "npm:^0.0.8"
+    "@nestjs/common": "npm:^10.3.8"
+    "@nestjs/core": "npm:^10.3.8"
+    "@nestjs/cqrs": "npm:^10.2.7"
+    "@nestjs/testing": "npm:^10.3.8"
+    "@types/node": "npm:^20.12.7"
+    rxjs: "npm:^7.8.1"
+  peerDependencies:
+    "@nestjs/common": ^10
+    "@nestjs/core": ^10
+    "@nestjs/cqrs": ^10
+    reflect-metadata: ^0.1
+    rxjs: ^7
+  languageName: unknown
+  linkType: soft
+
+"@figure-skating/gateway-module@workspace:0.0.1, @figure-skating/gateway-module@workspace:contexts/figure-skating/gateway/organizations-gateway-module":
+  version: 0.0.0-use.local
+  resolution: "@figure-skating/gateway-module@workspace:contexts/figure-skating/gateway/organizations-gateway-module"
+  dependencies:
+    "@bufbuild/protobuf": "npm:^1.9.0"
+    "@common/gateway-module": "workspace:0.0.1"
+    "@figure-skating/client-module": "workspace:0.0.1"
+    "@monstrs/protobuf-rpc": "npm:0.0.7"
+    "@nestjs/common": "npm:^10.3.8"
+    "@nestjs/core": "npm:^10.3.8"
+    "@nestjs/cqrs": "npm:^10.2.7"
+    "@nestjs/graphql": "npm:^12.1.1"
+    "@nestjs/microservices": "npm:^10.3.8"
+    graphql: "npm:^16.8.1"
+    rxjs: "npm:^7.8.1"
+    ts-morph: "npm:^22.0.0"
+  peerDependencies:
+    "@nestjs/common": ^10
+    "@nestjs/core": ^10
+    "@nestjs/cqrs": ^10
+    "@nestjs/graphql": ^12
+    "@nestjs/microservices": ^10.3.8
+    graphql: ^16
+    reflect-metadata: ^0.2
+    rxjs: ^7.8.0
+    ts-morph: ^18
+  languageName: unknown
+  linkType: soft
+
+"@figure-skating/infrastructure-module@workspace:0.0.1, @figure-skating/infrastructure-module@workspace:contexts/figure-skating/service/infrastructure-module":
+  version: 0.0.0-use.local
+  resolution: "@figure-skating/infrastructure-module@workspace:contexts/figure-skating/service/infrastructure-module"
+  dependencies:
+    "@bufbuild/protobuf": "npm:^1.9.0"
+    "@common/domain-module": "workspace:0.0.1"
+    "@connectrpc/connect": "npm:^1.4.0"
+    "@connectrpc/connect-node": "npm:^1.4.0"
+    "@faker-js/faker": "npm:^8.4.1"
+    "@figure-skating/application-module": "workspace:0.0.1"
+    "@figure-skating/domain-module": "workspace:0.0.1"
+    "@figure-skating/rpc": "workspace:0.0.1"
+    "@jest/globals": "npm:^29.7.0"
+    "@mikro-orm/cli": "npm:^6.2.3"
+    "@mikro-orm/core": "npm:^6.2.3"
+    "@mikro-orm/entity-generator": "npm:^6.2.3"
+    "@mikro-orm/knex": "npm:^6.2.3"
+    "@mikro-orm/migrations": "npm:^6.2.3"
+    "@mikro-orm/nestjs": "npm:^5.2.3"
+    "@mikro-orm/postgresql": "npm:^6.2.3"
+    "@mikro-orm/seeder": "npm:^6.2.3"
+    "@monstrs/base-types": "npm:^0.0.2"
+    "@monstrs/logger": "npm:^0.0.20"
+    "@monstrs/mikro-orm-query-builder": "npm:^0.0.11"
+    "@monstrs/nestjs-connectrpc": "npm:^0.0.3"
+    "@monstrs/nestjs-connectrpc-errors": "npm:^0.0.3"
+    "@monstrs/nestjs-mikro-orm-config": "npm:^0.1.3"
+    "@monstrs/nestjs-validation": "npm:^0.1.1"
+    "@monstrs/rpc-query-payloads": "npm:^0.0.19"
+    "@nestjs/common": "npm:^10.3.8"
+    "@nestjs/core": "npm:^10.3.8"
+    "@nestjs/cqrs": "npm:^10.2.7"
+    "@nestjs/microservices": "npm:^10.3.8"
+    "@nestjs/platform-express": "npm:^10.3.8"
+    "@nestjs/testing": "npm:^10.3.8"
+    "@types/express": "npm:^4.17.21"
+    "@types/node": "npm:^20.12.7"
+    "@types/uuid": "npm:^9.0.8"
+    class-transformer: "npm:^0.5.1"
+    class-validator: "npm:^0.14.1"
+    reflect-metadata: "npm:^0.2.2"
+    rxjs: "npm:^7.8.1"
+    ts-node: "npm:^10.9.2"
+    typescript: "npm:^5.4.5"
+    uuid: "npm:^9.0.1"
+  peerDependencies:
+    "@bufbuild/protobuf": ^1.3.1
+    "@connectrpc/connect": ^1.1.3
+    "@connectrpc/connect-node": ^1.1.3
+    "@figure-skating/rpc": "workspace:0.0.1"
+    "@mikro-orm/cli": ^6
+    "@mikro-orm/core": ^6
+    "@mikro-orm/entity-generator": ^6
+    "@mikro-orm/knex": ^6
+    "@mikro-orm/migrations": ^6
+    "@mikro-orm/nestjs": ^5
+    "@mikro-orm/postgresql": ^6
+    "@mikro-orm/seeder": ^6
+    "@monstrs/nestjs-connectrpc": ^0.0.3
+    "@nestjs/common": ^10
+    "@nestjs/core": ^10
+    "@nestjs/cqrs": ^10
+    "@nestjs/microservices": ^10
+    class-transformer: ^0.5
+    class-validator: ^0.14
+    reflect-metadata: ^0.1
+    rxjs: ^7
+  languageName: unknown
+  linkType: soft
+
+"@figure-skating/rpc-client@workspace:0.0.1, @figure-skating/rpc-client@workspace:contexts/figure-skating/rpc/organizations-rpc-client":
+  version: 0.0.0-use.local
+  resolution: "@figure-skating/rpc-client@workspace:contexts/figure-skating/rpc/organizations-rpc-client"
+  dependencies:
+    "@bufbuild/protobuf": "npm:^1.9.0"
+    "@connectrpc/connect": "npm:^1.4.0"
+    "@connectrpc/connect-node": "npm:^1.4.0"
+    "@figure-skating/rpc": "workspace:0.0.1"
+  peerDependencies:
+    "@connectrpc/connect": ^1.1.3
+    "@connectrpc/connect-node": ^1.1.3
+  languageName: unknown
+  linkType: soft
+
+"@figure-skating/rpc@workspace:0.0.1, @figure-skating/rpc@workspace:contexts/figure-skating/rpc/organizations-rpc":
+  version: 0.0.0-use.local
+  resolution: "@figure-skating/rpc@workspace:contexts/figure-skating/rpc/organizations-rpc"
+  dependencies:
+    "@bufbuild/buf": "npm:^1.31.0"
+    "@bufbuild/protobuf": "npm:^1.9.0"
+    "@bufbuild/protoc-gen-es": "npm:^1.9.0"
+    "@connectrpc/protoc-gen-connect-es": "npm:^1.4.0"
+    "@monstrs/protoc-gen-abstractions": "npm:^0.0.5"
+    "@monstrs/protoc-gen-interfaces": "npm:^0.0.4"
+  peerDependencies:
+    "@bufbuild/protobuf": ^1
+  languageName: unknown
+  linkType: soft
+
 "@floating-ui/core@npm:^1.0.0":
   version: 1.6.0
   resolution: "@floating-ui/core@npm:1.6.0"
@@ -5183,58 +5381,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@organizations/application-module@workspace:0.0.1, @organizations/application-module@workspace:contexts/organizations/service/application-module":
+"@organizations/create-figure-skating-organization-page@workspace:0.0.1, @organizations/create-figure-skating-organization-page@workspace:contexts/figure-skating/app/pages/create-figure-skating-organization-page":
   version: 0.0.0-use.local
-  resolution: "@organizations/application-module@workspace:contexts/organizations/service/application-module"
-  dependencies:
-    "@common/domain-module": "workspace:0.0.1"
-    "@monstrs/query-types": "npm:^0.0.10"
-    "@nestjs/common": "npm:^10.3.8"
-    "@nestjs/core": "npm:^10.3.8"
-    "@nestjs/cqrs": "npm:^10.2.7"
-    "@nestjs/testing": "npm:^10.3.8"
-    "@organizations/domain-module": "workspace:0.0.1"
-    "@types/node": "npm:^20.12.7"
-    rxjs: "npm:^7.8.1"
-  peerDependencies:
-    "@nestjs/common": ^10
-    "@nestjs/core": ^10
-    "@nestjs/cqrs": ^10
-    reflect-metadata: ^0.1
-    rxjs: ^7
-  languageName: unknown
-  linkType: soft
-
-"@organizations/client-module@workspace:0.0.1, @organizations/client-module@workspace:contexts/organizations/service/client-module":
-  version: 0.0.0-use.local
-  resolution: "@organizations/client-module@workspace:contexts/organizations/service/client-module"
-  dependencies:
-    "@bufbuild/protobuf": "npm:^1.9.0"
-    "@connectrpc/connect": "npm:^1.4.0"
-    "@connectrpc/connect-node": "npm:^1.4.0"
-    "@monstrs/logger": "npm:^0.0.20"
-    "@nestjs/common": "npm:^10.3.8"
-    "@nestjs/core": "npm:^10.3.8"
-    "@organizations/domain-module": "workspace:0.0.1"
-    "@organizations/rpc-client": "workspace:0.0.1"
-    dataloader: "npm:^2.2.2"
-    reflect-metadata: "npm:^0.2.2"
-    rxjs: "npm:^7.8.1"
-  peerDependencies:
-    "@bufbuild/protobuf": ^1.5.0
-    "@connectrpc/connect": ^1.1.3
-    "@connectrpc/connect-node": ^1.1.3
-    "@nestjs/common": ^10
-    "@nestjs/core": ^10
-    "@nestjs/microservices": ^10
-    reflect-metadata: ^0.2
-    rxjs: ^7
-  languageName: unknown
-  linkType: soft
-
-"@organizations/create-figure-skating-organization-page@workspace:0.0.1, @organizations/create-figure-skating-organization-page@workspace:contexts/organizations/app/pages/create-figure-skating-organization-page":
-  version: 0.0.0-use.local
-  resolution: "@organizations/create-figure-skating-organization-page@workspace:contexts/organizations/app/pages/create-figure-skating-organization-page"
+  resolution: "@organizations/create-figure-skating-organization-page@workspace:contexts/figure-skating/app/pages/create-figure-skating-organization-page"
   dependencies:
     "@organizations/create-figure-skating-organization-widget": "workspace:0.0.1"
     "@types/react": "npm:^18.3.1"
@@ -5253,9 +5402,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@organizations/create-figure-skating-organization-widget@workspace:0.0.1, @organizations/create-figure-skating-organization-widget@workspace:contexts/organizations/app/widgets/create-figure-skating-organization-widget":
+"@organizations/create-figure-skating-organization-widget@workspace:0.0.1, @organizations/create-figure-skating-organization-widget@workspace:contexts/figure-skating/app/widgets/create-figure-skating-organization-widget":
   version: 0.0.0-use.local
-  resolution: "@organizations/create-figure-skating-organization-widget@workspace:contexts/organizations/app/widgets/create-figure-skating-organization-widget"
+  resolution: "@organizations/create-figure-skating-organization-widget@workspace:contexts/figure-skating/app/widgets/create-figure-skating-organization-widget"
   dependencies:
     "@organizations/edit-organization-feature": "workspace:0.0.1"
     "@organizations/figure-skating-organization-entity": "workspace:0.0.1"
@@ -5280,30 +5429,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@organizations/domain-module@workspace:0.0.1, @organizations/domain-module@workspace:contexts/organizations/service/domain-module":
+"@organizations/edit-organization-feature@workspace:0.0.1, @organizations/edit-organization-feature@workspace:contexts/figure-skating/app/features/edit-organization-feature":
   version: 0.0.0-use.local
-  resolution: "@organizations/domain-module@workspace:contexts/organizations/service/domain-module"
-  dependencies:
-    "@common/domain-module": "workspace:0.0.1"
-    "@monstrs/guard-clause": "npm:^0.0.8"
-    "@nestjs/common": "npm:^10.3.8"
-    "@nestjs/core": "npm:^10.3.8"
-    "@nestjs/cqrs": "npm:^10.2.7"
-    "@nestjs/testing": "npm:^10.3.8"
-    "@types/node": "npm:^20.12.7"
-    rxjs: "npm:^7.8.1"
-  peerDependencies:
-    "@nestjs/common": ^10
-    "@nestjs/core": ^10
-    "@nestjs/cqrs": ^10
-    reflect-metadata: ^0.1
-    rxjs: ^7
-  languageName: unknown
-  linkType: soft
-
-"@organizations/edit-organization-feature@workspace:0.0.1, @organizations/edit-organization-feature@workspace:contexts/organizations/app/features/edit-organization-feature":
-  version: 0.0.0-use.local
-  resolution: "@organizations/edit-organization-feature@workspace:contexts/organizations/app/features/edit-organization-feature"
+  resolution: "@organizations/edit-organization-feature@workspace:contexts/figure-skating/app/features/edit-organization-feature"
   dependencies:
     "@app/operations": "workspace:0.0.1"
     "@organizations/figure-skating-organization-entity": "workspace:0.0.1"
@@ -5323,9 +5451,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@organizations/figure-skating-organization-entity@workspace:0.0.1, @organizations/figure-skating-organization-entity@workspace:contexts/organizations/app/entities/figure-skating-organization-entity":
+"@organizations/figure-skating-organization-entity@workspace:0.0.1, @organizations/figure-skating-organization-entity@workspace:contexts/figure-skating/app/entities/figure-skating-organization-entity":
   version: 0.0.0-use.local
-  resolution: "@organizations/figure-skating-organization-entity@workspace:contexts/organizations/app/entities/figure-skating-organization-entity"
+  resolution: "@organizations/figure-skating-organization-entity@workspace:contexts/figure-skating/app/entities/figure-skating-organization-entity"
   dependencies:
     "@types/react": "npm:^18.3.1"
     "@ui/card": "workspace:0.0.1"
@@ -5351,108 +5479,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@organizations/gateway-module@workspace:0.0.1, @organizations/gateway-module@workspace:contexts/organizations/gateway/organizations-gateway-module":
+"@organizations/organization-entity@workspace:0.0.1, @organizations/organization-entity@workspace:contexts/figure-skating/app/entities/organization-entity":
   version: 0.0.0-use.local
-  resolution: "@organizations/gateway-module@workspace:contexts/organizations/gateway/organizations-gateway-module"
-  dependencies:
-    "@bufbuild/protobuf": "npm:^1.9.0"
-    "@common/gateway-module": "workspace:0.0.1"
-    "@monstrs/protobuf-rpc": "npm:0.0.7"
-    "@nestjs/common": "npm:^10.3.8"
-    "@nestjs/core": "npm:^10.3.8"
-    "@nestjs/cqrs": "npm:^10.2.7"
-    "@nestjs/graphql": "npm:^12.1.1"
-    "@nestjs/microservices": "npm:^10.3.8"
-    "@organizations/client-module": "workspace:0.0.1"
-    graphql: "npm:^16.8.1"
-    rxjs: "npm:^7.8.1"
-    ts-morph: "npm:^22.0.0"
-  peerDependencies:
-    "@nestjs/common": ^10
-    "@nestjs/core": ^10
-    "@nestjs/cqrs": ^10
-    "@nestjs/graphql": ^12
-    "@nestjs/microservices": ^10.3.8
-    graphql: ^16
-    reflect-metadata: ^0.2
-    rxjs: ^7.8.0
-    ts-morph: ^18
-  languageName: unknown
-  linkType: soft
-
-"@organizations/infrastructure-module@workspace:0.0.1, @organizations/infrastructure-module@workspace:contexts/organizations/service/infrastructure-module":
-  version: 0.0.0-use.local
-  resolution: "@organizations/infrastructure-module@workspace:contexts/organizations/service/infrastructure-module"
-  dependencies:
-    "@bufbuild/protobuf": "npm:^1.9.0"
-    "@common/domain-module": "workspace:0.0.1"
-    "@connectrpc/connect": "npm:^1.4.0"
-    "@connectrpc/connect-node": "npm:^1.4.0"
-    "@faker-js/faker": "npm:^8.4.1"
-    "@jest/globals": "npm:^29.7.0"
-    "@mikro-orm/cli": "npm:^6.2.3"
-    "@mikro-orm/core": "npm:^6.2.3"
-    "@mikro-orm/entity-generator": "npm:^6.2.3"
-    "@mikro-orm/knex": "npm:^6.2.3"
-    "@mikro-orm/migrations": "npm:^6.2.3"
-    "@mikro-orm/nestjs": "npm:^5.2.3"
-    "@mikro-orm/postgresql": "npm:^6.2.3"
-    "@mikro-orm/seeder": "npm:^6.2.3"
-    "@monstrs/base-types": "npm:^0.0.2"
-    "@monstrs/logger": "npm:^0.0.20"
-    "@monstrs/mikro-orm-query-builder": "npm:^0.0.11"
-    "@monstrs/nestjs-connectrpc": "npm:^0.0.3"
-    "@monstrs/nestjs-connectrpc-errors": "npm:^0.0.3"
-    "@monstrs/nestjs-mikro-orm-config": "npm:^0.1.3"
-    "@monstrs/nestjs-validation": "npm:^0.1.1"
-    "@monstrs/rpc-query-payloads": "npm:^0.0.19"
-    "@nestjs/common": "npm:^10.3.8"
-    "@nestjs/core": "npm:^10.3.8"
-    "@nestjs/cqrs": "npm:^10.2.7"
-    "@nestjs/microservices": "npm:^10.3.8"
-    "@nestjs/platform-express": "npm:^10.3.8"
-    "@nestjs/testing": "npm:^10.3.8"
-    "@organizations/application-module": "workspace:0.0.1"
-    "@organizations/domain-module": "workspace:0.0.1"
-    "@organizations/rpc": "workspace:0.0.1"
-    "@types/express": "npm:^4.17.21"
-    "@types/node": "npm:^20.12.7"
-    "@types/uuid": "npm:^9.0.8"
-    class-transformer: "npm:^0.5.1"
-    class-validator: "npm:^0.14.1"
-    reflect-metadata: "npm:^0.2.2"
-    rxjs: "npm:^7.8.1"
-    ts-node: "npm:^10.9.2"
-    typescript: "npm:^5.4.5"
-    uuid: "npm:^9.0.1"
-  peerDependencies:
-    "@bufbuild/protobuf": ^1.3.1
-    "@connectrpc/connect": ^1.1.3
-    "@connectrpc/connect-node": ^1.1.3
-    "@mikro-orm/cli": ^6
-    "@mikro-orm/core": ^6
-    "@mikro-orm/entity-generator": ^6
-    "@mikro-orm/knex": ^6
-    "@mikro-orm/migrations": ^6
-    "@mikro-orm/nestjs": ^5
-    "@mikro-orm/postgresql": ^6
-    "@mikro-orm/seeder": ^6
-    "@monstrs/nestjs-connectrpc": ^0.0.3
-    "@nestjs/common": ^10
-    "@nestjs/core": ^10
-    "@nestjs/cqrs": ^10
-    "@nestjs/microservices": ^10
-    "@organizations/rpc": "workspace:0.0.1"
-    class-transformer: ^0.5
-    class-validator: ^0.14
-    reflect-metadata: ^0.1
-    rxjs: ^7
-  languageName: unknown
-  linkType: soft
-
-"@organizations/organization-entity@workspace:0.0.1, @organizations/organization-entity@workspace:contexts/organizations/app/entities/organization-entity":
-  version: 0.0.0-use.local
-  resolution: "@organizations/organization-entity@workspace:contexts/organizations/app/entities/organization-entity"
+  resolution: "@organizations/organization-entity@workspace:contexts/figure-skating/app/entities/organization-entity"
   dependencies:
     "@types/react": "npm:^18.3.1"
     "@ui/card": "workspace:0.0.1"
@@ -5474,35 +5503,6 @@ __metadata:
     react: ^18
     react-dom: ^18
     react-intl: ^6
-  languageName: unknown
-  linkType: soft
-
-"@organizations/rpc-client@workspace:0.0.1, @organizations/rpc-client@workspace:contexts/organizations/rpc/organizations-rpc-client":
-  version: 0.0.0-use.local
-  resolution: "@organizations/rpc-client@workspace:contexts/organizations/rpc/organizations-rpc-client"
-  dependencies:
-    "@bufbuild/protobuf": "npm:^1.9.0"
-    "@connectrpc/connect": "npm:^1.4.0"
-    "@connectrpc/connect-node": "npm:^1.4.0"
-    "@organizations/rpc": "workspace:0.0.1"
-  peerDependencies:
-    "@connectrpc/connect": ^1.1.3
-    "@connectrpc/connect-node": ^1.1.3
-  languageName: unknown
-  linkType: soft
-
-"@organizations/rpc@workspace:0.0.1, @organizations/rpc@workspace:contexts/organizations/rpc/organizations-rpc":
-  version: 0.0.0-use.local
-  resolution: "@organizations/rpc@workspace:contexts/organizations/rpc/organizations-rpc"
-  dependencies:
-    "@bufbuild/buf": "npm:^1.31.0"
-    "@bufbuild/protobuf": "npm:^1.9.0"
-    "@bufbuild/protoc-gen-es": "npm:^1.9.0"
-    "@connectrpc/protoc-gen-connect-es": "npm:^1.4.0"
-    "@monstrs/protoc-gen-abstractions": "npm:^0.0.5"
-    "@monstrs/protoc-gen-interfaces": "npm:^0.0.4"
-  peerDependencies:
-    "@bufbuild/protobuf": ^1
   languageName: unknown
   linkType: soft
 
@@ -6486,6 +6486,9 @@ __metadata:
     "@connectrpc/connect": "npm:^1.4.0"
     "@connectrpc/connect-node": "npm:^1.4.0"
     "@faker-js/faker": "npm:^8.4.1"
+    "@figure-skating/client-module": "workspace:0.0.1"
+    "@figure-skating/gateway-module": "workspace:0.0.1"
+    "@figure-skating/infrastructure-module": "workspace:0.0.1"
     "@jest/globals": "npm:^29.7.0"
     "@mikro-orm/cli": "npm:^6.2.3"
     "@mikro-orm/core": "npm:^6.2.3"
@@ -6511,9 +6514,6 @@ __metadata:
     "@nestjs/platform-socket.io": "npm:^10.3.8"
     "@nestjs/testing": "npm:^10.3.8"
     "@nestjs/websockets": "npm:^10.3.8"
-    "@organizations/client-module": "workspace:0.0.1"
-    "@organizations/gateway-module": "workspace:0.0.1"
-    "@organizations/infrastructure-module": "workspace:0.0.1"
     "@persons/infrastructure-module": "workspace:0.0.1"
     "@testcontainers/kafka": "npm:^10.9.0"
     "@types/express": "npm:^4.17.21"

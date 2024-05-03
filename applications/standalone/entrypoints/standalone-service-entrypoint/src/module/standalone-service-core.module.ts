@@ -2,8 +2,8 @@ import type { DynamicModule }                from '@nestjs/common'
 
 import { Module }                            from '@nestjs/common'
 
-import { OrganizationsGatewayModule }        from '@organizations/gateway-module'
-import { OrganizationsInfrastructureModule } from '@organizations/infrastructure-module'
+import { FigureSkatingGatewayModule }        from '@figure-skating/gateway-module'
+import { FigureSkatingInfrastructureModule } from '@figure-skating/infrastructure-module'
 import { PersonsInfrastructureModule }       from '@persons/infrastructure-module'
 
 @Module({})
@@ -13,8 +13,8 @@ export class StandaloneServiceCoreModule {
       module: StandaloneServiceCoreModule,
       imports: [
         PersonsInfrastructureModule.register(),
-        OrganizationsInfrastructureModule.register(),
-        OrganizationsGatewayModule.register(),
+        FigureSkatingInfrastructureModule.register(),
+        FigureSkatingGatewayModule.register(),
       ],
     }
   }

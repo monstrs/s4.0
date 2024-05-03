@@ -1,0 +1,130 @@
+syntax = "proto3";
+
+package ru.sportvokrug.figure_skatings.v1alpha1;
+
+import "google/protobuf/timestamp.proto";
+import "tech/monstrs/queries/v1alpha1/queries.proto";
+import "ru/sportvokrug/common/v1alpha1/common.types.proto";
+
+service FigureSkatingService {
+  rpc CreateFigureSkatingOrganization(CreateFigureSkatingOrganizationRequest) returns (CreateFigureSkatingOrganizationResponse) {}
+  rpc UpdateFigureSkatingOrganization(UpdateFigureSkatingOrganizationRequest) returns (UpdateFigureSkatingOrganizationResponse) {}
+  rpc ListFigureSkatingOrganizations(ListFigureSkatingOrganizationsRequest) returns (ListFigureSkatingOrganizationsResponse) {}
+}
+
+enum OrganizationCategory {
+  SCHOOL = 0;
+  FEDERATION = 1;
+  SOCIETY = 2;
+  OTHER = 3;
+}
+
+enum OrganizationState {
+  CREATED = 0;
+  WAIT_REVISE = 1;
+  CANCELED = 2;
+  DENIED = 3;
+  IN_REGISTRY = 4;
+  NOT_IN_REGISTRY = 5;
+  DOES_NOT_EXIST = 6;
+  ACTUALIZATION = 7;
+  ACTUALIZATION_FAILED = 8;
+  ACTUALIZATION_CHECK = 9;
+}
+
+message FigureSkatingOrganization {
+  string id = 1;
+  string full_name = 2;
+  string abbreviation = 3;
+  string website_name = 4;
+  string list_name = 5;
+  google.protobuf.Timestamp founding_date = 6;
+  OrganizationCategory category = 7;
+  string curator_id = 8;
+  string city_id = 9;
+  string address = 10;
+  string phone = 11;
+  string inn = 12;
+  string additional_information = 13;
+  string applicant_id = 14;
+  string applicant_job_title = 15;
+  string applicant_phone = 16;
+  repeated ru.sportvokrug.common.v1alpha1.FigureSkatingContingent contingent = 17;
+  repeated ru.sportvokrug.common.v1alpha1.FigureSkatingDisciplines disciplines = 18;
+  OrganizationState state = 19;
+  repeated string responsible = 20;
+  string charter_id = 21;
+  string registration_certificate_id = 22;
+  google.protobuf.Timestamp created_at = 23;
+}
+
+message CreateFigureSkatingOrganizationRequest {
+  string full_name = 1;
+  string abbreviation = 2;
+  string website_name = 3;
+  string list_name = 4;
+  google.protobuf.Timestamp founding_date = 5;
+  OrganizationCategory category = 6;
+  string curator_id = 7;
+  string city_id = 8;
+  string address = 9;
+  string phone = 10;
+  string inn = 11;
+  string additional_information = 12;
+  string applicant_id = 13;
+  string applicant_job_title = 14;
+  string applicant_phone = 15;
+  repeated ru.sportvokrug.common.v1alpha1.FigureSkatingContingent contingent = 16;
+  repeated ru.sportvokrug.common.v1alpha1.FigureSkatingDisciplines disciplines = 17;
+  repeated string responsible = 18;
+  string charter_id = 19;
+  string registration_certificate_id = 20;
+}
+
+message CreateFigureSkatingOrganizationResponse {
+  FigureSkatingOrganization organization = 1;
+}
+
+message UpdateFigureSkatingOrganizationRequest {
+  string organization_id = 1;
+  string full_name = 2;
+  string abbreviation = 3;
+  string website_name = 4;
+  string list_name = 5;
+  google.protobuf.Timestamp founding_date = 6;
+  OrganizationCategory category = 7;
+  string curator_id = 8;
+  string city_id = 9;
+  string address = 10;
+  string phone = 11;
+  string inn = 12;
+  string additional_information = 13;
+  string applicant_id = 14;
+  string applicant_job_title = 15;
+  string applicant_phone = 16;
+  repeated ru.sportvokrug.common.v1alpha1.FigureSkatingContingent contingent = 17;
+  repeated ru.sportvokrug.common.v1alpha1.FigureSkatingDisciplines disciplines = 18;
+  repeated string responsible = 19;
+  string charter_id = 20;
+  string registration_certificate_id = 21;
+}
+
+message UpdateFigureSkatingOrganizationResponse {
+  FigureSkatingOrganization organization = 1;
+}
+
+message ListFigureSkatingOrganizationsRequest {
+  message FigureSkatingOrganizationsQuery {
+    tech.monstrs.queries.v1alpha1.Query.ID id = 1;
+  }
+
+  tech.monstrs.queries.v1alpha1.Query.Pager pager = 1;
+  tech.monstrs.queries.v1alpha1.Query.Order order = 2;
+  tech.monstrs.queries.v1alpha1.Query.Search search = 3;
+  FigureSkatingOrganizationsQuery query = 4;
+}
+
+message ListFigureSkatingOrganizationsResponse {
+  repeated FigureSkatingOrganization organizations = 1;
+  bool has_next_page = 2;
+}
