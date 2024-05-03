@@ -11,6 +11,9 @@
   "dependencies": {
     "@ant-design/cssinjs": "^1.20.0",
     "@ant-design/nextjs-registry": "^1.0.0",
+    "@ui/layout": "workspace:0.0.1",
+    "@ui/logo": "workspace:0.0.1",
+    "@ui/navigation": "workspace:0.0.1",
     "@ui/theme": "workspace:0.0.1",
     "@vanilla-extract/css": "^1.15.1",
     "antd": "^5.16.5"

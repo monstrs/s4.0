@@ -11,4 +11,10 @@ export const colors = {
   red: '#ff4d4f',
   grayTransparent: 'rgba(5, 5, 5, 0.06)',
   blue: 'rgb(0, 147, 238)',
+  commonBlue: 'rgb(0, 174, 239)',
+  lightWhite: 'rgb(254, 254, 254)',
+  mainGreen: 'rgb(27, 83, 102)',
+  mainRed: 'rgb(200, 6, 0)',
+  mainOrange: 'rgb(254, 122, 36)',
+  mainBlue: 'rgb(0, 175, 245)',
 }
