@@ -3,14 +3,9 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import type { Timestamp }                from '@bufbuild/protobuf'
-
-import type { Query_ID }                 from '../../../../tech/monstrs/queries/v1alpha1/queries_pb.js'
-import type { Query_Order }              from '../../../../tech/monstrs/queries/v1alpha1/queries_pb.js'
-import type { Query_Pager }              from '../../../../tech/monstrs/queries/v1alpha1/queries_pb.js'
-import type { Query_Search }             from '../../../../tech/monstrs/queries/v1alpha1/queries_pb.js'
-import type { FigureSkatingContingent }  from '../../common/v1alpha1/common.types_pb.js'
-import type { FigureSkatingDisciplines } from '../../common/v1alpha1/common.types_pb.js'
+import type { Timestamp } from "@bufbuild/protobuf";
+import type { FigureSkatingContingent, FigureSkatingDisciplines } from "../../common/v1alpha1/common.types_pb.js";
+import type { Query_ID, Query_Order, Query_Pager, Query_Search } from "../../../../tech/monstrs/queries/v1alpha1/queries_pb.js";
 
 /**
  * @generated from enum ru.sportvokrug.figure_skatings.v1alpha1.OrganizationCategory
@@ -99,117 +94,118 @@ export abstract class FigureSkatingOrganization {
   /**
    * @generated from field: string id = 1;
    */
-  abstract readonly id: string
+  abstract readonly id: string;
 
   /**
    * @generated from field: string full_name = 2;
    */
-  abstract readonly fullName: string
+  abstract readonly fullName: string;
 
   /**
    * @generated from field: string abbreviation = 3;
    */
-  abstract readonly abbreviation: string
+  abstract readonly abbreviation: string;
 
   /**
    * @generated from field: string website_name = 4;
    */
-  abstract readonly websiteName: string
+  abstract readonly websiteName: string;
 
   /**
    * @generated from field: string list_name = 5;
    */
-  abstract readonly listName: string
+  abstract readonly listName: string;
 
   /**
    * @generated from field: google.protobuf.Timestamp founding_date = 6;
    */
-  abstract readonly foundingDate?: Timestamp
+  abstract readonly foundingDate?: Timestamp;
 
   /**
    * @generated from field: optional ru.sportvokrug.figure_skatings.v1alpha1.OrganizationCategory category = 7;
    */
-  abstract readonly category?: OrganizationCategory
+  abstract readonly category?: OrganizationCategory;
 
   /**
-   * @generated from field: string curator_id = 8;
+   * @generated from field: optional string curator_id = 8;
    */
-  abstract readonly curatorId: string
+  abstract readonly curatorId?: string;
 
   /**
    * @generated from field: string city_id = 9;
    */
-  abstract readonly cityId: string
+  abstract readonly cityId: string;
 
   /**
    * @generated from field: string address = 10;
    */
-  abstract readonly address: string
+  abstract readonly address: string;
 
   /**
    * @generated from field: string phone = 11;
    */
-  abstract readonly phone: string
+  abstract readonly phone: string;
 
   /**
    * @generated from field: string inn = 12;
    */
-  abstract readonly inn: string
+  abstract readonly inn: string;
 
   /**
-   * @generated from field: string additional_information = 13;
+   * @generated from field: optional string additional_information = 13;
    */
-  abstract readonly additionalInformation: string
+  abstract readonly additionalInformation?: string;
 
   /**
    * @generated from field: string applicant_id = 14;
    */
-  abstract readonly applicantId: string
+  abstract readonly applicantId: string;
 
   /**
    * @generated from field: string applicant_job_title = 15;
    */
-  abstract readonly applicantJobTitle: string
+  abstract readonly applicantJobTitle: string;
 
   /**
    * @generated from field: string applicant_phone = 16;
    */
-  abstract readonly applicantPhone: string
+  abstract readonly applicantPhone: string;
 
   /**
    * @generated from field: repeated ru.sportvokrug.common.v1alpha1.FigureSkatingContingent contingent = 17;
    */
-  abstract readonly contingent: FigureSkatingContingent[]
+  abstract readonly contingent: FigureSkatingContingent[];
 
   /**
    * @generated from field: repeated ru.sportvokrug.common.v1alpha1.FigureSkatingDisciplines disciplines = 18;
    */
-  abstract readonly disciplines: FigureSkatingDisciplines[]
+  abstract readonly disciplines: FigureSkatingDisciplines[];
 
   /**
    * @generated from field: ru.sportvokrug.figure_skatings.v1alpha1.OrganizationState state = 19;
    */
-  abstract readonly state: OrganizationState
+  abstract readonly state: OrganizationState;
 
   /**
    * @generated from field: repeated string responsible = 20;
    */
-  abstract readonly responsible: string[]
+  abstract readonly responsible: string[];
 
   /**
    * @generated from field: string charter_id = 21;
    */
-  abstract readonly charterId: string
+  abstract readonly charterId: string;
 
   /**
    * @generated from field: string registration_certificate_id = 22;
    */
-  abstract readonly registrationCertificateId: string
+  abstract readonly registrationCertificateId: string;
 
   /**
    * @generated from field: google.protobuf.Timestamp created_at = 23;
    */
-  abstract readonly createdAt?: Timestamp
+  abstract readonly createdAt?: Timestamp;
+
 }
 
 /**
@@ -219,102 +215,103 @@ export abstract class CreateFigureSkatingOrganizationRequest {
   /**
    * @generated from field: string full_name = 1;
    */
-  abstract readonly fullName: string
+  abstract readonly fullName: string;
 
   /**
    * @generated from field: string abbreviation = 2;
    */
-  abstract readonly abbreviation: string
+  abstract readonly abbreviation: string;
 
   /**
    * @generated from field: string website_name = 3;
    */
-  abstract readonly websiteName: string
+  abstract readonly websiteName: string;
 
   /**
    * @generated from field: string list_name = 4;
    */
-  abstract readonly listName: string
+  abstract readonly listName: string;
 
   /**
    * @generated from field: google.protobuf.Timestamp founding_date = 5;
    */
-  abstract readonly foundingDate?: Timestamp
+  abstract readonly foundingDate?: Timestamp;
 
   /**
    * @generated from field: optional ru.sportvokrug.figure_skatings.v1alpha1.OrganizationCategory category = 6;
    */
-  abstract readonly category?: OrganizationCategory
+  abstract readonly category?: OrganizationCategory;
 
   /**
-   * @generated from field: string curator_id = 7;
+   * @generated from field: optional string curator_id = 7;
    */
-  abstract readonly curatorId: string
+  abstract readonly curatorId?: string;
 
   /**
    * @generated from field: string city_id = 8;
    */
-  abstract readonly cityId: string
+  abstract readonly cityId: string;
 
   /**
    * @generated from field: string address = 9;
    */
-  abstract readonly address: string
+  abstract readonly address: string;
 
   /**
    * @generated from field: string phone = 10;
    */
-  abstract readonly phone: string
+  abstract readonly phone: string;
 
   /**
    * @generated from field: string inn = 11;
    */
-  abstract readonly inn: string
+  abstract readonly inn: string;
 
   /**
-   * @generated from field: string additional_information = 12;
+   * @generated from field: optional string additional_information = 12;
    */
-  abstract readonly additionalInformation: string
+  abstract readonly additionalInformation?: string;
 
   /**
    * @generated from field: string applicant_id = 13;
    */
-  abstract readonly applicantId: string
+  abstract readonly applicantId: string;
 
   /**
    * @generated from field: string applicant_job_title = 14;
    */
-  abstract readonly applicantJobTitle: string
+  abstract readonly applicantJobTitle: string;
 
   /**
    * @generated from field: string applicant_phone = 15;
    */
-  abstract readonly applicantPhone: string
+  abstract readonly applicantPhone: string;
 
   /**
    * @generated from field: repeated ru.sportvokrug.common.v1alpha1.FigureSkatingContingent contingent = 16;
    */
-  abstract readonly contingent: FigureSkatingContingent[]
+  abstract readonly contingent: FigureSkatingContingent[];
 
   /**
    * @generated from field: repeated ru.sportvokrug.common.v1alpha1.FigureSkatingDisciplines disciplines = 17;
    */
-  abstract readonly disciplines: FigureSkatingDisciplines[]
+  abstract readonly disciplines: FigureSkatingDisciplines[];
 
   /**
    * @generated from field: repeated string responsible = 18;
    */
-  abstract readonly responsible: string[]
+  abstract readonly responsible: string[];
 
   /**
    * @generated from field: string charter_id = 19;
    */
-  abstract readonly charterId: string
+  abstract readonly charterId: string;
 
   /**
    * @generated from field: string registration_certificate_id = 20;
    */
-  abstract readonly registrationCertificateId: string
+  abstract readonly registrationCertificateId: string;
+
 }
 
 /**
@@ -324,7 +321,8 @@ export abstract class CreateFigureSkatingOrganizationResponse {
   /**
    * @generated from field: ru.sportvokrug.figure_skatings.v1alpha1.FigureSkatingOrganization organization = 1;
    */
-  abstract readonly organization?: FigureSkatingOrganization
+  abstract readonly organization?: FigureSkatingOrganization;
+
 }
 
 /**
@@ -334,107 +332,108 @@ export abstract class UpdateFigureSkatingOrganizationRequest {
   /**
    * @generated from field: string organization_id = 1;
    */
-  abstract readonly organizationId: string
+  abstract readonly organizationId: string;
 
   /**
    * @generated from field: string full_name = 2;
    */
-  abstract readonly fullName: string
+  abstract readonly fullName: string;
 
   /**
    * @generated from field: string abbreviation = 3;
    */
-  abstract readonly abbreviation: string
+  abstract readonly abbreviation: string;
 
   /**
    * @generated from field: string website_name = 4;
    */
-  abstract readonly websiteName: string
+  abstract readonly websiteName: string;
 
   /**
    * @generated from field: string list_name = 5;
    */
-  abstract readonly listName: string
+  abstract readonly listName: string;
 
   /**
    * @generated from field: google.protobuf.Timestamp founding_date = 6;
    */
-  abstract readonly foundingDate?: Timestamp
+  abstract readonly foundingDate?: Timestamp;
 
   /**
-   * @generated from field: ru.sportvokrug.figure_skatings.v1alpha1.OrganizationCategory category = 7;
+   * @generated from field: optional ru.sportvokrug.figure_skatings.v1alpha1.OrganizationCategory category = 7;
    */
-  abstract readonly category: OrganizationCategory
+  abstract readonly category?: OrganizationCategory;
 
   /**
-   * @generated from field: string curator_id = 8;
+   * @generated from field: optional string curator_id = 8;
    */
-  abstract readonly curatorId: string
+  abstract readonly curatorId?: string;
 
   /**
    * @generated from field: string city_id = 9;
    */
-  abstract readonly cityId: string
+  abstract readonly cityId: string;
 
   /**
    * @generated from field: string address = 10;
    */
-  abstract readonly address: string
+  abstract readonly address: string;
 
   /**
    * @generated from field: string phone = 11;
    */
-  abstract readonly phone: string
+  abstract readonly phone: string;
 
   /**
    * @generated from field: string inn = 12;
    */
-  abstract readonly inn: string
+  abstract readonly inn: string;
 
   /**
-   * @generated from field: string additional_information = 13;
+   * @generated from field: optional string additional_information = 13;
    */
-  abstract readonly additionalInformation: string
+  abstract readonly additionalInformation?: string;
 
   /**
    * @generated from field: string applicant_id = 14;
    */
-  abstract readonly applicantId: string
+  abstract readonly applicantId: string;
 
   /**
    * @generated from field: string applicant_job_title = 15;
    */
-  abstract readonly applicantJobTitle: string
+  abstract readonly applicantJobTitle: string;
 
   /**
    * @generated from field: string applicant_phone = 16;
    */
-  abstract readonly applicantPhone: string
+  abstract readonly applicantPhone: string;
 
   /**
    * @generated from field: repeated ru.sportvokrug.common.v1alpha1.FigureSkatingContingent contingent = 17;
    */
-  abstract readonly contingent: FigureSkatingContingent[]
+  abstract readonly contingent: FigureSkatingContingent[];
 
   /**
    * @generated from field: repeated ru.sportvokrug.common.v1alpha1.FigureSkatingDisciplines disciplines = 18;
    */
-  abstract readonly disciplines: FigureSkatingDisciplines[]
+  abstract readonly disciplines: FigureSkatingDisciplines[];
 
   /**
    * @generated from field: repeated string responsible = 19;
    */
-  abstract readonly responsible: string[]
+  abstract readonly responsible: string[];
 
   /**
    * @generated from field: string charter_id = 20;
    */
-  abstract readonly charterId: string
+  abstract readonly charterId: string;
 
   /**
    * @generated from field: string registration_certificate_id = 21;
    */
-  abstract readonly registrationCertificateId: string
+  abstract readonly registrationCertificateId: string;
+
 }
 
 /**
@@ -444,7 +443,8 @@ export abstract class UpdateFigureSkatingOrganizationResponse {
   /**
    * @generated from field: ru.sportvokrug.figure_skatings.v1alpha1.FigureSkatingOrganization organization = 1;
    */
-  abstract readonly organization?: FigureSkatingOrganization
+  abstract readonly organization?: FigureSkatingOrganization;
+
 }
 
 /**
@@ -454,22 +454,23 @@ export abstract class ListFigureSkatingOrganizationsRequest {
   /**
    * @generated from field: tech.monstrs.queries.v1alpha1.Query.Pager pager = 1;
    */
-  abstract readonly pager?: Query_Pager
+  abstract readonly pager?: Query_Pager;
 
   /**
    * @generated from field: tech.monstrs.queries.v1alpha1.Query.Order order = 2;
    */
-  abstract readonly order?: Query_Order
+  abstract readonly order?: Query_Order;
 
   /**
    * @generated from field: tech.monstrs.queries.v1alpha1.Query.Search search = 3;
    */
-  abstract readonly search?: Query_Search
+  abstract readonly search?: Query_Search;
 
   /**
    * @generated from field: ru.sportvokrug.figure_skatings.v1alpha1.ListFigureSkatingOrganizationsRequest.FigureSkatingOrganizationsQuery query = 4;
    */
-  abstract readonly query?: ListFigureSkatingOrganizationsRequest_FigureSkatingOrganizationsQuery
+  abstract readonly query?: ListFigureSkatingOrganizationsRequest_FigureSkatingOrganizationsQuery;
+
 }
 
 /**
@@ -479,7 +480,8 @@ export abstract class ListFigureSkatingOrganizationsRequest_FigureSkatingOrganiz
   /**
    * @generated from field: tech.monstrs.queries.v1alpha1.Query.ID id = 1;
    */
-  abstract readonly id?: Query_ID
+  abstract readonly id?: Query_ID;
+
 }
 
 /**
@@ -489,10 +491,12 @@ export abstract class ListFigureSkatingOrganizationsResponse {
   /**
    * @generated from field: repeated ru.sportvokrug.figure_skatings.v1alpha1.FigureSkatingOrganization organizations = 1;
    */
-  abstract readonly organizations: FigureSkatingOrganization[]
+  abstract readonly organizations: FigureSkatingOrganization[];
 
   /**
    * @generated from field: bool has_next_page = 2;
    */
-  abstract readonly hasNextPage: boolean
+  abstract readonly hasNextPage: boolean;
+
 }
+

@@ -25,7 +25,7 @@ export class FigureSkatingOrganization extends AggregateRoot {
 
   #category!: OrganizationCategory
 
-  #curatorId!: string
+  #curatorId?: string
 
   #cityId!: string
 
@@ -35,7 +35,7 @@ export class FigureSkatingOrganization extends AggregateRoot {
 
   #inn!: string
 
-  #additionalInformation!: string
+  #additionalInformation?: string
 
   #applicantId!: string
 
@@ -113,11 +113,11 @@ export class FigureSkatingOrganization extends AggregateRoot {
     this.#category = category
   }
 
-  get curatorId(): string {
+  get curatorId(): string | undefined {
     return this.#curatorId
   }
 
-  private set curatorId(curatorId: string) {
+  private set curatorId(curatorId: string | undefined) {
     this.#curatorId = curatorId
   }
 
@@ -153,11 +153,11 @@ export class FigureSkatingOrganization extends AggregateRoot {
     this.#inn = inn
   }
 
-  get additionalInformation(): string {
+  get additionalInformation(): string | undefined {
     return this.#additionalInformation
   }
 
-  private set additionalInformation(additionalInformation: string) {
+  private set additionalInformation(additionalInformation: string | undefined) {
     this.#additionalInformation = additionalInformation
   }
 
@@ -250,12 +250,10 @@ export class FigureSkatingOrganization extends AggregateRoot {
     @Against('listName').Empty() listName: string,
     @Against('foundingDate').NotInstance(Date) foundingDate: Date,
     @Against('category').NotEnum(OrganizationCategory) category: OrganizationCategory,
-    @Against('curatorId').NotUUID(4) curatorId: string,
     @Against('cityId').NotUUID(4) cityId: string,
     @Against('address').Empty() address: string,
     @Against('phone').Empty() phone: string,
     @Against('inn').Empty() inn: string,
-    @Against('additionalInformation').Empty() additionalInformation: string,
     @Against('applicationId').NotUUID(4) applicantId: string,
     @Against('applicantJobTitle').Empty() applicantJobTitle: string,
     @Against('applicantPhone').Empty() applicantPhone: string,
@@ -265,7 +263,9 @@ export class FigureSkatingOrganization extends AggregateRoot {
     disciplines: Array<FigureSkatingDisciplines>,
     @Against('responsible').Each.NotUUID(4) responsible: Array<string>,
     @Against('charterId').NotUUID(4) charterId: string,
-    @Against('registrationCertificateId').NotUUID(4) registrationCertificateId: string
+    @Against('registrationCertificateId').NotUUID(4) registrationCertificateId: string,
+    @Against('curatorId').Optional.NotUUID(4) curatorId?: string,
+    additionalInformation?: string,
   ): FigureSkatingOrganization {
     this.apply(
       new FigureSkatingOrganizationCreatedEvent(
@@ -276,12 +276,10 @@ export class FigureSkatingOrganization extends AggregateRoot {
         listName,
         foundingDate,
         category,
-        curatorId,
         cityId,
         address,
         phone,
         inn,
-        additionalInformation,
         applicantId,
         applicantJobTitle,
         applicantPhone,
@@ -291,7 +289,9 @@ export class FigureSkatingOrganization extends AggregateRoot {
         responsible,
         charterId,
         registrationCertificateId,
-        new Date()
+        new Date(),
+        curatorId,
+        additionalInformation,
       )
     )
 
@@ -306,12 +306,10 @@ export class FigureSkatingOrganization extends AggregateRoot {
     @Against('listName').Empty() listName: string,
     @Against('foundingDate').NotInstance(Date) foundingDate: Date,
     @Against('category').NotEnum(OrganizationCategory) category: OrganizationCategory,
-    @Against('curatorId').NotUUID(4) curatorId: string,
     @Against('cityId').NotUUID(4) cityId: string,
     @Against('address').Empty() address: string,
     @Against('phone').Empty() phone: string,
     @Against('inn').Empty() inn: string,
-    @Against('additionalInformation').Empty() additionalInformation: string,
     @Against('applicationId').NotUUID(4) applicantId: string,
     @Against('applicantJobTitle').Empty() applicantJobTitle: string,
     @Against('applicantPhone').Empty() applicantPhone: string,
@@ -321,7 +319,9 @@ export class FigureSkatingOrganization extends AggregateRoot {
     disciplines: Array<FigureSkatingDisciplines>,
     @Against('responsible').Each.NotUUID(4) responsible: Array<string>,
     @Against('charterId').NotUUID(4) charterId: string,
-    @Against('registrationCertificateId').NotUUID(4) registrationCertificateId: string
+    @Against('registrationCertificateId').NotUUID(4) registrationCertificateId: string,
+    @Against('curatorId').Optional.NotUUID(4) curatorId?: string,
+    additionalInformation?: string,
   ): FigureSkatingOrganization {
     this.apply(
       new FigureSkatingOrganizationUpdatedEvent(
@@ -332,12 +332,10 @@ export class FigureSkatingOrganization extends AggregateRoot {
         listName,
         foundingDate,
         category,
-        curatorId,
         cityId,
         address,
         phone,
         inn,
-        additionalInformation,
         applicantId,
         applicantJobTitle,
         applicantPhone,
@@ -346,7 +344,9 @@ export class FigureSkatingOrganization extends AggregateRoot {
         OrganizationState.CREATED,
         responsible,
         charterId,
-        registrationCertificateId
+        registrationCertificateId,
+        curatorId,
+        additionalInformation,
       )
     )
 

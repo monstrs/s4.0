@@ -1,3 +1,5 @@
+'use client'
+
 import { Checkbox } from 'antd'
 
 const CheckboxGroup = Checkbox.Group

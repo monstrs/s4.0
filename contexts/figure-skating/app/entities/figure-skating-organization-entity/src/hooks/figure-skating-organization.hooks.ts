@@ -1,12 +1,14 @@
+'use client'
+
 import type { FigureSkatingDisciplines }                  from '../enums/index.js'
 import type { ChangeFigureSkatingOrganizationFieldProps } from '../events/index.js'
-import type { FigureSkatingOrganizationErrors }           from '../interfaces/index.js'
+import type { FigureSkatingOrganization, FigureSkatingOrganizationErrors }           from '../interfaces/index.js'
 import type { FigureSkatingOrganizationFields }           from '../interfaces/index.js'
 
 import { useUnit }                                        from 'effector-react'
 import { useCallback }                                    from 'react'
 
-import { $figureSkatingOrganizationErrors }               from '../stores/index.js'
+import { $figureSkatingOrganizationErrors, $figureSkatingOrganizations }               from '../stores/index.js'
 import { $figureSkatingOrganizationFields }               from '../stores/index.js'
 import { changeFigureSkatingOrganizationFieldEvent }      from '../events/index.js'
 
@@ -86,3 +88,5 @@ export const useChangeFigureSkatingOrganizationFields = (): {
     onChangeDisciplines,
   }
 }
+
+export const useFigureSkatingOrganizations = (): { organizations: Array<FigureSkatingOrganization>, hasNext: boolean } => useUnit($figureSkatingOrganizations)

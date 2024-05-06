@@ -1,0 +1,32 @@
+{
+  "name": "@figure-skating/figure-skating-organizations-list-page",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": "./src/index.ts"
+  },
+  "main": "src/index.ts",
+  "dependencies": {
+    "@figure-skating/figure-skating-organizations-list-widget": "workspace:0.0.1",
+    "@ui/layout": "workspace:0.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.1",
+    "effector": "^23.2.1",
+    "effector-react": "^23.2.0",
+    "next": "^14.2.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-intl": "^6.6.5"
+  },
+  "peerDependencies": {
+    "effector": "^23",
+    "effector-react": "^23",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-intl": "^6"
+  }
+}

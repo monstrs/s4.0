@@ -40,8 +40,8 @@ export abstract class BaseOrganization extends BaseEntity {
   })
   category: OrganizationCategory = OrganizationCategory.OTHER
 
-  @Property({ type: 'uuid' })
-  curatorId!: string
+  @Property({ type: 'uuid', nullable: true })
+  curatorId?: string
 
   @Property({ type: 'uuid' })
   cityId!: string
@@ -55,8 +55,8 @@ export abstract class BaseOrganization extends BaseEntity {
   @Property()
   inn!: string
 
-  @Property()
-  additionalInformation!: string
+  @Property({ nullable: true })
+  additionalInformation?: string
 
   @Property({ type: 'uuid' })
   applicantId!: string

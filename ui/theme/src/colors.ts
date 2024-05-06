@@ -17,4 +17,6 @@ export const colors = {
   mainRed: 'rgb(200, 6, 0)',
   mainOrange: 'rgb(254, 122, 36)',
   mainBlue: 'rgb(0, 175, 245)',
+  sGray: 'rgb(68, 84, 106)',
+  mGray: 'rgb(140, 140, 140)',
 }

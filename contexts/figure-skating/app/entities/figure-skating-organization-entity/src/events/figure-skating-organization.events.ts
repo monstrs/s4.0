@@ -1,5 +1,5 @@
 import type { FigureSkatingDisciplines }        from '../enums/index.js'
-import type { FigureSkatingOrganizationErrors } from '../interfaces/index.js'
+import type { FigureSkatingOrganizationErrors, FigureSkatingOrganization } from '../interfaces/index.js'
 
 import { createEvent }                          from 'effector'
 
@@ -21,3 +21,6 @@ export const changeFigureSkatingOrganizationFieldEvent =
 
 export const setFigureSkatingOrganizationErrorsEvent =
   createEvent<FigureSkatingOrganizationErrors>()
+
+export const figureSkatingOrganizationsLoadedEvent =
+  createEvent<{ organizations: Array<FigureSkatingOrganization>, hasNext: boolean }>()

@@ -13,12 +13,10 @@ export class FigureSkatingOrganizationUpdatedEvent {
     public readonly listName: string,
     public readonly foundingDate: Date,
     public readonly category: OrganizationCategory,
-    public readonly curatorId: string,
     public readonly cityId: string,
     public readonly address: string,
     public readonly phone: string,
     public readonly inn: string,
-    public readonly additionalInformation: string,
     public readonly applicantId: string,
     public readonly applicantJobTitle: string,
     public readonly applicantPhone: string,
@@ -27,6 +25,8 @@ export class FigureSkatingOrganizationUpdatedEvent {
     public readonly state: OrganizationState,
     public readonly responsible: Array<string>,
     public readonly charterId: string,
-    public readonly registrationCertificateId: string
+    public readonly registrationCertificateId: string,
+    public readonly curatorId?: string,
+    public readonly additionalInformation?: string,
   ) {}
 }

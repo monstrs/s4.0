@@ -26,12 +26,10 @@ export class UpdateFigureSkatingOrganizationCommandHandler
         command.listName,
         command.foundingDate,
         command.category,
-        command.curatorId,
         command.cityId,
         command.address,
         command.phone,
         command.inn,
-        command.additionalInformation,
         command.applicantId,
         command.applicantJobTitle,
         command.applicantPhone,
@@ -39,7 +37,9 @@ export class UpdateFigureSkatingOrganizationCommandHandler
         command.disciplines,
         command.responsible,
         command.charterId,
-        command.registrationCertificateId
+        command.registrationCertificateId,
+        command.curatorId,
+        command.additionalInformation,
       )
     )
   }

@@ -1,5 +1,5 @@
 {
-  "name": "@organizations/create-figure-skating-organization-widget",
+  "name": "@figure-skating/create-figure-skating-organization-widget",
   "version": "0.0.1",
   "private": true,
   "license": "MIT",
@@ -10,9 +10,9 @@
   },
   "main": "src/index.ts",
   "dependencies": {
-    "@organizations/edit-organization-feature": "workspace:0.0.1",
-    "@organizations/figure-skating-organization-entity": "workspace:0.0.1",
-    "@organizations/organization-entity": "workspace:0.0.1",
+    "@figure-skating/edit-organization-feature": "workspace:0.0.1",
+    "@figure-skating/figure-skating-organization-entity": "workspace:0.0.1",
+    "@figure-skating/organization-entity": "workspace:0.0.1",
     "@ui/button": "workspace:0.0.1",
     "@ui/card": "workspace:0.0.1",
     "@ui/layout": "workspace:0.0.1",

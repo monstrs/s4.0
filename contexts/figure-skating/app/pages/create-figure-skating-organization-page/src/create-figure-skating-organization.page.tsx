@@ -3,7 +3,7 @@
 import { ReactElement }                          from 'react'
 import React                                     from 'react'
 
-import { CreateFigureSkatingOrganizationWidget } from '@organizations/create-figure-skating-organization-widget'
+import { CreateFigureSkatingOrganizationWidget } from '@figure-skating/create-figure-skating-organization-widget'
 import { Layout }                                from '@ui/layout'
 import { Row }                                   from '@ui/layout'
 

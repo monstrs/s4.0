@@ -31,7 +31,7 @@ export const RootLayout = ({ children }: RootLayoutProps): ReactElement => (
             <Layout>
               <Navigation>
                 <Row width={['100%', '114x', '114x']}>
-                  <Layout ml={['0x', '2x', '2x']}>
+                  <Layout ml='2x' mr='2x'>
                     <Logo />
                   </Layout>
                 </Row>

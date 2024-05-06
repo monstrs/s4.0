@@ -1,6 +1,6 @@
 import type { CreateFigureSkatingOrganizationRequest } from '@figure-skating/rpc/interfaces'
 
-import { IsNotEmpty }                                  from 'class-validator'
+import { IsNotEmpty, IsOptional }                                  from 'class-validator'
 import { IsPhoneNumber }                               from 'class-validator'
 import { IsUUID }                                      from 'class-validator'
 import { IsEnum }                                      from 'class-validator'
@@ -44,8 +44,9 @@ export class CreateFigureSkatingOrganizationPayload {
     return this.request.category!
   }
 
+  @IsOptional()
   @IsUUID(4)
-  get curatorId(): string {
+  get curatorId(): string | undefined {
     return this.request.curatorId
   }
 
@@ -69,8 +70,7 @@ export class CreateFigureSkatingOrganizationPayload {
     return this.request.inn
   }
 
-  @IsNotEmpty()
-  get additionalInformation(): string {
+  get additionalInformation(): string | undefined {
     return this.request.additionalInformation
   }
 

@@ -1,4 +1,5 @@
 export const fontSizes = {
+  puny: '13px',
   tiny: '15px',
   small: '18px',
   little: '19px',

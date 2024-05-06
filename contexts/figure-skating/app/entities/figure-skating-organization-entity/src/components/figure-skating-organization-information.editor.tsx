@@ -75,7 +75,12 @@ export const FigureSkatingOrganizationInformationEditor = ({
             <Select<string>
               id='organization-information-city'
               style={{ width: '100%' }}
-              options={[]}
+              options={[
+                {
+                  label: 'Москва',
+                  value: '8bff216f-b729-483a-8a60-b7abd0eb37e3'
+                }
+              ]}
               value={cityId}
               status={errors.cityId && 'error'}
               onChange={onChangeCityId}

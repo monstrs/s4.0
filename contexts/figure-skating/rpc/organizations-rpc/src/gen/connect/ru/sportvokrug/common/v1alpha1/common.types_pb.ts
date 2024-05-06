@@ -3,7 +3,7 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { proto3 } from '@bufbuild/protobuf'
+import { proto3 } from "@bufbuild/protobuf";
 
 /**
  * @generated from enum ru.sportvokrug.common.v1alpha1.FigureSkatingContingent
@@ -20,14 +20,10 @@ export enum FigureSkatingContingent {
   ADULTS = 1,
 }
 // Retrieve enum metadata with: proto3.getEnumType(FigureSkatingContingent)
-proto3.util.setEnumType(
-  FigureSkatingContingent,
-  'ru.sportvokrug.common.v1alpha1.FigureSkatingContingent',
-  [
-    { no: 0, name: 'CHILDREN' },
-    { no: 1, name: 'ADULTS' },
-  ]
-)
+proto3.util.setEnumType(FigureSkatingContingent, "ru.sportvokrug.common.v1alpha1.FigureSkatingContingent", [
+  { no: 0, name: "CHILDREN" },
+  { no: 1, name: "ADULTS" },
+]);
 
 /**
  * @generated from enum ru.sportvokrug.common.v1alpha1.FigureSkatingDisciplines
@@ -64,15 +60,12 @@ export enum FigureSkatingDisciplines {
   OTHER = 5,
 }
 // Retrieve enum metadata with: proto3.getEnumType(FigureSkatingDisciplines)
-proto3.util.setEnumType(
-  FigureSkatingDisciplines,
-  'ru.sportvokrug.common.v1alpha1.FigureSkatingDisciplines',
-  [
-    { no: 0, name: 'SINGLE' },
-    { no: 1, name: 'PAIR' },
-    { no: 2, name: 'SYNCHRONOUS' },
-    { no: 3, name: 'DANCE' },
-    { no: 4, name: 'COLLECTIVE' },
-    { no: 5, name: 'OTHER' },
-  ]
-)
+proto3.util.setEnumType(FigureSkatingDisciplines, "ru.sportvokrug.common.v1alpha1.FigureSkatingDisciplines", [
+  { no: 0, name: "SINGLE" },
+  { no: 1, name: "PAIR" },
+  { no: 2, name: "SYNCHRONOUS" },
+  { no: 3, name: "DANCE" },
+  { no: 4, name: "COLLECTIVE" },
+  { no: 5, name: "OTHER" },
+]);
+

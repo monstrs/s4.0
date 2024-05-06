@@ -37,7 +37,7 @@ export class FigureSkatingOrganizationSerializer extends rpc.FigureSkatingOrgani
     return this.serializable.category
   }
 
-  get curatorId(): string {
+  get curatorId(): string | undefined {
     return this.serializable.curatorId
   }
 
@@ -57,7 +57,7 @@ export class FigureSkatingOrganizationSerializer extends rpc.FigureSkatingOrgani
     return this.serializable.inn
   }
 
-  get additionalInformation(): string {
+  get additionalInformation(): string | undefined {
     return this.serializable.additionalInformation
   }
 

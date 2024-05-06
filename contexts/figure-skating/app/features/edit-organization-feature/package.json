@@ -1,5 +1,5 @@
 {
-  "name": "@organizations/edit-organization-feature",
+  "name": "@figure-skating/edit-organization-feature",
   "version": "0.0.1",
   "private": true,
   "license": "MIT",
@@ -13,8 +13,8 @@
     "@app/operations": "workspace:0.0.1"
   },
   "devDependencies": {
-    "@organizations/figure-skating-organization-entity": "workspace:0.0.1",
-    "@organizations/organization-entity": "workspace:0.0.1",
+    "@figure-skating/figure-skating-organization-entity": "workspace:0.0.1",
+    "@figure-skating/organization-entity": "workspace:0.0.1",
     "@types/react": "^18.3.1",
     "effector": "^23.2.1",
     "effector-react": "^23.2.0",
@@ -22,8 +22,8 @@
     "react-dom": "^18.3.1"
   },
   "peerDependencies": {
-    "@organizations/figure-skating-organization-entity": "workspace:0.0.1",
-    "@organizations/organization-entity": "workspace:0.0.1",
+    "@figure-skating/figure-skating-organization-entity": "workspace:0.0.1",
+    "@figure-skating/organization-entity": "workspace:0.0.1",
     "effector": "^23",
     "effector-react": "^23",
     "react": "^18",

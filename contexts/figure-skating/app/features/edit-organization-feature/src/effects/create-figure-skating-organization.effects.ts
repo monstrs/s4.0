@@ -5,10 +5,10 @@ import { createEffect }                                 from 'effector'
 import { attach }                                       from 'effector'
 import { sample }                                       from 'effector'
 
-import { $figureSkatingOrganizationFields }             from '@organizations/figure-skating-organization-entity'
-import { $organizationFields }                          from '@organizations/organization-entity'
-import { setFigureSkatingOrganizationErrorsEvent }      from '@organizations/figure-skating-organization-entity'
-import { setOrganizationErrorsEvent }                   from '@organizations/organization-entity'
+import { $figureSkatingOrganizationFields }             from '@figure-skating/figure-skating-organization-entity'
+import { $organizationFields }                          from '@figure-skating/organization-entity'
+import { setFigureSkatingOrganizationErrorsEvent }      from '@figure-skating/figure-skating-organization-entity'
+import { setOrganizationErrorsEvent }                   from '@figure-skating/organization-entity'
 import operations                                       from '@app/operations'
 
 export const createFigureSkatingOrganizationFx = createEffect(async (

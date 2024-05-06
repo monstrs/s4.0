@@ -1,0 +1,12 @@
+query loadFigureSkatingOrganizations {
+  organizations {
+    figureSkating {
+      organizations {
+        id
+        fullName
+        abbreviation
+        category
+      }
+    }
+  }
+}

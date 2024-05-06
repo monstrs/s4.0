@@ -63,12 +63,10 @@ export class FigureSkatingServiceController implements ServiceImpl<typeof Figure
       payload.listName,
       payload.foundingDate,
       payload.category,
-      payload.curatorId,
       payload.cityId,
       payload.address,
       payload.phone,
       payload.inn,
-      payload.additionalInformation,
       payload.applicantId,
       payload.applicantJobTitle,
       payload.applicantPhone,
@@ -76,7 +74,9 @@ export class FigureSkatingServiceController implements ServiceImpl<typeof Figure
       payload.disciplines,
       payload.responsible,
       payload.charterId,
-      payload.registrationCertificateId
+      payload.registrationCertificateId,
+      payload.curatorId,
+      payload.additionalInformation,
     )
 
     await this.commandBus.execute(command)
@@ -105,12 +105,10 @@ export class FigureSkatingServiceController implements ServiceImpl<typeof Figure
       payload.listName,
       payload.foundingDate,
       payload.category,
-      payload.curatorId,
       payload.cityId,
       payload.address,
       payload.phone,
       payload.inn,
-      payload.additionalInformation,
       payload.applicantId,
       payload.applicantJobTitle,
       payload.applicantPhone,
@@ -118,7 +116,9 @@ export class FigureSkatingServiceController implements ServiceImpl<typeof Figure
       payload.disciplines,
       payload.responsible,
       payload.charterId,
-      payload.registrationCertificateId
+      payload.registrationCertificateId,
+      payload.curatorId,
+      payload.additionalInformation,
     )
 
     await this.commandBus.execute(command)
@@ -131,6 +131,7 @@ export class FigureSkatingServiceController implements ServiceImpl<typeof Figure
   }
 
   @ConnectRpcMethod()
+  @CreateRequestContext()
   async listFigureSkatingOrganizations(
     request: ListFigureSkatingOrganizationsRequest
   ): Promise<PartialMessage<ListFigureSkatingOrganizationsResponse>> {

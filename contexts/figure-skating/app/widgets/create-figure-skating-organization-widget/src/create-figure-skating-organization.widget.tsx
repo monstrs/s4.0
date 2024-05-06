@@ -1,22 +1,23 @@
 import type { ReactElement }                          from 'react'
 
-import React                                          from 'react'
+import React, { useEffect }                                          from 'react'
+import { useRouter }        from 'next/navigation.js'
 
-import { FigureSkatingOrganizationInformationEditor } from '@organizations/figure-skating-organization-entity'
-import { OrganizationEditor }                         from '@organizations/organization-entity'
+import { FigureSkatingOrganizationInformationEditor } from '@figure-skating/figure-skating-organization-entity'
+import { OrganizationEditor }                         from '@figure-skating/organization-entity'
 import { Button }                                     from '@ui/button'
 import { Card }                                       from '@ui/card'
 import { Column }                                     from '@ui/layout'
 import { Row }                                        from '@ui/layout'
 import { Layout }                                     from '@ui/layout'
 import { Tabs }                                       from '@ui/tabs'
-import { useCreateFigureSkatingOrganization }         from '@organizations/edit-organization-feature'
-import { useFigureSkatingOrganizationFields }         from '@organizations/figure-skating-organization-entity'
-import { useChangeFigureSkatingOrganizationFields }   from '@organizations/figure-skating-organization-entity'
-import { useFigureSkatingOrganizationErrors }         from '@organizations/figure-skating-organization-entity'
-import { useOrganizationFields }                      from '@organizations/organization-entity'
-import { useChangeOrganizationFields }                from '@organizations/organization-entity'
-import { useOrganizationErrors }                      from '@organizations/organization-entity'
+import { useCreateFigureSkatingOrganization, useCreateFigureSkatingOrganizationComplete }         from '@figure-skating/edit-organization-feature'
+import { useFigureSkatingOrganizationFields }         from '@figure-skating/figure-skating-organization-entity'
+import { useChangeFigureSkatingOrganizationFields }   from '@figure-skating/figure-skating-organization-entity'
+import { useFigureSkatingOrganizationErrors }         from '@figure-skating/figure-skating-organization-entity'
+import { useOrganizationFields }                      from '@figure-skating/organization-entity'
+import { useChangeOrganizationFields }                from '@figure-skating/organization-entity'
+import { useOrganizationErrors }                      from '@figure-skating/organization-entity'
 
 export const CreateFigureSkatingOrganizationWidget = (): ReactElement => {
   const organizationfields = useOrganizationFields()
@@ -26,6 +27,14 @@ export const CreateFigureSkatingOrganizationWidget = (): ReactElement => {
   const figureSkatingOrganizationErrors = useFigureSkatingOrganizationErrors()
   const organizationErrors = useOrganizationErrors()
   const createFigureSkatingOrganization = useCreateFigureSkatingOrganization()
+  const createFigureSkatingOrganizationComplete = useCreateFigureSkatingOrganizationComplete()
+  const router = useRouter()
+
+  useEffect(() => {
+    if (createFigureSkatingOrganizationComplete) {
+      router.push('/sports/figure-skating/organizations')
+    }
+  }, [router, createFigureSkatingOrganizationComplete])
 
   return (
     <Column>

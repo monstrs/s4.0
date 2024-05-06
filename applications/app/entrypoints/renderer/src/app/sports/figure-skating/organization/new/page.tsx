@@ -1,1 +1,1 @@
-export { CreateFigureSkatingOrganizationPage as default } from '@organizations/create-figure-skating-organization-page'
+export { CreateFigureSkatingOrganizationPage as default } from '@figure-skating/create-figure-skating-organization-page'
