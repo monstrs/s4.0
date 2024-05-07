@@ -3,10 +3,23 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import type { BinaryReadOptions, FieldList, JsonReadOptions, JsonValue, PartialMessage, PlainMessage } from "@bufbuild/protobuf";
-import { Message, proto3, Timestamp } from "@bufbuild/protobuf";
-import { FigureSkatingContingent, FigureSkatingDisciplines } from "../../common/v1alpha1/common.types_pb.js";
-import { Query_ID, Query_Order, Query_Pager, Query_Search } from "../../../../tech/monstrs/queries/v1alpha1/queries_pb.js";
+import type { BinaryReadOptions }   from '@bufbuild/protobuf'
+import type { FieldList }           from '@bufbuild/protobuf'
+import type { JsonReadOptions }     from '@bufbuild/protobuf'
+import type { JsonValue }           from '@bufbuild/protobuf'
+import type { PartialMessage }      from '@bufbuild/protobuf'
+import type { PlainMessage }        from '@bufbuild/protobuf'
+
+import { Message }                  from '@bufbuild/protobuf'
+import { Timestamp }                from '@bufbuild/protobuf'
+import { proto3 }                   from '@bufbuild/protobuf'
+
+import { Query_ID }                 from '../../../../tech/monstrs/queries/v1alpha1/queries_pb.js'
+import { Query_Order }              from '../../../../tech/monstrs/queries/v1alpha1/queries_pb.js'
+import { Query_Pager }              from '../../../../tech/monstrs/queries/v1alpha1/queries_pb.js'
+import { Query_Search }             from '../../../../tech/monstrs/queries/v1alpha1/queries_pb.js'
+import { FigureSkatingContingent }  from '../../common/v1alpha1/common.types_pb.js'
+import { FigureSkatingDisciplines } from '../../common/v1alpha1/common.types_pb.js'
 
 /**
  * @generated from enum ru.sportvokrug.figure_skatings.v1alpha1.OrganizationCategory
@@ -33,12 +46,16 @@ export enum OrganizationCategory {
   OTHER = 3,
 }
 // Retrieve enum metadata with: proto3.getEnumType(OrganizationCategory)
-proto3.util.setEnumType(OrganizationCategory, "ru.sportvokrug.figure_skatings.v1alpha1.OrganizationCategory", [
-  { no: 0, name: "SCHOOL" },
-  { no: 1, name: "FEDERATION" },
-  { no: 2, name: "SOCIETY" },
-  { no: 3, name: "OTHER" },
-]);
+proto3.util.setEnumType(
+  OrganizationCategory,
+  'ru.sportvokrug.figure_skatings.v1alpha1.OrganizationCategory',
+  [
+    { no: 0, name: 'SCHOOL' },
+    { no: 1, name: 'FEDERATION' },
+    { no: 2, name: 'SOCIETY' },
+    { no: 3, name: 'OTHER' },
+  ]
+)
 
 /**
  * @generated from enum ru.sportvokrug.figure_skatings.v1alpha1.OrganizationState
@@ -95,18 +112,22 @@ export enum OrganizationState {
   ACTUALIZATION_CHECK = 9,
 }
 // Retrieve enum metadata with: proto3.getEnumType(OrganizationState)
-proto3.util.setEnumType(OrganizationState, "ru.sportvokrug.figure_skatings.v1alpha1.OrganizationState", [
-  { no: 0, name: "CREATED" },
-  { no: 1, name: "WAIT_REVISE" },
-  { no: 2, name: "CANCELED" },
-  { no: 3, name: "DENIED" },
-  { no: 4, name: "IN_REGISTRY" },
-  { no: 5, name: "NOT_IN_REGISTRY" },
-  { no: 6, name: "DOES_NOT_EXIST" },
-  { no: 7, name: "ACTUALIZATION" },
-  { no: 8, name: "ACTUALIZATION_FAILED" },
-  { no: 9, name: "ACTUALIZATION_CHECK" },
-]);
+proto3.util.setEnumType(
+  OrganizationState,
+  'ru.sportvokrug.figure_skatings.v1alpha1.OrganizationState',
+  [
+    { no: 0, name: 'CREATED' },
+    { no: 1, name: 'WAIT_REVISE' },
+    { no: 2, name: 'CANCELED' },
+    { no: 3, name: 'DENIED' },
+    { no: 4, name: 'IN_REGISTRY' },
+    { no: 5, name: 'NOT_IN_REGISTRY' },
+    { no: 6, name: 'DOES_NOT_EXIST' },
+    { no: 7, name: 'ACTUALIZATION' },
+    { no: 8, name: 'ACTUALIZATION_FAILED' },
+    { no: 9, name: 'ACTUALIZATION_CHECK' },
+  ]
+)
 
 /**
  * @generated from message ru.sportvokrug.figure_skatings.v1alpha1.FigureSkatingOrganization
@@ -115,165 +136,201 @@ export class FigureSkatingOrganization extends Message<FigureSkatingOrganization
   /**
    * @generated from field: string id = 1;
    */
-  id = "";
+  id = ''
 
   /**
    * @generated from field: string full_name = 2;
    */
-  fullName = "";
+  fullName = ''
 
   /**
    * @generated from field: string abbreviation = 3;
    */
-  abbreviation = "";
+  abbreviation = ''
 
   /**
    * @generated from field: string website_name = 4;
    */
-  websiteName = "";
+  websiteName = ''
 
   /**
    * @generated from field: string list_name = 5;
    */
-  listName = "";
+  listName = ''
 
   /**
    * @generated from field: google.protobuf.Timestamp founding_date = 6;
    */
-  foundingDate?: Timestamp;
+  foundingDate?: Timestamp
 
   /**
    * @generated from field: optional ru.sportvokrug.figure_skatings.v1alpha1.OrganizationCategory category = 7;
    */
-  category?: OrganizationCategory;
+  category?: OrganizationCategory
 
   /**
    * @generated from field: optional string curator_id = 8;
    */
-  curatorId?: string;
+  curatorId?: string
 
   /**
    * @generated from field: string city_id = 9;
    */
-  cityId = "";
+  cityId = ''
 
   /**
    * @generated from field: string address = 10;
    */
-  address = "";
+  address = ''
 
   /**
    * @generated from field: string phone = 11;
    */
-  phone = "";
+  phone = ''
 
   /**
    * @generated from field: string inn = 12;
    */
-  inn = "";
+  inn = ''
 
   /**
    * @generated from field: optional string additional_information = 13;
    */
-  additionalInformation?: string;
+  additionalInformation?: string
 
   /**
    * @generated from field: string applicant_id = 14;
    */
-  applicantId = "";
+  applicantId = ''
 
   /**
    * @generated from field: string applicant_job_title = 15;
    */
-  applicantJobTitle = "";
+  applicantJobTitle = ''
 
   /**
    * @generated from field: string applicant_phone = 16;
    */
-  applicantPhone = "";
+  applicantPhone = ''
 
   /**
    * @generated from field: repeated ru.sportvokrug.common.v1alpha1.FigureSkatingContingent contingent = 17;
    */
-  contingent: FigureSkatingContingent[] = [];
+  contingent: FigureSkatingContingent[] = []
 
   /**
    * @generated from field: repeated ru.sportvokrug.common.v1alpha1.FigureSkatingDisciplines disciplines = 18;
    */
-  disciplines: FigureSkatingDisciplines[] = [];
+  disciplines: FigureSkatingDisciplines[] = []
 
   /**
    * @generated from field: ru.sportvokrug.figure_skatings.v1alpha1.OrganizationState state = 19;
    */
-  state = OrganizationState.CREATED;
+  state = OrganizationState.CREATED
 
   /**
    * @generated from field: repeated string responsible = 20;
    */
-  responsible: string[] = [];
+  responsible: string[] = []
 
   /**
    * @generated from field: string charter_id = 21;
    */
-  charterId = "";
+  charterId = ''
 
   /**
    * @generated from field: string registration_certificate_id = 22;
    */
-  registrationCertificateId = "";
+  registrationCertificateId = ''
 
   /**
    * @generated from field: google.protobuf.Timestamp created_at = 23;
    */
-  createdAt?: Timestamp;
+  createdAt?: Timestamp
 
   constructor(data?: PartialMessage<FigureSkatingOrganization>) {
-    super();
-    proto3.util.initPartial(data, this);
+    super()
+    proto3.util.initPartial(data, this)
   }
 
-  static readonly runtime: typeof proto3 = proto3;
-  static readonly typeName = "ru.sportvokrug.figure_skatings.v1alpha1.FigureSkatingOrganization";
+  static readonly runtime: typeof proto3 = proto3
+  static readonly typeName = 'ru.sportvokrug.figure_skatings.v1alpha1.FigureSkatingOrganization'
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 2, name: "full_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 3, name: "abbreviation", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 4, name: "website_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 5, name: "list_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 6, name: "founding_date", kind: "message", T: Timestamp },
-    { no: 7, name: "category", kind: "enum", T: proto3.getEnumType(OrganizationCategory), opt: true },
-    { no: 8, name: "curator_id", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
-    { no: 9, name: "city_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 11, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "inn", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 13, name: "additional_information", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
-    { no: 14, name: "applicant_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 15, name: "applicant_job_title", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 16, name: "applicant_phone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 17, name: "contingent", kind: "enum", T: proto3.getEnumType(FigureSkatingContingent), repeated: true },
-    { no: 18, name: "disciplines", kind: "enum", T: proto3.getEnumType(FigureSkatingDisciplines), repeated: true },
-    { no: 19, name: "state", kind: "enum", T: proto3.getEnumType(OrganizationState) },
-    { no: 20, name: "responsible", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
-    { no: 21, name: "charter_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "registration_certificate_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 23, name: "created_at", kind: "message", T: Timestamp },
-  ]);
+    { no: 1, name: 'id', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: 'full_name', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: 'abbreviation', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    { no: 4, name: 'website_name', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    { no: 5, name: 'list_name', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    { no: 6, name: 'founding_date', kind: 'message', T: Timestamp },
+    {
+      no: 7,
+      name: 'category',
+      kind: 'enum',
+      T: proto3.getEnumType(OrganizationCategory),
+      opt: true,
+    },
+    { no: 8, name: 'curator_id', kind: 'scalar', T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 9, name: 'city_id', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: 'address', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: 'phone', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: 'inn', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    {
+      no: 13,
+      name: 'additional_information',
+      kind: 'scalar',
+      T: 9 /* ScalarType.STRING */,
+      opt: true,
+    },
+    { no: 14, name: 'applicant_id', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    { no: 15, name: 'applicant_job_title', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    { no: 16, name: 'applicant_phone', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    {
+      no: 17,
+      name: 'contingent',
+      kind: 'enum',
+      T: proto3.getEnumType(FigureSkatingContingent),
+      repeated: true,
+    },
+    {
+      no: 18,
+      name: 'disciplines',
+      kind: 'enum',
+      T: proto3.getEnumType(FigureSkatingDisciplines),
+      repeated: true,
+    },
+    { no: 19, name: 'state', kind: 'enum', T: proto3.getEnumType(OrganizationState) },
+    { no: 20, name: 'responsible', kind: 'scalar', T: 9 /* ScalarType.STRING */, repeated: true },
+    { no: 21, name: 'charter_id', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: 'registration_certificate_id', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    { no: 23, name: 'created_at', kind: 'message', T: Timestamp },
+  ])
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FigureSkatingOrganization {
-    return new FigureSkatingOrganization().fromBinary(bytes, options);
+  static fromBinary(
+    bytes: Uint8Array,
+    options?: Partial<BinaryReadOptions>
+  ): FigureSkatingOrganization {
+    return new FigureSkatingOrganization().fromBinary(bytes, options)
   }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): FigureSkatingOrganization {
-    return new FigureSkatingOrganization().fromJson(jsonValue, options);
+  static fromJson(
+    jsonValue: JsonValue,
+    options?: Partial<JsonReadOptions>
+  ): FigureSkatingOrganization {
+    return new FigureSkatingOrganization().fromJson(jsonValue, options)
   }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): FigureSkatingOrganization {
-    return new FigureSkatingOrganization().fromJsonString(jsonString, options);
+  static fromJsonString(
+    jsonString: string,
+    options?: Partial<JsonReadOptions>
+  ): FigureSkatingOrganization {
+    return new FigureSkatingOrganization().fromJsonString(jsonString, options)
   }
 
-  static equals(a: FigureSkatingOrganization | PlainMessage<FigureSkatingOrganization> | undefined, b: FigureSkatingOrganization | PlainMessage<FigureSkatingOrganization> | undefined): boolean {
-    return proto3.util.equals(FigureSkatingOrganization, a, b);
+  static equals(
+    a: FigureSkatingOrganization | PlainMessage<FigureSkatingOrganization> | undefined,
+    b: FigureSkatingOrganization | PlainMessage<FigureSkatingOrganization> | undefined
+  ): boolean {
+    return proto3.util.equals(FigureSkatingOrganization, a, b)
   }
 }
 
@@ -284,147 +341,190 @@ export class CreateFigureSkatingOrganizationRequest extends Message<CreateFigure
   /**
    * @generated from field: string full_name = 1;
    */
-  fullName = "";
+  fullName = ''
 
   /**
    * @generated from field: string abbreviation = 2;
    */
-  abbreviation = "";
+  abbreviation = ''
 
   /**
    * @generated from field: string website_name = 3;
    */
-  websiteName = "";
+  websiteName = ''
 
   /**
    * @generated from field: string list_name = 4;
    */
-  listName = "";
+  listName = ''
 
   /**
    * @generated from field: google.protobuf.Timestamp founding_date = 5;
    */
-  foundingDate?: Timestamp;
+  foundingDate?: Timestamp
 
   /**
    * @generated from field: optional ru.sportvokrug.figure_skatings.v1alpha1.OrganizationCategory category = 6;
    */
-  category?: OrganizationCategory;
+  category?: OrganizationCategory
 
   /**
    * @generated from field: optional string curator_id = 7;
    */
-  curatorId?: string;
+  curatorId?: string
 
   /**
    * @generated from field: string city_id = 8;
    */
-  cityId = "";
+  cityId = ''
 
   /**
    * @generated from field: string address = 9;
    */
-  address = "";
+  address = ''
 
   /**
    * @generated from field: string phone = 10;
    */
-  phone = "";
+  phone = ''
 
   /**
    * @generated from field: string inn = 11;
    */
-  inn = "";
+  inn = ''
 
   /**
    * @generated from field: optional string additional_information = 12;
    */
-  additionalInformation?: string;
+  additionalInformation?: string
 
   /**
    * @generated from field: string applicant_id = 13;
    */
-  applicantId = "";
+  applicantId = ''
 
   /**
    * @generated from field: string applicant_job_title = 14;
    */
-  applicantJobTitle = "";
+  applicantJobTitle = ''
 
   /**
    * @generated from field: string applicant_phone = 15;
    */
-  applicantPhone = "";
+  applicantPhone = ''
 
   /**
    * @generated from field: repeated ru.sportvokrug.common.v1alpha1.FigureSkatingContingent contingent = 16;
    */
-  contingent: FigureSkatingContingent[] = [];
+  contingent: FigureSkatingContingent[] = []
 
   /**
    * @generated from field: repeated ru.sportvokrug.common.v1alpha1.FigureSkatingDisciplines disciplines = 17;
    */
-  disciplines: FigureSkatingDisciplines[] = [];
+  disciplines: FigureSkatingDisciplines[] = []
 
   /**
    * @generated from field: repeated string responsible = 18;
    */
-  responsible: string[] = [];
+  responsible: string[] = []
 
   /**
    * @generated from field: string charter_id = 19;
    */
-  charterId = "";
+  charterId = ''
 
   /**
    * @generated from field: string registration_certificate_id = 20;
    */
-  registrationCertificateId = "";
+  registrationCertificateId = ''
 
   constructor(data?: PartialMessage<CreateFigureSkatingOrganizationRequest>) {
-    super();
-    proto3.util.initPartial(data, this);
+    super()
+    proto3.util.initPartial(data, this)
   }
 
-  static readonly runtime: typeof proto3 = proto3;
-  static readonly typeName = "ru.sportvokrug.figure_skatings.v1alpha1.CreateFigureSkatingOrganizationRequest";
+  static readonly runtime: typeof proto3 = proto3
+  static readonly typeName =
+    'ru.sportvokrug.figure_skatings.v1alpha1.CreateFigureSkatingOrganizationRequest'
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "full_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 2, name: "abbreviation", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 3, name: "website_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 4, name: "list_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 5, name: "founding_date", kind: "message", T: Timestamp },
-    { no: 6, name: "category", kind: "enum", T: proto3.getEnumType(OrganizationCategory), opt: true },
-    { no: 7, name: "curator_id", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
-    { no: 8, name: "city_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 9, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 11, name: "inn", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "additional_information", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
-    { no: 13, name: "applicant_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 14, name: "applicant_job_title", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 15, name: "applicant_phone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 16, name: "contingent", kind: "enum", T: proto3.getEnumType(FigureSkatingContingent), repeated: true },
-    { no: 17, name: "disciplines", kind: "enum", T: proto3.getEnumType(FigureSkatingDisciplines), repeated: true },
-    { no: 18, name: "responsible", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
-    { no: 19, name: "charter_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 20, name: "registration_certificate_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-  ]);
+    { no: 1, name: 'full_name', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: 'abbreviation', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: 'website_name', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    { no: 4, name: 'list_name', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    { no: 5, name: 'founding_date', kind: 'message', T: Timestamp },
+    {
+      no: 6,
+      name: 'category',
+      kind: 'enum',
+      T: proto3.getEnumType(OrganizationCategory),
+      opt: true,
+    },
+    { no: 7, name: 'curator_id', kind: 'scalar', T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 8, name: 'city_id', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    { no: 9, name: 'address', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: 'phone', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: 'inn', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    {
+      no: 12,
+      name: 'additional_information',
+      kind: 'scalar',
+      T: 9 /* ScalarType.STRING */,
+      opt: true,
+    },
+    { no: 13, name: 'applicant_id', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    { no: 14, name: 'applicant_job_title', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    { no: 15, name: 'applicant_phone', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    {
+      no: 16,
+      name: 'contingent',
+      kind: 'enum',
+      T: proto3.getEnumType(FigureSkatingContingent),
+      repeated: true,
+    },
+    {
+      no: 17,
+      name: 'disciplines',
+      kind: 'enum',
+      T: proto3.getEnumType(FigureSkatingDisciplines),
+      repeated: true,
+    },
+    { no: 18, name: 'responsible', kind: 'scalar', T: 9 /* ScalarType.STRING */, repeated: true },
+    { no: 19, name: 'charter_id', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    { no: 20, name: 'registration_certificate_id', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+  ])
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): CreateFigureSkatingOrganizationRequest {
-    return new CreateFigureSkatingOrganizationRequest().fromBinary(bytes, options);
+  static fromBinary(
+    bytes: Uint8Array,
+    options?: Partial<BinaryReadOptions>
+  ): CreateFigureSkatingOrganizationRequest {
+    return new CreateFigureSkatingOrganizationRequest().fromBinary(bytes, options)
   }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): CreateFigureSkatingOrganizationRequest {
-    return new CreateFigureSkatingOrganizationRequest().fromJson(jsonValue, options);
+  static fromJson(
+    jsonValue: JsonValue,
+    options?: Partial<JsonReadOptions>
+  ): CreateFigureSkatingOrganizationRequest {
+    return new CreateFigureSkatingOrganizationRequest().fromJson(jsonValue, options)
   }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): CreateFigureSkatingOrganizationRequest {
-    return new CreateFigureSkatingOrganizationRequest().fromJsonString(jsonString, options);
+  static fromJsonString(
+    jsonString: string,
+    options?: Partial<JsonReadOptions>
+  ): CreateFigureSkatingOrganizationRequest {
+    return new CreateFigureSkatingOrganizationRequest().fromJsonString(jsonString, options)
   }
 
-  static equals(a: CreateFigureSkatingOrganizationRequest | PlainMessage<CreateFigureSkatingOrganizationRequest> | undefined, b: CreateFigureSkatingOrganizationRequest | PlainMessage<CreateFigureSkatingOrganizationRequest> | undefined): boolean {
-    return proto3.util.equals(CreateFigureSkatingOrganizationRequest, a, b);
+  static equals(
+    a:
+      | CreateFigureSkatingOrganizationRequest
+      | PlainMessage<CreateFigureSkatingOrganizationRequest>
+      | undefined,
+    b:
+      | CreateFigureSkatingOrganizationRequest
+      | PlainMessage<CreateFigureSkatingOrganizationRequest>
+      | undefined
+  ): boolean {
+    return proto3.util.equals(CreateFigureSkatingOrganizationRequest, a, b)
   }
 }
 
@@ -435,33 +535,52 @@ export class CreateFigureSkatingOrganizationResponse extends Message<CreateFigur
   /**
    * @generated from field: ru.sportvokrug.figure_skatings.v1alpha1.FigureSkatingOrganization organization = 1;
    */
-  organization?: FigureSkatingOrganization;
+  organization?: FigureSkatingOrganization
 
   constructor(data?: PartialMessage<CreateFigureSkatingOrganizationResponse>) {
-    super();
-    proto3.util.initPartial(data, this);
+    super()
+    proto3.util.initPartial(data, this)
   }
 
-  static readonly runtime: typeof proto3 = proto3;
-  static readonly typeName = "ru.sportvokrug.figure_skatings.v1alpha1.CreateFigureSkatingOrganizationResponse";
+  static readonly runtime: typeof proto3 = proto3
+  static readonly typeName =
+    'ru.sportvokrug.figure_skatings.v1alpha1.CreateFigureSkatingOrganizationResponse'
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "organization", kind: "message", T: FigureSkatingOrganization },
-  ]);
+    { no: 1, name: 'organization', kind: 'message', T: FigureSkatingOrganization },
+  ])
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): CreateFigureSkatingOrganizationResponse {
-    return new CreateFigureSkatingOrganizationResponse().fromBinary(bytes, options);
+  static fromBinary(
+    bytes: Uint8Array,
+    options?: Partial<BinaryReadOptions>
+  ): CreateFigureSkatingOrganizationResponse {
+    return new CreateFigureSkatingOrganizationResponse().fromBinary(bytes, options)
   }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): CreateFigureSkatingOrganizationResponse {
-    return new CreateFigureSkatingOrganizationResponse().fromJson(jsonValue, options);
+  static fromJson(
+    jsonValue: JsonValue,
+    options?: Partial<JsonReadOptions>
+  ): CreateFigureSkatingOrganizationResponse {
+    return new CreateFigureSkatingOrganizationResponse().fromJson(jsonValue, options)
   }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): CreateFigureSkatingOrganizationResponse {
-    return new CreateFigureSkatingOrganizationResponse().fromJsonString(jsonString, options);
+  static fromJsonString(
+    jsonString: string,
+    options?: Partial<JsonReadOptions>
+  ): CreateFigureSkatingOrganizationResponse {
+    return new CreateFigureSkatingOrganizationResponse().fromJsonString(jsonString, options)
   }
 
-  static equals(a: CreateFigureSkatingOrganizationResponse | PlainMessage<CreateFigureSkatingOrganizationResponse> | undefined, b: CreateFigureSkatingOrganizationResponse | PlainMessage<CreateFigureSkatingOrganizationResponse> | undefined): boolean {
-    return proto3.util.equals(CreateFigureSkatingOrganizationResponse, a, b);
+  static equals(
+    a:
+      | CreateFigureSkatingOrganizationResponse
+      | PlainMessage<CreateFigureSkatingOrganizationResponse>
+      | undefined,
+    b:
+      | CreateFigureSkatingOrganizationResponse
+      | PlainMessage<CreateFigureSkatingOrganizationResponse>
+      | undefined
+  ): boolean {
+    return proto3.util.equals(CreateFigureSkatingOrganizationResponse, a, b)
   }
 }
 
@@ -472,153 +591,196 @@ export class UpdateFigureSkatingOrganizationRequest extends Message<UpdateFigure
   /**
    * @generated from field: string organization_id = 1;
    */
-  organizationId = "";
+  organizationId = ''
 
   /**
    * @generated from field: string full_name = 2;
    */
-  fullName = "";
+  fullName = ''
 
   /**
    * @generated from field: string abbreviation = 3;
    */
-  abbreviation = "";
+  abbreviation = ''
 
   /**
    * @generated from field: string website_name = 4;
    */
-  websiteName = "";
+  websiteName = ''
 
   /**
    * @generated from field: string list_name = 5;
    */
-  listName = "";
+  listName = ''
 
   /**
    * @generated from field: google.protobuf.Timestamp founding_date = 6;
    */
-  foundingDate?: Timestamp;
+  foundingDate?: Timestamp
 
   /**
    * @generated from field: optional ru.sportvokrug.figure_skatings.v1alpha1.OrganizationCategory category = 7;
    */
-  category?: OrganizationCategory;
+  category?: OrganizationCategory
 
   /**
    * @generated from field: optional string curator_id = 8;
    */
-  curatorId?: string;
+  curatorId?: string
 
   /**
    * @generated from field: string city_id = 9;
    */
-  cityId = "";
+  cityId = ''
 
   /**
    * @generated from field: string address = 10;
    */
-  address = "";
+  address = ''
 
   /**
    * @generated from field: string phone = 11;
    */
-  phone = "";
+  phone = ''
 
   /**
    * @generated from field: string inn = 12;
    */
-  inn = "";
+  inn = ''
 
   /**
    * @generated from field: optional string additional_information = 13;
    */
-  additionalInformation?: string;
+  additionalInformation?: string
 
   /**
    * @generated from field: string applicant_id = 14;
    */
-  applicantId = "";
+  applicantId = ''
 
   /**
    * @generated from field: string applicant_job_title = 15;
    */
-  applicantJobTitle = "";
+  applicantJobTitle = ''
 
   /**
    * @generated from field: string applicant_phone = 16;
    */
-  applicantPhone = "";
+  applicantPhone = ''
 
   /**
    * @generated from field: repeated ru.sportvokrug.common.v1alpha1.FigureSkatingContingent contingent = 17;
    */
-  contingent: FigureSkatingContingent[] = [];
+  contingent: FigureSkatingContingent[] = []
 
   /**
    * @generated from field: repeated ru.sportvokrug.common.v1alpha1.FigureSkatingDisciplines disciplines = 18;
    */
-  disciplines: FigureSkatingDisciplines[] = [];
+  disciplines: FigureSkatingDisciplines[] = []
 
   /**
    * @generated from field: repeated string responsible = 19;
    */
-  responsible: string[] = [];
+  responsible: string[] = []
 
   /**
    * @generated from field: string charter_id = 20;
    */
-  charterId = "";
+  charterId = ''
 
   /**
    * @generated from field: string registration_certificate_id = 21;
    */
-  registrationCertificateId = "";
+  registrationCertificateId = ''
 
   constructor(data?: PartialMessage<UpdateFigureSkatingOrganizationRequest>) {
-    super();
-    proto3.util.initPartial(data, this);
+    super()
+    proto3.util.initPartial(data, this)
   }
 
-  static readonly runtime: typeof proto3 = proto3;
-  static readonly typeName = "ru.sportvokrug.figure_skatings.v1alpha1.UpdateFigureSkatingOrganizationRequest";
+  static readonly runtime: typeof proto3 = proto3
+  static readonly typeName =
+    'ru.sportvokrug.figure_skatings.v1alpha1.UpdateFigureSkatingOrganizationRequest'
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "organization_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 2, name: "full_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 3, name: "abbreviation", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 4, name: "website_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 5, name: "list_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 6, name: "founding_date", kind: "message", T: Timestamp },
-    { no: 7, name: "category", kind: "enum", T: proto3.getEnumType(OrganizationCategory), opt: true },
-    { no: 8, name: "curator_id", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
-    { no: 9, name: "city_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "address", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 11, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "inn", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 13, name: "additional_information", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
-    { no: 14, name: "applicant_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 15, name: "applicant_job_title", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 16, name: "applicant_phone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 17, name: "contingent", kind: "enum", T: proto3.getEnumType(FigureSkatingContingent), repeated: true },
-    { no: 18, name: "disciplines", kind: "enum", T: proto3.getEnumType(FigureSkatingDisciplines), repeated: true },
-    { no: 19, name: "responsible", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
-    { no: 20, name: "charter_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "registration_certificate_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-  ]);
+    { no: 1, name: 'organization_id', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: 'full_name', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: 'abbreviation', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    { no: 4, name: 'website_name', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    { no: 5, name: 'list_name', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    { no: 6, name: 'founding_date', kind: 'message', T: Timestamp },
+    {
+      no: 7,
+      name: 'category',
+      kind: 'enum',
+      T: proto3.getEnumType(OrganizationCategory),
+      opt: true,
+    },
+    { no: 8, name: 'curator_id', kind: 'scalar', T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 9, name: 'city_id', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: 'address', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    { no: 11, name: 'phone', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: 'inn', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    {
+      no: 13,
+      name: 'additional_information',
+      kind: 'scalar',
+      T: 9 /* ScalarType.STRING */,
+      opt: true,
+    },
+    { no: 14, name: 'applicant_id', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    { no: 15, name: 'applicant_job_title', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    { no: 16, name: 'applicant_phone', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    {
+      no: 17,
+      name: 'contingent',
+      kind: 'enum',
+      T: proto3.getEnumType(FigureSkatingContingent),
+      repeated: true,
+    },
+    {
+      no: 18,
+      name: 'disciplines',
+      kind: 'enum',
+      T: proto3.getEnumType(FigureSkatingDisciplines),
+      repeated: true,
+    },
+    { no: 19, name: 'responsible', kind: 'scalar', T: 9 /* ScalarType.STRING */, repeated: true },
+    { no: 20, name: 'charter_id', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: 'registration_certificate_id', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+  ])
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UpdateFigureSkatingOrganizationRequest {
-    return new UpdateFigureSkatingOrganizationRequest().fromBinary(bytes, options);
+  static fromBinary(
+    bytes: Uint8Array,
+    options?: Partial<BinaryReadOptions>
+  ): UpdateFigureSkatingOrganizationRequest {
+    return new UpdateFigureSkatingOrganizationRequest().fromBinary(bytes, options)
   }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UpdateFigureSkatingOrganizationRequest {
-    return new UpdateFigureSkatingOrganizationRequest().fromJson(jsonValue, options);
+  static fromJson(
+    jsonValue: JsonValue,
+    options?: Partial<JsonReadOptions>
+  ): UpdateFigureSkatingOrganizationRequest {
+    return new UpdateFigureSkatingOrganizationRequest().fromJson(jsonValue, options)
   }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UpdateFigureSkatingOrganizationRequest {
-    return new UpdateFigureSkatingOrganizationRequest().fromJsonString(jsonString, options);
+  static fromJsonString(
+    jsonString: string,
+    options?: Partial<JsonReadOptions>
+  ): UpdateFigureSkatingOrganizationRequest {
+    return new UpdateFigureSkatingOrganizationRequest().fromJsonString(jsonString, options)
   }
 
-  static equals(a: UpdateFigureSkatingOrganizationRequest | PlainMessage<UpdateFigureSkatingOrganizationRequest> | undefined, b: UpdateFigureSkatingOrganizationRequest | PlainMessage<UpdateFigureSkatingOrganizationRequest> | undefined): boolean {
-    return proto3.util.equals(UpdateFigureSkatingOrganizationRequest, a, b);
+  static equals(
+    a:
+      | UpdateFigureSkatingOrganizationRequest
+      | PlainMessage<UpdateFigureSkatingOrganizationRequest>
+      | undefined,
+    b:
+      | UpdateFigureSkatingOrganizationRequest
+      | PlainMessage<UpdateFigureSkatingOrganizationRequest>
+      | undefined
+  ): boolean {
+    return proto3.util.equals(UpdateFigureSkatingOrganizationRequest, a, b)
   }
 }
 
@@ -629,33 +791,52 @@ export class UpdateFigureSkatingOrganizationResponse extends Message<UpdateFigur
   /**
    * @generated from field: ru.sportvokrug.figure_skatings.v1alpha1.FigureSkatingOrganization organization = 1;
    */
-  organization?: FigureSkatingOrganization;
+  organization?: FigureSkatingOrganization
 
   constructor(data?: PartialMessage<UpdateFigureSkatingOrganizationResponse>) {
-    super();
-    proto3.util.initPartial(data, this);
+    super()
+    proto3.util.initPartial(data, this)
   }
 
-  static readonly runtime: typeof proto3 = proto3;
-  static readonly typeName = "ru.sportvokrug.figure_skatings.v1alpha1.UpdateFigureSkatingOrganizationResponse";
+  static readonly runtime: typeof proto3 = proto3
+  static readonly typeName =
+    'ru.sportvokrug.figure_skatings.v1alpha1.UpdateFigureSkatingOrganizationResponse'
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "organization", kind: "message", T: FigureSkatingOrganization },
-  ]);
+    { no: 1, name: 'organization', kind: 'message', T: FigureSkatingOrganization },
+  ])
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UpdateFigureSkatingOrganizationResponse {
-    return new UpdateFigureSkatingOrganizationResponse().fromBinary(bytes, options);
+  static fromBinary(
+    bytes: Uint8Array,
+    options?: Partial<BinaryReadOptions>
+  ): UpdateFigureSkatingOrganizationResponse {
+    return new UpdateFigureSkatingOrganizationResponse().fromBinary(bytes, options)
   }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UpdateFigureSkatingOrganizationResponse {
-    return new UpdateFigureSkatingOrganizationResponse().fromJson(jsonValue, options);
+  static fromJson(
+    jsonValue: JsonValue,
+    options?: Partial<JsonReadOptions>
+  ): UpdateFigureSkatingOrganizationResponse {
+    return new UpdateFigureSkatingOrganizationResponse().fromJson(jsonValue, options)
   }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UpdateFigureSkatingOrganizationResponse {
-    return new UpdateFigureSkatingOrganizationResponse().fromJsonString(jsonString, options);
+  static fromJsonString(
+    jsonString: string,
+    options?: Partial<JsonReadOptions>
+  ): UpdateFigureSkatingOrganizationResponse {
+    return new UpdateFigureSkatingOrganizationResponse().fromJsonString(jsonString, options)
   }
 
-  static equals(a: UpdateFigureSkatingOrganizationResponse | PlainMessage<UpdateFigureSkatingOrganizationResponse> | undefined, b: UpdateFigureSkatingOrganizationResponse | PlainMessage<UpdateFigureSkatingOrganizationResponse> | undefined): boolean {
-    return proto3.util.equals(UpdateFigureSkatingOrganizationResponse, a, b);
+  static equals(
+    a:
+      | UpdateFigureSkatingOrganizationResponse
+      | PlainMessage<UpdateFigureSkatingOrganizationResponse>
+      | undefined,
+    b:
+      | UpdateFigureSkatingOrganizationResponse
+      | PlainMessage<UpdateFigureSkatingOrganizationResponse>
+      | undefined
+  ): boolean {
+    return proto3.util.equals(UpdateFigureSkatingOrganizationResponse, a, b)
   }
 }
 
@@ -666,51 +847,75 @@ export class ListFigureSkatingOrganizationsRequest extends Message<ListFigureSka
   /**
    * @generated from field: tech.monstrs.queries.v1alpha1.Query.Pager pager = 1;
    */
-  pager?: Query_Pager;
+  pager?: Query_Pager
 
   /**
    * @generated from field: tech.monstrs.queries.v1alpha1.Query.Order order = 2;
    */
-  order?: Query_Order;
+  order?: Query_Order
 
   /**
    * @generated from field: tech.monstrs.queries.v1alpha1.Query.Search search = 3;
    */
-  search?: Query_Search;
+  search?: Query_Search
 
   /**
    * @generated from field: ru.sportvokrug.figure_skatings.v1alpha1.ListFigureSkatingOrganizationsRequest.FigureSkatingOrganizationsQuery query = 4;
    */
-  query?: ListFigureSkatingOrganizationsRequest_FigureSkatingOrganizationsQuery;
+  query?: ListFigureSkatingOrganizationsRequest_FigureSkatingOrganizationsQuery
 
   constructor(data?: PartialMessage<ListFigureSkatingOrganizationsRequest>) {
-    super();
-    proto3.util.initPartial(data, this);
+    super()
+    proto3.util.initPartial(data, this)
   }
 
-  static readonly runtime: typeof proto3 = proto3;
-  static readonly typeName = "ru.sportvokrug.figure_skatings.v1alpha1.ListFigureSkatingOrganizationsRequest";
+  static readonly runtime: typeof proto3 = proto3
+  static readonly typeName =
+    'ru.sportvokrug.figure_skatings.v1alpha1.ListFigureSkatingOrganizationsRequest'
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "pager", kind: "message", T: Query_Pager },
-    { no: 2, name: "order", kind: "message", T: Query_Order },
-    { no: 3, name: "search", kind: "message", T: Query_Search },
-    { no: 4, name: "query", kind: "message", T: ListFigureSkatingOrganizationsRequest_FigureSkatingOrganizationsQuery },
-  ]);
+    { no: 1, name: 'pager', kind: 'message', T: Query_Pager },
+    { no: 2, name: 'order', kind: 'message', T: Query_Order },
+    { no: 3, name: 'search', kind: 'message', T: Query_Search },
+    {
+      no: 4,
+      name: 'query',
+      kind: 'message',
+      T: ListFigureSkatingOrganizationsRequest_FigureSkatingOrganizationsQuery,
+    },
+  ])
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ListFigureSkatingOrganizationsRequest {
-    return new ListFigureSkatingOrganizationsRequest().fromBinary(bytes, options);
+  static fromBinary(
+    bytes: Uint8Array,
+    options?: Partial<BinaryReadOptions>
+  ): ListFigureSkatingOrganizationsRequest {
+    return new ListFigureSkatingOrganizationsRequest().fromBinary(bytes, options)
   }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ListFigureSkatingOrganizationsRequest {
-    return new ListFigureSkatingOrganizationsRequest().fromJson(jsonValue, options);
+  static fromJson(
+    jsonValue: JsonValue,
+    options?: Partial<JsonReadOptions>
+  ): ListFigureSkatingOrganizationsRequest {
+    return new ListFigureSkatingOrganizationsRequest().fromJson(jsonValue, options)
   }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ListFigureSkatingOrganizationsRequest {
-    return new ListFigureSkatingOrganizationsRequest().fromJsonString(jsonString, options);
+  static fromJsonString(
+    jsonString: string,
+    options?: Partial<JsonReadOptions>
+  ): ListFigureSkatingOrganizationsRequest {
+    return new ListFigureSkatingOrganizationsRequest().fromJsonString(jsonString, options)
   }
 
-  static equals(a: ListFigureSkatingOrganizationsRequest | PlainMessage<ListFigureSkatingOrganizationsRequest> | undefined, b: ListFigureSkatingOrganizationsRequest | PlainMessage<ListFigureSkatingOrganizationsRequest> | undefined): boolean {
-    return proto3.util.equals(ListFigureSkatingOrganizationsRequest, a, b);
+  static equals(
+    a:
+      | ListFigureSkatingOrganizationsRequest
+      | PlainMessage<ListFigureSkatingOrganizationsRequest>
+      | undefined,
+    b:
+      | ListFigureSkatingOrganizationsRequest
+      | PlainMessage<ListFigureSkatingOrganizationsRequest>
+      | undefined
+  ): boolean {
+    return proto3.util.equals(ListFigureSkatingOrganizationsRequest, a, b)
   }
 }
 
@@ -721,33 +926,67 @@ export class ListFigureSkatingOrganizationsRequest_FigureSkatingOrganizationsQue
   /**
    * @generated from field: tech.monstrs.queries.v1alpha1.Query.ID id = 1;
    */
-  id?: Query_ID;
+  id?: Query_ID
 
-  constructor(data?: PartialMessage<ListFigureSkatingOrganizationsRequest_FigureSkatingOrganizationsQuery>) {
-    super();
-    proto3.util.initPartial(data, this);
+  constructor(
+    data?: PartialMessage<ListFigureSkatingOrganizationsRequest_FigureSkatingOrganizationsQuery>
+  ) {
+    super()
+    proto3.util.initPartial(data, this)
   }
 
-  static readonly runtime: typeof proto3 = proto3;
-  static readonly typeName = "ru.sportvokrug.figure_skatings.v1alpha1.ListFigureSkatingOrganizationsRequest.FigureSkatingOrganizationsQuery";
+  static readonly runtime: typeof proto3 = proto3
+  static readonly typeName =
+    'ru.sportvokrug.figure_skatings.v1alpha1.ListFigureSkatingOrganizationsRequest.FigureSkatingOrganizationsQuery'
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "id", kind: "message", T: Query_ID },
-  ]);
+    { no: 1, name: 'id', kind: 'message', T: Query_ID },
+  ])
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ListFigureSkatingOrganizationsRequest_FigureSkatingOrganizationsQuery {
-    return new ListFigureSkatingOrganizationsRequest_FigureSkatingOrganizationsQuery().fromBinary(bytes, options);
+  static fromBinary(
+    bytes: Uint8Array,
+    options?: Partial<BinaryReadOptions>
+  ): ListFigureSkatingOrganizationsRequest_FigureSkatingOrganizationsQuery {
+    return new ListFigureSkatingOrganizationsRequest_FigureSkatingOrganizationsQuery().fromBinary(
+      bytes,
+      options
+    )
   }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ListFigureSkatingOrganizationsRequest_FigureSkatingOrganizationsQuery {
-    return new ListFigureSkatingOrganizationsRequest_FigureSkatingOrganizationsQuery().fromJson(jsonValue, options);
+  static fromJson(
+    jsonValue: JsonValue,
+    options?: Partial<JsonReadOptions>
+  ): ListFigureSkatingOrganizationsRequest_FigureSkatingOrganizationsQuery {
+    return new ListFigureSkatingOrganizationsRequest_FigureSkatingOrganizationsQuery().fromJson(
+      jsonValue,
+      options
+    )
   }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ListFigureSkatingOrganizationsRequest_FigureSkatingOrganizationsQuery {
-    return new ListFigureSkatingOrganizationsRequest_FigureSkatingOrganizationsQuery().fromJsonString(jsonString, options);
+  static fromJsonString(
+    jsonString: string,
+    options?: Partial<JsonReadOptions>
+  ): ListFigureSkatingOrganizationsRequest_FigureSkatingOrganizationsQuery {
+    return new ListFigureSkatingOrganizationsRequest_FigureSkatingOrganizationsQuery().fromJsonString(
+      jsonString,
+      options
+    )
   }
 
-  static equals(a: ListFigureSkatingOrganizationsRequest_FigureSkatingOrganizationsQuery | PlainMessage<ListFigureSkatingOrganizationsRequest_FigureSkatingOrganizationsQuery> | undefined, b: ListFigureSkatingOrganizationsRequest_FigureSkatingOrganizationsQuery | PlainMessage<ListFigureSkatingOrganizationsRequest_FigureSkatingOrganizationsQuery> | undefined): boolean {
-    return proto3.util.equals(ListFigureSkatingOrganizationsRequest_FigureSkatingOrganizationsQuery, a, b);
+  static equals(
+    a:
+      | ListFigureSkatingOrganizationsRequest_FigureSkatingOrganizationsQuery
+      | PlainMessage<ListFigureSkatingOrganizationsRequest_FigureSkatingOrganizationsQuery>
+      | undefined,
+    b:
+      | ListFigureSkatingOrganizationsRequest_FigureSkatingOrganizationsQuery
+      | PlainMessage<ListFigureSkatingOrganizationsRequest_FigureSkatingOrganizationsQuery>
+      | undefined
+  ): boolean {
+    return proto3.util.equals(
+      ListFigureSkatingOrganizationsRequest_FigureSkatingOrganizationsQuery,
+      a,
+      b
+    )
   }
 }
 
@@ -758,39 +997,57 @@ export class ListFigureSkatingOrganizationsResponse extends Message<ListFigureSk
   /**
    * @generated from field: repeated ru.sportvokrug.figure_skatings.v1alpha1.FigureSkatingOrganization organizations = 1;
    */
-  organizations: FigureSkatingOrganization[] = [];
+  organizations: FigureSkatingOrganization[] = []
 
   /**
    * @generated from field: bool has_next_page = 2;
    */
-  hasNextPage = false;
+  hasNextPage = false
 
   constructor(data?: PartialMessage<ListFigureSkatingOrganizationsResponse>) {
-    super();
-    proto3.util.initPartial(data, this);
+    super()
+    proto3.util.initPartial(data, this)
   }
 
-  static readonly runtime: typeof proto3 = proto3;
-  static readonly typeName = "ru.sportvokrug.figure_skatings.v1alpha1.ListFigureSkatingOrganizationsResponse";
+  static readonly runtime: typeof proto3 = proto3
+  static readonly typeName =
+    'ru.sportvokrug.figure_skatings.v1alpha1.ListFigureSkatingOrganizationsResponse'
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "organizations", kind: "message", T: FigureSkatingOrganization, repeated: true },
-    { no: 2, name: "has_next_page", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-  ]);
+    { no: 1, name: 'organizations', kind: 'message', T: FigureSkatingOrganization, repeated: true },
+    { no: 2, name: 'has_next_page', kind: 'scalar', T: 8 /* ScalarType.BOOL */ },
+  ])
 
-  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ListFigureSkatingOrganizationsResponse {
-    return new ListFigureSkatingOrganizationsResponse().fromBinary(bytes, options);
+  static fromBinary(
+    bytes: Uint8Array,
+    options?: Partial<BinaryReadOptions>
+  ): ListFigureSkatingOrganizationsResponse {
+    return new ListFigureSkatingOrganizationsResponse().fromBinary(bytes, options)
   }
 
-  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): ListFigureSkatingOrganizationsResponse {
-    return new ListFigureSkatingOrganizationsResponse().fromJson(jsonValue, options);
+  static fromJson(
+    jsonValue: JsonValue,
+    options?: Partial<JsonReadOptions>
+  ): ListFigureSkatingOrganizationsResponse {
+    return new ListFigureSkatingOrganizationsResponse().fromJson(jsonValue, options)
   }
 
-  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): ListFigureSkatingOrganizationsResponse {
-    return new ListFigureSkatingOrganizationsResponse().fromJsonString(jsonString, options);
+  static fromJsonString(
+    jsonString: string,
+    options?: Partial<JsonReadOptions>
+  ): ListFigureSkatingOrganizationsResponse {
+    return new ListFigureSkatingOrganizationsResponse().fromJsonString(jsonString, options)
   }
 
-  static equals(a: ListFigureSkatingOrganizationsResponse | PlainMessage<ListFigureSkatingOrganizationsResponse> | undefined, b: ListFigureSkatingOrganizationsResponse | PlainMessage<ListFigureSkatingOrganizationsResponse> | undefined): boolean {
-    return proto3.util.equals(ListFigureSkatingOrganizationsResponse, a, b);
+  static equals(
+    a:
+      | ListFigureSkatingOrganizationsResponse
+      | PlainMessage<ListFigureSkatingOrganizationsResponse>
+      | undefined,
+    b:
+      | ListFigureSkatingOrganizationsResponse
+      | PlainMessage<ListFigureSkatingOrganizationsResponse>
+      | undefined
+  ): boolean {
+    return proto3.util.equals(ListFigureSkatingOrganizationsResponse, a, b)
   }
 }
-

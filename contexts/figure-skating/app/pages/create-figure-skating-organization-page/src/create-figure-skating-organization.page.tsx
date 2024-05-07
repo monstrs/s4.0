@@ -1,6 +1,7 @@
 'use client'
 
-import { ReactElement }                          from 'react'
+import type { ReactElement }                     from 'react'
+
 import React                                     from 'react'
 
 import { CreateFigureSkatingOrganizationWidget } from '@figure-skating/create-figure-skating-organization-widget'

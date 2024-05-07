@@ -1,6 +1,7 @@
 import type { CreateFigureSkatingOrganizationRequest } from '@figure-skating/rpc/interfaces'
 
-import { IsNotEmpty, IsOptional }                                  from 'class-validator'
+import { IsNotEmpty }                                  from 'class-validator'
+import { IsOptional }                                  from 'class-validator'
 import { IsPhoneNumber }                               from 'class-validator'
 import { IsUUID }                                      from 'class-validator'
 import { IsEnum }                                      from 'class-validator'
@@ -35,6 +36,7 @@ export class CreateFigureSkatingOrganizationPayload {
 
   @IsDate()
   get foundingDate(): Date {
+    // eslint-disable-next-line @typescript-eslint/no-non-null-asserted-optional-chain
     return this.request.foundingDate?.toDate()!
   }
 

@@ -112,7 +112,9 @@ type Query {
 }
 
 type Mutation {
-  createFigureSkatingOrganization(input: CreateFigureSkatingOrganizationInput!): CreateFigureSkatingOrganizationResponse!
+  createFigureSkatingOrganization(
+    input: CreateFigureSkatingOrganizationInput!
+  ): CreateFigureSkatingOrganizationResponse!
 }
 
 input CreateFigureSkatingOrganizationInput {

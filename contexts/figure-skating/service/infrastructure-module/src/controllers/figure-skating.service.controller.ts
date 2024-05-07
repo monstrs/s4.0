@@ -76,7 +76,7 @@ export class FigureSkatingServiceController implements ServiceImpl<typeof Figure
       payload.charterId,
       payload.registrationCertificateId,
       payload.curatorId,
-      payload.additionalInformation,
+      payload.additionalInformation
     )
 
     await this.commandBus.execute(command)
@@ -118,7 +118,7 @@ export class FigureSkatingServiceController implements ServiceImpl<typeof Figure
       payload.charterId,
       payload.registrationCertificateId,
       payload.curatorId,
-      payload.additionalInformation,
+      payload.additionalInformation
     )
 
     await this.commandBus.execute(command)

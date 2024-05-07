@@ -1,3 +1,6 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/jsx-no-leaked-render */
+
 import type { ReactElement }       from 'react'
 
 import type { OrganizationErrors } from '../interfaces/index.js'
@@ -44,7 +47,7 @@ export const OrganizationEditor = ({
   foundingDate,
   category,
   curatorId,
-  errors,
+  errors = {},
   onChangeFullName,
   onChangeAbbreviation,
   onChangeWebsiteName,
@@ -99,7 +102,7 @@ export const OrganizationEditor = ({
               id='organization-full-name'
               value={fullName}
               status={errors.fullName && 'error'}
-              suffix={errors.fullName && <WarningFilledIcon color='red' />}
+              suffix={!!errors.fullName && <WarningFilledIcon color='red' />}
               onChange={(event) => {
                 onChangeFullName(event.target.value)
               }}
@@ -141,7 +144,7 @@ export const OrganizationEditor = ({
               id='organization-abbreviation'
               value={abbreviation}
               status={errors.abbreviation && 'error'}
-              suffix={errors.abbreviation && <WarningFilledIcon color='red' />}
+              suffix={!!errors.abbreviation && <WarningFilledIcon color='red' />}
               onChange={(event) => {
                 onChangeAbbreviation(event.target.value)
               }}
@@ -191,7 +194,7 @@ export const OrganizationEditor = ({
               id='organization-website-name'
               value={websiteName}
               status={errors.websiteName && 'error'}
-              suffix={errors.websiteName && <WarningFilledIcon color='red' />}
+              suffix={!!errors.websiteName && <WarningFilledIcon color='red' />}
               onChange={(event) => {
                 onChangeWebsiteName(event.target.value)
               }}
@@ -237,7 +240,7 @@ export const OrganizationEditor = ({
               id='organization-list-name'
               value={listName}
               status={errors.listName && 'error'}
-              suffix={errors.listName && <WarningFilledIcon color='red' />}
+              suffix={!!errors.listName && <WarningFilledIcon color='red' />}
               onChange={(event) => {
                 onChangeListName(event.target.value)
               }}
@@ -286,6 +289,7 @@ export const OrganizationEditor = ({
               style={{ width: '100%' }}
               placeholder='выбрать...'
               value={category}
+              status={errors.category && 'error'}
               options={[
                 {
                   value: OrganizationCategory.School,
@@ -304,7 +308,6 @@ export const OrganizationEditor = ({
                   label: 'прочее',
                 },
               ]}
-              status={errors.category && 'error'}
               onChange={onChangeCategory}
             />
           </Layout>

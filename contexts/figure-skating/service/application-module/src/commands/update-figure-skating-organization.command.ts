@@ -24,6 +24,6 @@ export class UpdateFigureSkatingOrganizationCommand {
     public readonly charterId: string,
     public readonly registrationCertificateId: string,
     public readonly curatorId?: string,
-    public readonly additionalInformation?: string,
+    public readonly additionalInformation?: string
   ) {}
 }

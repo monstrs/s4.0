@@ -3,20 +3,26 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { CreateFigureSkatingOrganizationRequest, CreateFigureSkatingOrganizationResponse, ListFigureSkatingOrganizationsRequest, ListFigureSkatingOrganizationsResponse, UpdateFigureSkatingOrganizationRequest, UpdateFigureSkatingOrganizationResponse } from "./figure-skating.service_pb.js";
-import { MethodKind } from "@bufbuild/protobuf";
+import { MethodKind }                              from '@bufbuild/protobuf'
+
+import { CreateFigureSkatingOrganizationRequest }  from './figure-skating.service_pb.js'
+import { CreateFigureSkatingOrganizationResponse } from './figure-skating.service_pb.js'
+import { ListFigureSkatingOrganizationsRequest }   from './figure-skating.service_pb.js'
+import { ListFigureSkatingOrganizationsResponse }  from './figure-skating.service_pb.js'
+import { UpdateFigureSkatingOrganizationRequest }  from './figure-skating.service_pb.js'
+import { UpdateFigureSkatingOrganizationResponse } from './figure-skating.service_pb.js'
 
 /**
  * @generated from service ru.sportvokrug.figure_skatings.v1alpha1.FigureSkatingService
  */
 export const FigureSkatingService = {
-  typeName: "ru.sportvokrug.figure_skatings.v1alpha1.FigureSkatingService",
+  typeName: 'ru.sportvokrug.figure_skatings.v1alpha1.FigureSkatingService',
   methods: {
     /**
      * @generated from rpc ru.sportvokrug.figure_skatings.v1alpha1.FigureSkatingService.CreateFigureSkatingOrganization
      */
     createFigureSkatingOrganization: {
-      name: "CreateFigureSkatingOrganization",
+      name: 'CreateFigureSkatingOrganization',
       I: CreateFigureSkatingOrganizationRequest,
       O: CreateFigureSkatingOrganizationResponse,
       kind: MethodKind.Unary,
@@ -25,7 +31,7 @@ export const FigureSkatingService = {
      * @generated from rpc ru.sportvokrug.figure_skatings.v1alpha1.FigureSkatingService.UpdateFigureSkatingOrganization
      */
     updateFigureSkatingOrganization: {
-      name: "UpdateFigureSkatingOrganization",
+      name: 'UpdateFigureSkatingOrganization',
       I: UpdateFigureSkatingOrganizationRequest,
       O: UpdateFigureSkatingOrganizationResponse,
       kind: MethodKind.Unary,
@@ -34,11 +40,10 @@ export const FigureSkatingService = {
      * @generated from rpc ru.sportvokrug.figure_skatings.v1alpha1.FigureSkatingService.ListFigureSkatingOrganizations
      */
     listFigureSkatingOrganizations: {
-      name: "ListFigureSkatingOrganizations",
+      name: 'ListFigureSkatingOrganizations',
       I: ListFigureSkatingOrganizationsRequest,
       O: ListFigureSkatingOrganizationsResponse,
       kind: MethodKind.Unary,
     },
-  }
-} as const;
-
+  },
+} as const

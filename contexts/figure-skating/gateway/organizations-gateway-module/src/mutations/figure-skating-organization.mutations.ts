@@ -28,7 +28,7 @@ export class FigureSkatingOrganizationMutations {
       return await this.client.createFigureSkatingOrganization({
         ...input,
         applicantId: 'ce8157ce-e69c-4944-9aad-87aa73f1fc8b',
-        charterId:  'ce8157ce-e69c-4944-9aad-87aa73f1fc8b',
+        charterId: 'ce8157ce-e69c-4944-9aad-87aa73f1fc8b',
         registrationCertificateId: 'ce8157ce-e69c-4944-9aad-87aa73f1fc8b',
         foundingDate: input.foundingDate ? Timestamp.fromDate(input.foundingDate) : undefined,
         responsible: [],
@@ -37,7 +37,6 @@ export class FigureSkatingOrganizationMutations {
       const details: Array<ValidationError> = findValidationErrorDetails(error)
 
       if (details.length > 0) {
-        console.log(details)
         return {
           errors: details.reduce(
             (result, detail) => ({

@@ -5,7 +5,7 @@ import { getSdk }        from './sdk.js'
 
 const getEndpoint = (): string => {
   return 'http://localhost:3000'
-  
+
   if (typeof window === 'undefined') {
     return process.env.GATEWAY_URL || process.env.NEXT_PUBLIC_GATEWAY_URL!
   }

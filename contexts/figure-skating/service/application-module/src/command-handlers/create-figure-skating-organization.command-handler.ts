@@ -36,7 +36,7 @@ export class CreateFigureSkatingOrganizationCommandHandler
         command.charterId,
         command.registrationCertificateId,
         command.curatorId,
-        command.additionalInformation,
+        command.additionalInformation
       )
     )
   }

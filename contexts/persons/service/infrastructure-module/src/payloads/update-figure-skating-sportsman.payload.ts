@@ -20,7 +20,8 @@ export class UpdateFigureSkatingSportsmanPayload {
   }
 
   @IsDate()
-  get rankAssignDate() {
+  get rankAssignDate(): Date {
+    // eslint-disable-next-line @typescript-eslint/no-non-null-asserted-optional-chain
     return this.request.rankAssignDate?.toDate()!
   }
 }

@@ -39,7 +39,7 @@ export class UpdateFigureSkatingOrganizationCommandHandler
         command.charterId,
         command.registrationCertificateId,
         command.curatorId,
-        command.additionalInformation,
+        command.additionalInformation
       )
     )
   }

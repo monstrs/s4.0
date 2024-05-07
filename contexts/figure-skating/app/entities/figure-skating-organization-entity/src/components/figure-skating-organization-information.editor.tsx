@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-no-leaked-render */
+
 import type { ReactElement }                    from 'react'
 
 import type { FigureSkatingOrganizationErrors } from '../interfaces/index.js'
@@ -48,7 +50,7 @@ export const FigureSkatingOrganizationInformationEditor = ({
   applicantJobTitle,
   applicantPhone,
   disciplines,
-  errors,
+  errors = {},
   onChangeCityId,
   onChangeAddress,
   onChangePhone,
@@ -75,14 +77,14 @@ export const FigureSkatingOrganizationInformationEditor = ({
             <Select<string>
               id='organization-information-city'
               style={{ width: '100%' }}
+              value={cityId}
+              status={errors.cityId && 'error'}
               options={[
                 {
                   label: 'Москва',
-                  value: '8bff216f-b729-483a-8a60-b7abd0eb37e3'
-                }
+                  value: '8bff216f-b729-483a-8a60-b7abd0eb37e3',
+                },
               ]}
-              value={cityId}
-              status={errors.cityId && 'error'}
               onChange={onChangeCityId}
             />
           </Layout>
@@ -105,7 +107,7 @@ export const FigureSkatingOrganizationInformationEditor = ({
               placeholder='Укажите адрес без города'
               value={address}
               status={errors.address && 'error'}
-              suffix={errors.address && <WarningFilledIcon color='red' />}
+              suffix={!!errors.address && <WarningFilledIcon color='red' />}
               onChange={(event) => {
                 onChangeAddress(event.target.value)
               }}
@@ -130,7 +132,7 @@ export const FigureSkatingOrganizationInformationEditor = ({
               placeholder='+7 (123) 456-78-90'
               value={phone}
               status={errors.phone && 'error'}
-              suffix={errors.phone && <WarningFilledIcon color='red' />}
+              suffix={!!errors.phone && <WarningFilledIcon color='red' />}
               onChange={(event) => {
                 onChangePhone(event.target.value)
               }}
@@ -154,7 +156,7 @@ export const FigureSkatingOrganizationInformationEditor = ({
               id='organization-information-inn'
               value={inn}
               status={errors.inn && 'error'}
-              suffix={errors.inn && <WarningFilledIcon color='red' />}
+              suffix={!!errors.inn && <WarningFilledIcon color='red' />}
               onChange={(event) => {
                 onChangeInn(event.target.value)
               }}
@@ -224,7 +226,7 @@ export const FigureSkatingOrganizationInformationEditor = ({
               placeholder='Укажите должность'
               value={applicantJobTitle}
               status={errors.applicantJobTitle && 'error'}
-              suffix={errors.applicantJobTitle && <WarningFilledIcon color='red' />}
+              suffix={!!errors.applicantJobTitle && <WarningFilledIcon color='red' />}
               onChange={(event) => {
                 onChangeApplicantJobTitle(event.target.value)
               }}
@@ -249,7 +251,7 @@ export const FigureSkatingOrganizationInformationEditor = ({
               placeholder='+7 (123) 456-78-90'
               value={applicantPhone}
               status={errors.applicantPhone && 'error'}
-              suffix={errors.applicantPhone && <WarningFilledIcon color='red' />}
+              suffix={!!errors.applicantPhone && <WarningFilledIcon color='red' />}
               onChange={(event) => {
                 onChangeApplicantPhone(event.target.value)
               }}

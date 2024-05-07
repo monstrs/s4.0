@@ -1,10 +1,12 @@
 import type { FigureSkatingOrganizationErrors }      from '../interfaces/index.js'
-import type { FigureSkatingOrganizationFields, FigureSkatingOrganization }      from '../interfaces/index.js'
+import type { FigureSkatingOrganizationFields }      from '../interfaces/index.js'
+import type { FigureSkatingOrganization }            from '../interfaces/index.js'
 
 import { createStore }                               from 'effector'
 
 import { changeFigureSkatingOrganizationFieldEvent } from '../events/index.js'
-import { setFigureSkatingOrganizationErrorsEvent, figureSkatingOrganizationsLoadedEvent }   from '../events/index.js'
+import { setFigureSkatingOrganizationErrorsEvent }   from '../events/index.js'
+import { figureSkatingOrganizationsLoadedEvent }     from '../events/index.js'
 
 const initialState: FigureSkatingOrganizationFields = {
   cityId: '',
@@ -41,21 +43,21 @@ export const $figureSkatingOrganizationErrors = createStore<FigureSkatingOrganiz
 
 $figureSkatingOrganizationErrors.on(setFigureSkatingOrganizationErrorsEvent, (_, errors) => errors)
 
-export const $figureSkatingOrganizations = createStore<{ organizations: Array<FigureSkatingOrganization>, hasNext: boolean }>(
+export const $figureSkatingOrganizations = createStore<{
+  organizations: Array<FigureSkatingOrganization>
+  hasNext: boolean
+}>(
   {
     organizations: [],
     hasNext: false,
   },
   {
-    sid: 'figure-skating-organizations'
+    sid: 'figure-skating-organizations',
   }
 )
 
 $figureSkatingOrganizations.on(figureSkatingOrganizationsLoadedEvent, (state, result) => ({
   ...state,
   ...result,
-  organizations: [
-    ...state.organizations,
-    ...result.organizations
-  ]
+  organizations: [...state.organizations, ...result.organizations],
 }))

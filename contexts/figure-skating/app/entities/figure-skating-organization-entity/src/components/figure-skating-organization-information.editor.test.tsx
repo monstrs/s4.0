@@ -2,31 +2,50 @@
  * @jest-environment jsdom
  */
 
-import React from 'react'
-import { describe, jest }                           from '@jest/globals'
-import { afterAll }                           from '@jest/globals'
-import { beforeAll }                          from '@jest/globals'
-import { expect }                             from '@jest/globals'
-import { it }                                 from '@jest/globals'
-import {render, screen} from '@testing-library/react'
-import userEvent from '@testing-library/user-event'
 import '@testing-library/jest-dom'
 
-import { FigureSkatingOrganizationInformationEditor, FigureSkatingOrganizationInformationEditorProps } from './figure-skating-organization-information.editor.jsx'
+import type { FigureSkatingOrganizationInformationEditorProps } from './figure-skating-organization-information.editor.jsx'
 
-describe('figure-skating-organization-information.editor', () => {  
-    it('check change full name', async () => {
-        const props = {
-            onChangeFullName: jest.fn()
-        } as any as FigureSkatingOrganizationInformationEditorProps
+import { faker }                                                from '@faker-js/faker'
+import { describe }                                             from '@jest/globals'
+import { jest }                                                 from '@jest/globals'
+import { expect }                                               from '@jest/globals'
+import { it }                                                   from '@jest/globals'
+import { render }                                               from '@testing-library/react'
+import { fireEvent }                                            from '@testing-library/react'
+import React                                                    from 'react'
 
-        const {container} =render(
-            <FigureSkatingOrganizationInformationEditor
-                {...props}
-            />
-        )
+import { FigureSkatingOrganizationInformationEditor }           from './figure-skating-organization-information.editor.jsx'
 
-        console.log(container)
-        
+describe('figure-skating-organization-information.editor', () => {
+  describe('address', () => {
+    it('check set address', async () => {
+      const props = {
+        address: faker.word.sample(),
+      } as any as FigureSkatingOrganizationInformationEditorProps
+
+      const { container } = render(<FigureSkatingOrganizationInformationEditor {...props} />)
+
+      const input: HTMLInputElement = container.querySelector('#organization-information-address')!
+
+      expect(input.value).toBe(props.address)
+    })
+
+    it('check change address', async () => {
+      const value = faker.word.sample()
+
+      const props = {
+        onChangeAddress: jest.fn(),
+      } as any as FigureSkatingOrganizationInformationEditorProps
+
+      const { container } = render(<FigureSkatingOrganizationInformationEditor {...props} />)
+
+      const input: HTMLInputElement = container.querySelector('#organization-information-address')!
+
+      fireEvent.change(input, { target: { value } })
+
+      expect(props.onChangeAddress).toBeCalledTimes(1)
+      expect(props.onChangeAddress).toBeCalledWith(value)
     })
   })
+})

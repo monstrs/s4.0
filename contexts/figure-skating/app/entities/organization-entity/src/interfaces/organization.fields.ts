@@ -1,4 +1,4 @@
-import { OrganizationCategory } from '../enums/index.js'
+import type { OrganizationCategory } from '../enums/index.js'
 
 export interface OrganizationFields {
   fullName: string

@@ -13,7 +13,7 @@
     "@ui/sprinkles": "workspace:0.0.1",
     "@ui/theme": "workspace:0.0.1",
     "@ui/tooltip": "workspace:0.0.1",
-    "antd": "^5.16.5"
+    "antd": "^5.17.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.1",

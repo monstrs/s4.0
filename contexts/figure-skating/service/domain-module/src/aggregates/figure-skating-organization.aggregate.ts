@@ -265,7 +265,7 @@ export class FigureSkatingOrganization extends AggregateRoot {
     @Against('charterId').NotUUID(4) charterId: string,
     @Against('registrationCertificateId').NotUUID(4) registrationCertificateId: string,
     @Against('curatorId').Optional.NotUUID(4) curatorId?: string,
-    additionalInformation?: string,
+    additionalInformation?: string
   ): FigureSkatingOrganization {
     this.apply(
       new FigureSkatingOrganizationCreatedEvent(
@@ -291,7 +291,7 @@ export class FigureSkatingOrganization extends AggregateRoot {
         registrationCertificateId,
         new Date(),
         curatorId,
-        additionalInformation,
+        additionalInformation
       )
     )
 
@@ -321,7 +321,7 @@ export class FigureSkatingOrganization extends AggregateRoot {
     @Against('charterId').NotUUID(4) charterId: string,
     @Against('registrationCertificateId').NotUUID(4) registrationCertificateId: string,
     @Against('curatorId').Optional.NotUUID(4) curatorId?: string,
-    additionalInformation?: string,
+    additionalInformation?: string
   ): FigureSkatingOrganization {
     this.apply(
       new FigureSkatingOrganizationUpdatedEvent(
@@ -346,7 +346,7 @@ export class FigureSkatingOrganization extends AggregateRoot {
         charterId,
         registrationCertificateId,
         curatorId,
-        additionalInformation,
+        additionalInformation
       )
     )
 

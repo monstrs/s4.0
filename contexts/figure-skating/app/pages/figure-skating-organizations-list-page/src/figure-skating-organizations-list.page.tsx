@@ -1,11 +1,12 @@
 'use client'
 
-import { ReactElement }                          from 'react'
-import React                                     from 'react'
+import type { ReactElement }                    from 'react'
+
+import React                                    from 'react'
 
 import { FigureSkatingOrganizationsListWidget } from '@figure-skating/figure-skating-organizations-list-widget'
-import { Layout }                                from '@ui/layout'
-import { Row }                                   from '@ui/layout'
+import { Layout }                               from '@ui/layout'
+import { Row }                                  from '@ui/layout'
 
 export const FigureSkatingOrganizationsListPage = (): ReactElement => (
   <Row flexDirection={['column', 'row', 'row']}>

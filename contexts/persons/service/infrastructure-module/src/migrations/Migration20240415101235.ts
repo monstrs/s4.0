@@ -12,5 +12,6 @@ export class Migration20240415101235 extends Migration {
     )
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
   override async down(): Promise<void> {}
 }

@@ -20,7 +20,8 @@ export class CreateFigureSkatingJudgePayload {
   }
 
   @IsDate()
-  get rankOrderDate() {
+  get rankOrderDate(): Date {
+    // eslint-disable-next-line @typescript-eslint/no-non-null-asserted-optional-chain
     return this.request.rankOrderDate?.toDate()!
   }
 }

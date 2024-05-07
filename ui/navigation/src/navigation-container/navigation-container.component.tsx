@@ -1,5 +1,6 @@
-import { ReactElement }              from 'react'
-import { ReactNode }                 from 'react'
+import type { ReactElement }         from 'react'
+import type { ReactNode }            from 'react'
+
 import React                         from 'react'
 
 import { navigationContainerStyles } from './navigation-container.css.js'

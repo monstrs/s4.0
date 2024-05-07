@@ -1,7 +1,5 @@
 {
-  "namespaces": [
-    "public"
-  ],
+  "namespaces": ["public"],
   "name": "public",
   "tables": [
     {
@@ -22,9 +20,7 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
-          "enumItems": [
-            "figure-skating"
-          ],
+          "enumItems": ["figure-skating"],
           "mappedType": "enum"
         },
         "full_name": {
@@ -236,9 +232,7 @@
       "schema": "public",
       "indexes": [
         {
-          "columnNames": [
-            "kind"
-          ],
+          "columnNames": ["kind"],
           "composite": false,
           "keyName": "organizations_kind_index",
           "constraint": false,
@@ -247,9 +241,7 @@
         },
         {
           "keyName": "organizations_pkey",
-          "columnNames": [
-            "id"
-          ],
+          "columnNames": ["id"],
           "composite": false,
           "constraint": true,
           "primary": true,

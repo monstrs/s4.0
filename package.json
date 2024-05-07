@@ -7,15 +7,11 @@
     "shared/**/*",
     "ui/**/*"
   ],
-  "resolutions": {
-    "esbuild": "0.17.2"
-  },
   "devDependencies": {
-    "@monstrs/tools-runtime": "^0.2.22",
-    "@types/node": "^20.12.7",
-    "esbuild": "^0.20.2",
+    "@monstrs/tools-runtime": "^0.2.23",
+    "@types/node": "^20.12.10",
     "jest-environment-jsdom": "^29.7.0",
-    "typescript": "^5.4.2"
+    "typescript": "^5.4.5"
   },
   "packageManager": "yarn@4.2.1",
   "tools": {
@@ -24,11 +20,6 @@
       "schematic": "project",
       "type": "libraries",
       "migration": "1643131477515"
-    }
-  },
-  "dependenciesMeta": {
-    "@monstrs/config-jest@0.3.15": {
-      "unplugged": true
     }
   }
 }

@@ -28,6 +28,6 @@ export class FigureSkatingOrganizationCreatedEvent {
     public readonly registrationCertificateId: string,
     public readonly createdAt: Date,
     public readonly curatorId?: string,
-    public readonly additionalInformation?: string,
+    public readonly additionalInformation?: string
   ) {}
 }

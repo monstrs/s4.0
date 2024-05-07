@@ -10,7 +10,7 @@
   "main": "src/index.ts",
   "dependencies": {
     "@vanilla-extract/css": "^1.15.1",
-    "antd": "^5.16.5"
+    "antd": "^5.17.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.1",

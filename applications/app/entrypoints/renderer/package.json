@@ -13,7 +13,7 @@
     "next": "^14.2.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-intl": "^6.6.5",
+    "react-intl": "^6.6.6",
     "sharp": "^0.33.3"
   },
   "devDependencies": {
@@ -22,11 +22,11 @@
     "@figure-skating/create-figure-skating-organization-page": "workspace:0.0.1",
     "@figure-skating/figure-skating-organizations-list-page": "workspace:0.0.1",
     "@figure-skating/load-figure-skating-organizations-feature": "workspace:0.0.1",
-    "@types/node": "^20.12.7",
+    "@types/node": "^20.12.10",
     "@types/react": "^18.3.1",
     "@types/react-dom": "^18.3.0",
     "@vanilla-extract/next-plugin": "^2.4.0",
-    "antd": "^5.16.5",
+    "antd": "^5.17.0",
     "effector": "^23.2.1",
     "effector-react": "^23.2.0",
     "typescript": "^5.4.5"

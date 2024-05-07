@@ -52,4 +52,3 @@ export enum FigureSkatingDisciplines {
    */
   OTHER = 5,
 }
-

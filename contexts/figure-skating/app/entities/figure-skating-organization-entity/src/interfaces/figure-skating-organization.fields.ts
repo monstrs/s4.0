@@ -1,4 +1,4 @@
-import { FigureSkatingDisciplines } from '../enums/index.js'
+import type { FigureSkatingDisciplines } from '../enums/index.js'
 
 export interface FigureSkatingOrganizationFields {
   cityId: string
