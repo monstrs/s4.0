@@ -1,4 +1,7 @@
+/* eslint-disable @typescript-eslint/consistent-type-imports */
+
 import type { PartialMessage }                          from '@bufbuild/protobuf'
+import type { PromiseClient }                           from '@connectrpc/connect'
 import type { FigureSkatingOrganization }               from '@figure-skating/rpc-client'
 import type { ListFigureSkatingOrganizationsRequest }   from '@figure-skating/rpc-client'
 import type { ListFigureSkatingOrganizationsResponse }  from '@figure-skating/rpc-client'
@@ -6,7 +9,6 @@ import type { FigureSkatingService }                    from '@figure-skating/rp
 import type { CreateFigureSkatingOrganizationRequest }  from '@figure-skating/rpc-client'
 import type { CreateFigureSkatingOrganizationResponse } from '@figure-skating/rpc-client'
 
-import { PromiseClient }                                from '@connectrpc/connect'
 import { Inject }                                       from '@nestjs/common'
 import { Injectable }                                   from '@nestjs/common'
 
