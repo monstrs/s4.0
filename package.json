@@ -11,7 +11,7 @@
     "@monstrs/tools-runtime": "^0.2.23",
     "@types/node": "^20.12.10",
     "jest-environment-jsdom": "^29.7.0",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.2"
   },
   "packageManager": "yarn@4.2.1",
   "tools": {

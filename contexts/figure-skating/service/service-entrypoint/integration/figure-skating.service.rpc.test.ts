@@ -188,11 +188,11 @@ describe('figure skating', () => {
         const category = OrganizationCategory.SCHOOL
         const cityId = faker.string.uuid()
         const address = faker.location.streetAddress()
-        const phone = faker.string.numeric('+7 ### ### ## ##')
+        const phone = '+79009009090'
         const inn = '020944781396'
         const applicantId = faker.string.uuid()
         const applicantJobTitle = faker.string.sample()
-        const applicantPhone = faker.string.numeric('+7 ### ### ## ##')
+        const applicantPhone = '+79009009090'
         const disciplines = [FigureSkatingDisciplines.SINGLE]
         const charterId = faker.string.uuid()
         const registrationCertificateId = faker.string.uuid()
@@ -222,7 +222,6 @@ describe('figure skating', () => {
             abbreviation,
             websiteName,
             listName,
-            foundingDate,
             category,
             cityId,
             address,

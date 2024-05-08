@@ -17601,7 +17601,7 @@ __metadata:
     "@monstrs/tools-runtime": "npm:^0.2.23"
     "@types/node": "npm:^20.12.10"
     jest-environment-jsdom: "npm:^29.7.0"
-    typescript: "npm:^5.4.5"
+    typescript: "npm:^5.4.2"
   languageName: unknown
   linkType: soft
 

@@ -250,7 +250,7 @@ const RAW_RUNTIME_STATE =
           ["@monstrs/tools-runtime", "npm:0.2.23"],\
           ["@types/node", "npm:20.12.10"],\
           ["jest-environment-jsdom", "virtual:9cb6012f667f095e1f02518ff95f34d7d3abb37859a7c1b6a8e7cb7d05417a5884ba067ab5e4c80ccd99b9a1552461be559b0978070fa28c4f853bfdc70a7a83#npm:29.7.0"],\
-          ["typescript", "patch:typescript@npm%3A5.4.5#optional!builtin<compat/typescript>::version=5.4.5&hash=5adc0c"]\
+          ["typescript", "patch:typescript@npm%3A5.4.4#optional!builtin<compat/typescript>::version=5.4.4&hash=5adc0c"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -28997,7 +28997,7 @@ const RAW_RUNTIME_STATE =
           ["@monstrs/tools-runtime", "npm:0.2.23"],\
           ["@types/node", "npm:20.12.10"],\
           ["jest-environment-jsdom", "virtual:9cb6012f667f095e1f02518ff95f34d7d3abb37859a7c1b6a8e7cb7d05417a5884ba067ab5e4c80ccd99b9a1552461be559b0978070fa28c4f853bfdc70a7a83#npm:29.7.0"],\
-          ["typescript", "patch:typescript@npm%3A5.4.5#optional!builtin<compat/typescript>::version=5.4.5&hash=5adc0c"]\
+          ["typescript", "patch:typescript@npm%3A5.4.4#optional!builtin<compat/typescript>::version=5.4.4&hash=5adc0c"]\
         ],\
         "linkType": "SOFT"\
       }]\

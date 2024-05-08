@@ -67,7 +67,12 @@ export const CreateFigureSkatingOrganizationWidget = (): ReactElement => {
               <Button>Отмена</Button>
             </Layout>
             <Layout mx='2x'>
-              <Button type='primary' onClick={createFigureSkatingOrganization}>
+              <Button
+                type='primary'
+                onClick={() => {
+                  createFigureSkatingOrganization({})
+                }}
+              >
                 Сохранить
               </Button>
             </Layout>
